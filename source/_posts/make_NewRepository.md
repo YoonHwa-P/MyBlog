@@ -20,7 +20,8 @@ title: Method Making New Repository
 1. git hub 로그인 후 새로운 저장소를 만들어 보도록 합시다.
   <br>
 
- ![](../images/New_.png)
+ ![](../imeges/New_.png)
+![](C:\Users\GREEN\Desktop\MyBlog\source\imeges\New_.png)
 
  new 를 누르면 새로운 repository를 생성하기 위한 정보를 입렬 할 수있다. 
 
@@ -30,7 +31,7 @@ title: Method Making New Repository
 
 2. Repository name 입력 후 Public(전체 공개)으로 할 것인지, Private(비공개)로 할 것인지 선택한다.
 
- ![](/images/img.png)
+ ![](../imeges/img.png)
  
 <br><br>
 
@@ -45,7 +46,7 @@ title: Method Making New Repository
 $ git clone + 나의 경로
 ```
 
- ![](/images/Path.png)
+ ![](../imeges/Path.png)
 
 혹시 나의 경로를 어디서 찾는지 잘 모르는 나를 위해 남긴다. <br>
 _git bash네... bush인줄알았는데..._
@@ -76,6 +77,8 @@ git push -u origin main
 8. 이제 저장소와 Desktop file이 페어링 되었다. 
 9. 앞으로는 file Update후 git 명령어로 올리면 된다. 
 10. 예를 들자면, folder에 file을 넣고, pycham으로 foler를 열어서 다음과 같은 명령어를 넣으면 된다. 
+
+![](C:\Users\GREEN\Desktop\MyBlog\source\imeges\make_ReadMe.PNG)
 
 ```bash
 git add . -- 모든 file을 업로드 하기 위해 저장
