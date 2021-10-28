@@ -13,7 +13,7 @@ title: Method Making New Repository
 <br><br>
 
 ---
-##Github에서
+## Github에서
 ###새로운 저장소 만들기 
 
 
