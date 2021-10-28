@@ -20,7 +20,7 @@ title: Method Making New Repository
 1. git hub 로그인 후 새로운 저장소를 만들어 보도록 합시다.
   <br>
 
- ![시작](../_image/New_.png)
+ ![](../_image/New_.png)
 
  new 를 누르면 새로운 repository를 생성하기 위한 정보를 입렬 할 수있다. 
 
@@ -30,7 +30,7 @@ title: Method Making New Repository
 
 2. Repository name 입력 후 Public(전체 공개)으로 할 것인지, Private(비공개)로 할 것인지 선택한다.
 
- ![저장소 만들기](../_image/img.png)
+ ![](../_image/img.png)
 
     <br>
     <br>
@@ -45,7 +45,7 @@ title: Method Making New Repository
 $ git clone + 나의 경로
 ```
 
- ![My Path](../_image/Path.png)
+ ![](../_image/Path.png)
 
 혹시 나의 경로를 어디서 찾는지 잘 모르는 나를 위해 남긴다. <br>
 _git bash네... bush인줄알았는데..._
