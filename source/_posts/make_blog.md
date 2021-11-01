@@ -1,5 +1,5 @@
 ---
-layout: temp
+layout: makeBlog
 title: Make_blog 
 date: 2021-10-28 12:21:20
 tags: makeBlog

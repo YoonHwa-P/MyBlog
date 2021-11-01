@@ -24,12 +24,21 @@ google Colaboratory (G-CLB, 구글 코랩)로 작업 했다면 이 file을 바�
 <br>
 
 
-1. 우리에게 필요한 app은 '아나콘다' 이다.   <br>
+1. 우리에게 필요한 app은 '아나콘다' 이다.     <br>
     - ![anaconda JupyterLab](/imeges/anaconda.PNG)
     - Anaconda의 JupyterLab을 이용하여 변환 해 봅시다. 
-2. 아나콘다의 주피터랩> file Tab에서 Export Note로 간다  <br>
+2. 아나콘다의 주피터랩> file Tab에서 Export Note로 간다    <br>
    - ![jupyterExport](/imeges/jupyterExport.PNG)
    -  MarkDown file으로 다운 받아서 _post 경로에 넣어주면 완성 !!!
 
-3. 다른 방법도 있다. !!
-4. 
+3. 다른 방법도 있다. !!    <br>
+   - ![CLB에서 Down](/imeges/CLB_douwn.png)
+   - ![Save](/imeges/Save.png)
+   - G-CLB 에서 다운받아서 _post 경로에 넣어 주어도 된다. 
+   - ![img.png](../imeges/Create_.png)
+   - G-CLB 에서 만들었다고 하는 마크가 같이 뜨는 것을 볼 수 있다. 
+  
+
+
+
+

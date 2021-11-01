@@ -21,7 +21,7 @@ title: Method Making New Repository
   <br>
 
 ![](/imeges/20211101/New_.png)
-![](/imeges/New_.png)
+
 
  new 를 누르면 새로운 repository를 생성하기 위한 정보를 입렬 할 수있다. 
 
