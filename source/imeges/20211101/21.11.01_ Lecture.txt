@@ -1,0 +1,18 @@
+GPU : _
+
+장비 구축하기 
+google colab _ reoport 형태로 만들 수 있따. 
+
+
+새노트 >런타임> GPU
+TPU _머신러닝_CCTV등에서 옮기는... 잘 모름
+
+
+케글 ?!
+책 가지고 다니기 
+
+google drive_file UPload
+
+1)Reporting 
+2) Web publishing_게시 
+
