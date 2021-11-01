@@ -20,8 +20,8 @@ title: Method Making New Repository
 1. git hub 로그인 후 새로운 저장소를 만들어 보도록 합시다.
   <br>
 
- ![](../imeges/New_.png)
-![](C:\Users\GREEN\Desktop\MyBlog\source\imeges\New_.png)
+![](/imeges/20211101/New_.png)
+![](/imeges/New_.png)
 
  new 를 누르면 새로운 repository를 생성하기 위한 정보를 입렬 할 수있다. 
 
@@ -31,7 +31,7 @@ title: Method Making New Repository
 
 2. Repository name 입력 후 Public(전체 공개)으로 할 것인지, Private(비공개)로 할 것인지 선택한다.
 
- ![](../imeges/img.png)
+ ![](/imeges/img.png)
  
 <br><br>
 

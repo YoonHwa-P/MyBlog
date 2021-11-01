@@ -16,7 +16,7 @@ tags: google, colaboratory, github, upload
 <br>
 
 
-google Colaboratory (G-CLB)로 작업 했다면 이 file을 바로 gitHub blog에 올리고 싶을 것이다. 
+google Colaboratory (G-CLB, 구글 코랩)로 작업 했다면 이 file을 바로 gitHub blog에 올리고 싶을 것이다. 
 우리는 다음과 같은 과정을 통해 G-CLB file을 다른 변환 과정 없이 file 째로 올릴 수 있다. 
 
 
@@ -24,7 +24,12 @@ google Colaboratory (G-CLB)로 작업 했다면 이 file을 바로 gitHub blog�
 <br>
 
 
-1. 우리에게 필요한 app은 '아나콘다' 이다. 
-    -  ![anaconda JupyterLab](/source/imeges/anaconda.PNG)
-2.  
-3. 
+1. 우리에게 필요한 app은 '아나콘다' 이다.   <br>
+    - ![anaconda JupyterLab](/imeges/anaconda.PNG)
+    - Anaconda의 JupyterLab을 이용하여 변환 해 봅시다. 
+2. 아나콘다의 주피터랩> file Tab에서 Export Note로 간다  <br>
+   - ![jupyterExport](/imeges/jupyterExport.PNG)
+   -  MarkDown file으로 다운 받아서 _post 경로에 넣어주면 완성 !!!
+
+3. 다른 방법도 있다. !!
+4. 
