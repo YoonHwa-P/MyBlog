@@ -1,7 +1,5 @@
 ---
 title: visualization by python
----
----
 date: 2021-11-03 13:09:57
 categories:
 - Python
