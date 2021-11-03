@@ -26,7 +26,7 @@ Let's Start!!
  + ##### Install Applications
    + gitHub :  https://github.com/
    + pycham :  https://www.jetbrains.com/pycharm/
-   + nodejs :  https://www.jetbrains.com/pycharm/
+   + nodejs :  https://nodejs.org/en/
    + ※ 주의 : 설치 중에 *SYSTEM PATH* 관련 텝이 나오면 Check 하고 넘어가기
  + ##### 회원가입 
    + github : mail 로 회원가입 하기.
