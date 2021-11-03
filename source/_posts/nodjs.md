@@ -32,6 +32,8 @@ $ node -v
 $ npm install -g hexo-cli
 ```
 
+
+
 #### git bash를 적당한 경로에서 들어간다. 
 makeBlog folder를 만들어준다. 
 
@@ -43,9 +45,17 @@ $ hexo init myblog
 
 ```
 
+hexo init 을 myblog에서 해 준다. 
+hexo server와 deployer를 설치 해 준다. 
+
+이를 설치 하지 않으면 에러가 날 수 있다. 
+
 ``` bash
 $ cd myblog
 $ npm install
 $ npm install hexo-server --save
 $ npm install hexo-deployer-git --save
 ```
+
+
+
