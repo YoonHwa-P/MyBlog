@@ -3,7 +3,7 @@ version: 4.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /source/imeges/main.jpg
+logo: /img/main.jpg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
@@ -229,7 +229,7 @@ widgets:
         # Author's current location
         location: "Mars"
         # URL or path to the avatar image
-        avatar: \MyBlog\public\img\main.jpg
+        avatar: /img/main.jpg
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
@@ -248,7 +248,7 @@ widgets:
                 icon: fab fa-twitter
                 url: 'https://twitter.com'
             Instagram:
-                icon: fab Instagram
+                icon: fab fa-Instagram
                 url: 'https://www.instagram.com/1_haza'
             RSS:
                 icon: fas fa-rss
