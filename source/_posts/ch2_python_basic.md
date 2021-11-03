@@ -2,8 +2,7 @@
 layout: temp
 title: Lecture_python_basic
 date: 2021-11-02 14:21:20
-tags: 
--python_basic
+tags: python_basic
 ---
 
 
@@ -285,21 +284,16 @@ print('"Hello, world!"')
 
 ## String Operators
 
-
 ```python
 str1 = "Hello "
 str2 = "World "
 print('str1 + str2 = ', str1 + str2)
-```
 
-    str1 + str2 =  Hello World 
-    
-
-
-```python
 greet = str1 + str2
 print('greet * 3 = ', greet * 3)
 ```
+
+    str1 + str2 =  Hello World 
 
     greet * 3 =  Hello World Hello World Hello World 
     

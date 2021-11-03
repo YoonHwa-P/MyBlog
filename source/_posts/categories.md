@@ -1,5 +1,8 @@
 ---
 title: "Making Category"
+---
+
+---
 excerpt :"Credit card"
 classes: wide
 categories:
