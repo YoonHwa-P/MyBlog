@@ -1,9 +1,16 @@
 ---
-layout: temp
 title: visualization by python
-date: 2021-11-02 15:11:02
-tags: Study, python, visualization
+date: 2021-11-03 13:09:57
+categories:
+- Python
+- Matplotlib
+- Seaborn
+tags:
+- Python
+- Matplotlib
+- Seaborn
 ---
+
 
 # Visualization _python으로 
 
