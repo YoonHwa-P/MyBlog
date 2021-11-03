@@ -88,7 +88,7 @@ plt.show()
 
 
     
-![graph](source/imeges/output_6_0.png)
+![graph](/imeges/output_6_0.png)
     
 
 
