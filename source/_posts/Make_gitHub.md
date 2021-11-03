@@ -1,11 +1,16 @@
 ---
 title: "Make a gitHub"
+date : 2021-10-29 12:21:20
+tags: makeBlog, makegithub
 ---
+<br>
+
+
  <h2>학원에서 배운 코드들을 올려봅시다.</h2>
 
    <br>
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=YoonHwa-P&show_icons=true&theme=radical)
+![YH's GitHub stats](https://github-readme-stats.vercel.app/api?username=YoonHwa-P&show_icons=true&theme=radical)
 <br>
  + 깃허브 디자인 더 하고 싶은데 안되넹 흐흐 
 <br>
@@ -35,12 +40,12 @@ title: "Make a gitHub"
      
  <h2>$ git init</h2>
    >$ git init_ git을 initiation 해 준다. (초기화) <br>
-     ![img.png](img.png) <br>
+     ![img.png](..\imeges\Make_gitHub\img.png)  <br>
     맨 처음에만 해 주면 된다. <br>
 
 <h2>$ git add .</h2>
    > $ git add : 지금 Update한 data를 서버에 올려준다. <br>
-     ![img_1.png](img_1.png) <br>
+     ![img_1.png](..\imeges\Make_gitHub\img_1.png) <br>
     $ git add . : 경로에 있는 모든 file Upload
     <br>
     $ git add [filename.Ex] : [file 이름과 확장자] 
@@ -49,10 +54,10 @@ title: "Make a gitHub"
 
 <h2>$ git commit - m "Comment(History log)"</h2>
    > $ git commit - m "Comment(History log)" <br><br>
-    ![img_2.png](img_2.png) <br><br>
+    ![img_2.png](..\imeges\Make_gitHub\img_2.png) <br><br>
     commit하여 확정 해 준다. 5개의 sql files가 올라간 것을 볼 수 있다.
     <br><br>
-   ![img_3.png](img_3.png)
+   ![img_3.png](..\imeges\Make_gitHub\img_3.png)
    <br>
     확정 해 주고 마지막으로 push 해 주면 다음과같은 
     History Log를 github main에서 볼 수 있다.
@@ -63,7 +68,7 @@ title: "Make a gitHub"
 > $git status <br>
 깃허브 commit 하기 전에 올릴 파일이 있는지 등의 상태를 알아 볼 수 있다. <br>
 commit 이후에는 사라지나부다 사진이 없다. <br><br>
- ![img_5.png](img_5.png) <br>
+ ![img_5.png](..\imeges\Make_gitHub\img_5.png) <br>
 올리기 전에 급하게 한컷 찍어 보앗쥐 <br>
 커밋해야하는 상태를 보여준다.
    <br>
@@ -71,7 +76,7 @@ commit 이후에는 사라지나부다 사진이 없다. <br><br>
 <h2>$ git push</h2>
 > $ git push
  최종 브라우저에 저장. 
- ![img_4.png](img_4.png) <br>
+ ![img_4.png](..\imeges\Make_gitHub\img_4.png) <br>
  $ git push 후 main -> main 이 나오면 성공 ! 
 > 
 
