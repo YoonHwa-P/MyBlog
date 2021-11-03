@@ -1,13 +1,11 @@
 ---
 layout: temp
-title: Make_blog 
+title: Making Blog method
 date: 2021-10-28 12:21:20
 tags: makeBlog
 ---
 
----
-title: Making Blog method
----
+
 ### Hello World I'm in the Mars
 
 <br><br><br><hr>
