@@ -1,5 +1,5 @@
 ---
-title: Study Numpy
+title: "Study Numpy"
 layout: temp
 title: Study Numpy
 date: 2021-11-01 12:22:02
