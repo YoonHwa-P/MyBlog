@@ -1,4 +1,13 @@
-# Visualiztion _python으로 
+---
+layout: temp
+title: visualiztion by python
+date: 2021-11-02 15:11:02
+tags: 
+Study python visualiztion
+
+---
+
+# Visualization _python으로 
 
 [1103 학습]
 시각화 연습 및 작성 코드 깃헙 블로그 및 깃헙에 올리기, 개인별로 공유
@@ -79,7 +88,7 @@ plt.show()
 
 
     
-![png](output_6_0.png)
+![graph](source/imeges/output_6_0.png)
     
 
 
@@ -229,7 +238,7 @@ plt.show()
 
 
     
-![png](output_18_1.png)
+![graph](/imeges/output_18_1.png)
     
 
 

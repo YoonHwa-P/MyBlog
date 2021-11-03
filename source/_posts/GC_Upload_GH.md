@@ -1,11 +1,12 @@
 ---
-layout: Google Colaboratory file을 GitHube에 Upload하기
-title: Method Making New Repository 
+layout: temp
+title: Method Making file from.ipynb to .md 
 date: 2021-11-01 15:30:20
 tags: google, colaboratory, github, upload
 ---
 
 # Google Colaboratory file을 GitHub에  바로 올리기 
+Google Colaboratory file을 GitHube에 Upload하기
 <br>
 <br>
 <hr>
