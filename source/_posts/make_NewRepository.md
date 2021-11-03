@@ -78,7 +78,7 @@ git push -u origin main
 9. 앞으로는 file Update후 git 명령어로 올리면 된다. 
 10. 예를 들자면, folder에 file을 넣고, pycham으로 foler를 열어서 다음과 같은 명령어를 넣으면 된다. 
 
-![](C:\Users\GREEN\Desktop\MyBlog\source\imeges\make_ReadMe.PNG)
+![make readMe](../imeges/make_ReadMe.PNG)
 
 ```bash
 git add . -- 모든 file을 업로드 하기 위해 저장
