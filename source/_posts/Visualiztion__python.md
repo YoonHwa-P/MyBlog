@@ -1,10 +1,8 @@
 ---
 layout: temp
-title: visualiztion by python
+title: visualization by python
 date: 2021-11-02 15:11:02
-tags: 
-Study python visualiztion
-
+tags: Study, python, visualization
 ---
 
 # Visualization _python으로 
