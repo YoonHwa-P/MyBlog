@@ -1,4 +1,6 @@
-# Red
+---
+title: "Make a gitHub"
+---
  <h2>학원에서 배운 코드들을 올려봅시다.</h2>
 
    <br>
