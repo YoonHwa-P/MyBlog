@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
-title: "to use gitHub in Multi place" 
-=======
-title: "to use gitHub in Multi place " 
->>>>>>> c5589a672e850f5edca309f81ca50915cbf17ada
+title: "to use gitHub in Multi place"
 date: 2021-11-02 14:21:20
 tags: 
 - python_basic
