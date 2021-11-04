@@ -2,12 +2,15 @@
 title: "Study Pandas"
 date: 2021-11-02 15:11:02
 tags: 
--Study 
--Pandas
+- Study 
+- Pandas
 ---
 
 
 #Pandas
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
 
 
 

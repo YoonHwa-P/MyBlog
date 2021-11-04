@@ -1,5 +1,5 @@
 ---
-title: "to use gitHub in Multi place "" 
+title: "to use gitHub in Multi place" 
 date: 2021-11-02 14:21:20
 tags: 
 - python_basic
