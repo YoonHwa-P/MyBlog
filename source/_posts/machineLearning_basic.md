@@ -83,7 +83,7 @@ tags:
 <br>
 
 #### 이어지는 posting
-- [classification]()
+- [classification](https://yoonhwa-p.github.io/2021/11/04/DecisionTreeClassifier/)
 - [Regression]()
 
 ---
