@@ -90,6 +90,7 @@ tags:
 Ref.
 
 1) [결정트리학습법/wiki](https://ko.wikipedia.org/wiki/%EA%B2%B0%EC%A0%95_%ED%8A%B8%EB%A6%AC_%ED%95%99%EC%8A%B5%EB%B2%95)
-2) [Decusuib Trees](https://scikit-learn.org/stable/modules/tree.html)
-3) [1.10.1](https://scikit-learn.org/stable/modules/tree.html#tree-classification) 
-4) [1.10.2](https://scikit-learn.org/stable/modules/tree.html#tree-regression)
+2) [결정트리 국문](https://injo.tistory.com/15)
+3) [Decusuib Trees](https://scikit-learn.org/stable/modules/tree.html)
+4) [1.10.1](https://scikit-learn.org/stable/modules/tree.html#tree-classification) 
+5) [1.10.2](https://scikit-learn.org/stable/modules/tree.html#tree-regression)
