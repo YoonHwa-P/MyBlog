@@ -1,7 +1,12 @@
 ---
 title: machine Learning_basic
-date: 2021-10-28 12:21:20
-tags: makeBlog
+date: 2021-11-04 12:21:20
+categories:
+- DecisionTree
+tags: 
+- machineLearning
+- decisionTree
+- predictionModel
 ---
 
 # machine learning 
@@ -57,20 +62,29 @@ tags: makeBlog
     7. 생성된 데이터가 실제 모형에 의해 가정이 다소 위반되더라도 잘 수행된다.
 
 ## 단점
-    1. data 일반화가 잘 되지 못하면 복잡한 트리가 만들어짐 (과적합)
+
+1. data 일반화가 잘 되지 못하면 복잡한 트리가 만들어짐 (과적합)
         - 가지치기, 리프노드에 필요한 샘플 최소화, 트리 최대깊이 설정 으로 해결 가능
-    2. variation이 작은 경우 의사결정트리가 불안정 할 수 있다. 
-        - 앙상블 내에서 의사결정 트리 사용으로 해결 가능.
-    3. 수치형, 범주형 data를 모두 처리 가능
-    4. multi-output problems를 다룰 수 있다. 
-    5. a white box model을 사용 할 수 있다. (bool 가능)
-    6. 통계 검정을 사용하여 모형을 검증하기 때문에 모델의 신뢰성을 설명할 수 있다.
-    7. 생성된 데이터가 실제 모형에 의해 가정이 다소 위반되더라도 잘 수행된다.
-    
+2. variation이 작은 경우 의사결정트리가 불안정 할 수 있다. 
+    - 앙상블(ensemble) 내에서 의사결정 트리 사용으로 해결 가능.
+    - 실용적인 의사 결정 트리 학습 알고리즘은 각 노드에서 국소적으로 최적의 의사결정이 이루어지는 그리디 알고리즘과 같은 경험적 알고리즘을 기반으로 한다. 이러한 알고리즘은 전역 최적 의사 결정 트리를 반환한다고 보장할 수 없다. 
+    - 이는 특징과 샘플이 교체와 함께 무작위로 샘플링되는 앙상블 학습기에서 여러 트리를 훈련시킴으로써 완화될 수 있다.
+3. 의사 결정 트리의 예측은 근사치이기 때문에 좋은 추정은 아닐 수 있다.
+4. 의사결정 트리의 최적화의 문제는 NP-complete로 잘 알려진 문제이다.
+   잘 모르겠다.
+- [NP-complete](https://ko.wikipedia.org/wiki/NP-%EC%99%84%EC%A0%84)
+ 
+5. XOR, parity or multiplexer problems와 같이 배우기 쉽지 않은 컨셉들 때문에 표현하기 쉽지않다. 
+6. 학습자가 편향된 트리르르 만들 수 있으므로, 데이터 세트의 균형을 맞춰줘야 한다. 
 
 
+<br>
+<hr>
+<br>
 
-
+#### 이어지는 posting
+- [classification]()
+- [Regression]()
 
 ---
 Ref.
