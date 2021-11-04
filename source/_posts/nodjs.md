@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Deploy gitHub blog by hexo"
 date: 2021-11-04 08:21:20
 tags: makeBlog

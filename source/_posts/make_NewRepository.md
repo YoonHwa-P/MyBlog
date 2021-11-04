@@ -1,13 +1,12 @@
 ---
-layout: temp
-title: Method Making New Repository 
+title: "Method Making New Repository" 
 date: 2021-10-28 12:21:20
 tags:
+- method
+- repository
+- make
 ---
 
----
-title: Method Making New Repository 
----
 ###### Hello World I'm in the Mars
 
 <br><br>

@@ -1,9 +1,11 @@
-
 ---
-layout: temp
 title: Study Pandas
-date: 2021-11-02 15:11:02
+layout: temp
+date: 2021-11-04 15:11:02
 tags: 
-Study Pandas
-
+- Study 
+- Pandas
 ---
+
+# rody
+

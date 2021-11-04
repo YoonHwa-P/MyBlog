@@ -1,7 +1,6 @@
 ---
 title: "Study Pandas"
 layout: temp
-title: Study Pandas
 date: 2021-11-02 15:11:02
 tags: 
 -Study 
@@ -10,11 +9,12 @@ tags:
 
 
 #Pandas
+
 <a href="https://colab.research.google.com/github/YoonHwa-P/MyBlog/blob/main/Pandas.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
----
-
+<br>
+<hr>
 
 ## 판다스란
 
@@ -32,7 +32,7 @@ tags:
 
 
 
----
+-------
 판다스를 이용 할 수 있는 많은 튜토리얼 들이 있지만, 
 아래 링크는 매우 유용 한것이라고 강사님이 말씀 해 주셨다. 
 

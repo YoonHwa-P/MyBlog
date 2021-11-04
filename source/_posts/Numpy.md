@@ -1,10 +1,9 @@
 ---
 title: "Study Numpy"
-layout: temp
 date: 2021-11-01 12:22:02
 tags: 
--Study
--Numpy
+- Study
+- Numpy
 ---
 
 

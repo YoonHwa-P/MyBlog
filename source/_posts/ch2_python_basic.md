@@ -1,6 +1,6 @@
 ---
 layout: temp
-title: Lecture_python_basic
+title: "Lecture_python_basic"
 date: 2021-11-02 14:21:20
 tags: python_basic
 ---
