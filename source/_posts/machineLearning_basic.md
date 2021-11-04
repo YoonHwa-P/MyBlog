@@ -23,3 +23,19 @@ tags: makeBlog
    - 목표변수가 연속하는 값(일반적으로 실수 )을 가지는 트리
 
     의사결정 분석에서 결정트리는 시각적으로 명시적인 방법으로 과정을 보여준다.     
+
+
+    결정 트리 학습법은 데이터 마이닝에서 일반적으로 사용되는 방법론으로, 
+    몇몇 입력 변수를 바탕으로 목표 변수의 값을 예측하는 모델을 
+    생성하는 것을 목표로 한다.
+
+
+
+
+---
+Ref.
+
+1) [결정트리학습법/wiki](https://ko.wikipedia.org/wiki/%EA%B2%B0%EC%A0%95_%ED%8A%B8%EB%A6%AC_%ED%95%99%EC%8A%B5%EB%B2%95)
+2) [Decusuib Trees](https://scikit-learn.org/stable/modules/tree.html)
+3) [1.10.1](https://scikit-learn.org/stable/modules/tree.html#tree-classification) 
+4) [1.10.2](https://scikit-learn.org/stable/modules/tree.html#tree-regression)
