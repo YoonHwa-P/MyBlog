@@ -12,10 +12,6 @@ tags:
 <<<<<<< HEAD
  
 =======
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-  111112222
-git push origin HEAD:main
 
 >>>>>>> 53622efd31df4f58e5efef044a98e4a6c33d8ad1
 
