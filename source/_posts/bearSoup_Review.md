@@ -1,5 +1,3 @@
-
-
 ---
 title: BearSoup_Review
 layout: temp
