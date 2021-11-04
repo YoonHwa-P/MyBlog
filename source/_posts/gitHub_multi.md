@@ -15,7 +15,7 @@ tags:
 이 때, 깃헙 blog 저장소 삭제할 필요가 없어요~
 
 
-``` git
+``` bash
 
 $ hexo init myblog # 여기는 각자 소스 레포 확인
 $ cd myblog

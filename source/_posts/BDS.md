@@ -1,20 +1,18 @@
 ---
-layout: temp
 title: "become a BDS"
 date: 2021-11-04 08:30:20
 categories:
 - BDS
 tags:
--python
--bioinformatics
--BioDataScientist
+- python
+- bioinformatics
+- BioDataScientist
 - BioData_Science
-last_modified_at: 2021-11-04
 ---
 
 
 
-##Big data 를 이용 할 수 있는 BioDataScientist가 되고 싶다. 
+##Big data 를 이용 할 수 있는 BioData Scientist가 되고 싶다. 
 
 <br>
 <hr>
@@ -126,13 +124,14 @@ BDS 데이터는 매우 많은 수의 관측에서 보존된 패턴을 식별하
 <br>
 
 
--omics 데이터의 바이오 마커 분석을 위한 단순화된 파이프라인과 관련 주요 고려 사항은 다음과 같을 수 있다.
+- omics 데이터의 바이오 마커 분석을 위한 단순화된 파이프라인과 관련 주요 고려 사항은 다음과 같을 수 있다.
 
 
-
+    
 ![BDS_omics.png](../imeges/BDS_omics.png)
 
 <br>
+
 
 분석 파이프라인은 매우 유연해야 하며 연구 질문의 필요에 따라 변화해야 한다.
 완벽한 지식이 부족하기 때문에 최적화와 재현성을 어느 정도 달성하기 위해 몇 단계를 왔다 갔다
@@ -155,5 +154,5 @@ BDS 데이터는 매우 많은 수의 관측에서 보존된 패턴을 식별하
 BDS는 예술에 가까운 과학인 것이다. 
 
 
-
+Ref.
 https://gohwils.github.io/biodatascience/biodatascience.html
