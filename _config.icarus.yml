@@ -19,17 +19,17 @@ head:
         # The start URL of the web application
         start_url: brilliant_bio@naver.com
         # The default theme color for the application
-        theme_color: 
+        theme_color:
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
-        background_color : "pink"
+        background_color :
         # The preferred display mode for the website
         display: standalone
         # Image files that can serve as application icons for different contexts
         icons:
             -
                 # The path to the image file
-                src: ''
+                src: '/img/main.jpg'
                 # A string containing space-separated image dimensions
                 sizes: ''
                 # A hint as to the media type of the image
@@ -248,7 +248,7 @@ widgets:
                 icon: fab fa-twitter
                 url: 'https://twitter.com'
             Instagram:
-                icon: fab fa-Instagram
+                icon: <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/>
                 url: 'https://www.instagram.com/1_haza'
             RSS:
                 icon: fas fa-rss
@@ -256,7 +256,7 @@ widgets:
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: toc
         # Whether to show the index of each heading
         index: true
@@ -267,7 +267,7 @@ widgets:
     # Recommendation links widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: links
         # Names and URLs of the sites
         links:
@@ -276,27 +276,27 @@ widgets:
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: categories
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: recent_posts
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: archives
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: tags
     # Google FeedBurner email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: subscribe_email
         # Hint text under the email input
         description: 
@@ -305,7 +305,7 @@ widgets:
     # Google AdSense unit configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: adsense
         # AdSense client ID
         client_id: ''
@@ -314,7 +314,7 @@ widgets:
     # Follow.it email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: followit
         # Hint text under the email input
         description: 
@@ -359,7 +359,7 @@ plugins:
         # Whether the popup should stay static regardless of the page scrolls
         static: false
         # Where on the screen the consent popup should display
-        position: bottom-left
+        position: bottom-right
         # URL to your site's cookie policy
         policyLink: 'https://www.cookiesandyou.com/'
     # Enable the lightGallery and Justified Gallery plugins
