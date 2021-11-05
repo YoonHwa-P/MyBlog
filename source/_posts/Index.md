@@ -18,8 +18,7 @@ made By @YoonHwa-P</center>
 <hr style="dashed; 10px; pink;">
 
 ## Python
- * [python, Tuple](https://yoonhwa-p.github.io/2021/11/05/Python_tuple/) 
-<span style="font-size:150%;  color: Red;">*</span>
+ * [python, Tuple](https://yoonhwa-p.github.io/2021/11/05/Python_tuple/) <span style="font-size:150%;  color: Red;">*</span>
  * [python, List](https://yoonhwa-p.github.io/2021/11/05/Python_List/)
  * [python, Matplotlib](https://yoonhwa-p.github.io/2021/11/03/Visualiztion__python/)
  * [python, Pandas](https://yoonhwa-p.github.io/2021/11/02/Pandas/)
@@ -30,8 +29,7 @@ made By @YoonHwa-P</center>
    * [의사결정트리, 이론](https://yoonhwa-p.github.io/2021/11/04/machineLearning_basic/)
 ## DBS
  * [DBS, 이론](https://yoonhwa-p.github.io/2021/11/04/BDS/)
- * [논문리뷰, ](https://yoonhwa-p.github.io/2021/11/03/bearSoup_Review/) 
- <span style="font-size:150%;  color: Red;">*</span>
+ * [논문리뷰, ](https://yoonhwa-p.github.io/2021/11/03/bearSoup_Review/) <span style="font-size:150%;  color: Red;">*</span>
 ## github
  * [girhub, nodjs](https://yoonhwa-p.github.io/2021/11/04/nodjs/)
  * [github, 카테고리](https://yoonhwa-p.github.io/2021/11/04/categories/)
@@ -40,11 +38,19 @@ made By @YoonHwa-P</center>
  * [github, blog 만들기](https://yoonhwa-p.github.io/2021/10/29/Make_gitHub/)
  * [github, Repository 만들기](https://yoonhwa-p.github.io/2021/10/28/make_NewRepository/)
  
->> 올려야 하는 Posting List   <br>
-    - 의사결정트리, Regression
-
 
 <hr align="center" style="border: solid 10px #304A84; width: 50%;">
+
+> 올려야 하는 Posting List   <br>
+>> - 의사결정트리, Regression <br>
+>> - Kaggle, the-typical-kaggle-data-scientist-in-2021
+
+수정 해야 할것도 넘넘 많다. 
+일단 이번 주 주말에는 Kaggle 먼저 **(Team project 닌까.)**
+
+
+
+
 
 * <span style="font-size:150%;  color: Red;">*</span> : 수정중
 
