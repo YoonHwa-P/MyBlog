@@ -220,7 +220,7 @@ widgets:
     # Profile widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: profile
         # Author name
         author: "YoonHwa Park"
@@ -248,7 +248,7 @@ widgets:
                 icon: fab fa-twitter
                 url: 'https://twitter.com'
             Instagram:
-                icon: <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"/>
+                icon: ../img/instaGram.jpg
                 url: 'https://www.instagram.com/1_haza'
             RSS:
                 icon: fas fa-rss
