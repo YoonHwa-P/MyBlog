@@ -39,7 +39,7 @@ made By @YoonHwa-P</center>
  * [github, Repository 만들기](https://yoonhwa-p.github.io/2021/10/28/make_NewRepository/)
  
 
-<hr align="center" style="border: solid 10px #304A84; width: 50%;">
+<hr align="center" style="border: solid; 10px; #304A84; width: 50%;">
 
 > 올려야 하는 Posting List   <br>
 >> - 의사결정트리, Regression <br>
