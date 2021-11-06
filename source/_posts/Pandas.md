@@ -56,7 +56,14 @@ Import 해 주는 라이브러리는 version을 꼭 확인하여 오류에 대�
 
 
   
-Pandas에는 3가지 자료 구조가 있는데 series와 dataFrame, panel이 그것이다.
+Pandas에는 3가지 자료 구조가 있는데
+[series](https://yoonhwa-p.github.io/2021/11/06/Pandas_Series/) 와
+[dataFrame](https://yoonhwa-p.github.io/2021/11/06/Pandas_DataFrame),
+[panel](https://yoonhwa-p.github.io/2021/11/06/Pandas_panel) 이 그것이다.
+
+
+
+pandas에대해 더 알아보고 싶다면, 링크를 타고 가보자.
 
 
 
@@ -64,9 +71,6 @@ Pandas에는 3가지 자료 구조가 있는데 series와 dataFrame, panel이 �
 ref.
 
   [판다스/위키](https://wikidocs.net/32829)  <br>
-
-
-
 
 
 
