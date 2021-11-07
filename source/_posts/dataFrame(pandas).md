@@ -24,6 +24,37 @@ dataFrame은 Rew, column에대한 Index 이렇게 2가지 변수를 담고 있�
 <hr>
 <br>
 
+## pd.dataframe() 
+
+```python
+import pandas as pd
+values = [['rose', 'tulip', 'Liry'], [4, 5, 6], ['red', 'blue', 'green']]
+index = ['flower', 'Number', 'color']
+columns = [1, 2, 3]
+
+df = pd.DataFrame(values, index=index, columns=columns)
+print(df)
+```
+
+df 는  data frame의 준말.
+
+
+
+
+           1     2     3
+    flower rose  tulip Liry
+    Number 4     5     6
+    color  red   blue  green
+
+
+Index와 column 의 dtype은 object이다. 
+
+
+
+데이터프레임은 리스트(List), 시리즈(Series), 딕셔너리(dict), Numpy의 ndarrays,
+또 다른 데이터프레임으로 생성할 수 있습니다.
+
+
 
 ### Ref.
 [DataFrame](https://eunguru.tistory.com/221?category=817455)

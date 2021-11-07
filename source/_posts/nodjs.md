@@ -7,7 +7,7 @@ tags: makeBlog
 
 
 ##github blog를 Hexo를 이용하여 deploy 해 보자.
-    이전에 만들었던 포스팅이 컴퓨터가 바뀌면서 사라졌더군
+    
 
 Ref.
 
