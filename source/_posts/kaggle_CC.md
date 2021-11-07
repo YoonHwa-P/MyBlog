@@ -1,6 +1,6 @@
 ---
 title: "kaggle study"
-date: 2021-10-28 12:21:20
+date: 2021-11-07 20:21:20
 tags:
 - kaggle
 - summary
