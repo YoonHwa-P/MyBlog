@@ -246,6 +246,8 @@ fig.update_layout(showlegend=False,
 - paper_bgcolor='#F7F7F7'
   - 배경색 설정
 
+
+
 ![paper_bgcolor](../imeges/paper_bgcolor.png)
 
 - plot_bgcolor='#F7F7F7'
@@ -266,11 +268,69 @@ fig.update_layout(showlegend=False,
   - [font 설정](https://plotly.com/python/reference/layout/#layout-font)
   - family, color, size 설정 가능, title_fond도 함께 설정 가능 해 보임.
 
+### fig Information 추가
+
+#### fig.add_annotation() _1
+
+플롯에 메모를 남길 수 있는것. 코멘트나 copy-Right 같은걸 남기는듯
+
+-[plotly-annotation/ko.] (https://soohee410.github.io/plotly_annotation)
+
+```python
+fig.add_annotation(dict(font=dict(size=14),
+                                    x=0.96,
+                                    y=-0.14,
+                                    showarrow=False,
+                                    text="@miguelfzzz",
+                                    xanchor='left',
+                                    xref="paper",
+                                    yref="paper"))
+```
+
+dict = dictionary
+
+>>A list or tuple of dicts of string/value properties where:
+>> The ‘type’ property specifies the trace type
+
+* 여기서 dict는 fig객체 즉 **plotly.graph_objects.Figure** 에서 상응하는 정보(font, size등) 변수를 가져와 대응 시켜 주는 역할을 한다. 
+
+
+plot 아래에 보면 "@miguelfzzz"이라는 글자가 보이는데 이것을 설정 한 것.
+
+- showarrow=False,
+  - 화살표등을 남길 수 있는데 이 Graph에선 false
+- xref="paper", yref="paper"
+  - 어느 부분 (plot or paper)에 표시 할 것인지  
+
+> 나머지는 말 안해도 이제는 알 수 있기 때문에 생략.
+
+#### fig.add_annotation() _2
+
+```python
+fig.add_annotation(dict(font=dict(size=12),
+                                    x=0.01,
+                                    y=-0.14,
+                                    showarrow=False,
+                                    text="Source: 2021 Kaggle Machine Learning & Data Science Survey",
+                                    xanchor='left',
+                                    xref="paper",
+                                    yref="paper"))
+```
 
 
 
+<br>
+<hr>
+
+## fig.show() 내보내기 
+
+```python
+fig.show()
+```
+
+fig.show()로 마무리 해 주면 된다.  <br>
+이건 java의 return과 같은 느낌인듯. <br>
 
 
-
-[Plotly Treemap/en.](https://plotly.com/python/treemaps/)
-[layout/en.](https://plotly.com/python/reference/layout/)
+[Plotly Treemap/en.](https://plotly.com/python/treemaps/)  <br>
+[layout/en.](https://plotly.com/python/reference/layout/)  <br>
