@@ -1,6 +1,6 @@
 ---
 title: "kaggle :Bar Graph"
-date: 2021-11-08 16:59:41
+date: 2021-11-08 16:50:41
 tags:
 - kaggle
 - Plotly
