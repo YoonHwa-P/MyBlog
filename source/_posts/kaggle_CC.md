@@ -15,6 +15,8 @@ tags:
 
 
 ```python
+
+
 # This Python 3 environment, PKG Load
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
@@ -151,21 +153,11 @@ Introduction
 ; Introduction 에서 이 notebook의 성격, data의 간간한 정보, 목차 등을 설명.
 
 
-<center style="font-size:300%; font-family:Hiragino Kaku Gothic Pro, sans-serif"> 1. Demographics & Geographics</center>
-
+<hr>
 
 모든 글은 Markdown을 이용한 css 로 작성 된 것 같다. 
 
-
-```python
-
-```
-
-<blockquote><p style="font-size:130%; font-family:Hiragino Kaku Gothic Pro, sans-serif"><b> The most common industry is technology, with <span style="color:#5abbf9;">25% </span> of the respondents working on it, followed by the education industry, with <span style="color:#5abbf9;">20%</span>.</b><p></blockquote>
-
-<center style="font-size:300%; font-family:Hiragino Kaku Gothic Pro, sans-serif"> 3. Knowledge & Skills</center>
-
-
+<br>
 
 
 ```python
@@ -185,7 +177,8 @@ experience = (
 
 
 ```python
- df['Q6'].value_counts()  #여러개의 fuction을 사용 하기 위해서 괄호로 묶어서 사용 
+ df['Q6'].value_counts()  
+#여러개의 fuction을 사용 하기 위해서 괄호로 묶어서 사용 
 ```
 
 
@@ -204,16 +197,18 @@ experience = (
 
 1. .value_counts() : 데이터의 분포도를 확인하는데 매우 유용한 함수
   - column 값의 개수를 확인 하는것.
-2. .to_frame() : 하
+2. .to_frame() : 
    .rename(columns={'index':'Experience', 'Q6':'Count'}) 
 3. reset_index()
   - Index를 reset해 준다. 
   
   Ref. [판다스 함수](https://hun931018.tistory.com/19)
 
+
+
+
 ## data 수집, 전처리 
 Experience라는 Question 6에 해당하는 값을 전처리 해 준다. 
-
 
 
 ## data categoircal로 List로 만들고, 함수정의, 정렬
