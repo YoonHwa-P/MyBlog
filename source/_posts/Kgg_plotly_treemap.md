@@ -203,7 +203,7 @@ fig의 layout을 설정.
 #### hoverTemp까지 설정된 treemap.
 <br>
 
-![Before_layout](../imeges/Before_layout.png)
+![Before_layout](/imeges/Before_layout.png)
 
 <br>
 

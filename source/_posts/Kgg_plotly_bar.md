@@ -59,8 +59,7 @@ warnings.filterwarnings('ignore')
 data: Kaggle의 the-typical-kaggle-data-scientist-in-2021 
 
 이 부분은 [data import 방법](https://yoonhwa-p.github.io/2021/11/07/kaggle_CC/) 을 참고 하거나 
-[kaggle dictation (01)](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_treemap/0)
-을 참조하세요.
+[kaggle dictation (01)](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_treemap/0) 을 참조하세요.
 
 <br><br>
 
@@ -121,7 +120,7 @@ Ref. [판다스 함수](https://hun931018.tistory.com/19)
     I have never written code    1032
     Name: Q6, dtype: int64
 
-![valueCount](../imeges/kgg/valueCount.png)
+![valueCount](/imeges/kgg/valueCount.png)
 
 <br>
 
@@ -174,7 +173,7 @@ experience['percent'] = ((experience['Count'] / experience['Count'].sum())*100).
     - short_Index의 경우에는 Index를 기준으로 data를 정렬한다.
     - 이 경우에는 ('Experience')를 기준으로 default값인 오름차순으로 정렬
 
-![experience.sort_values()](../imeges/kgg/experience.sort_values.png)
+![experience.sort_values()](/imeges/kgg/experience.sort_values.png)
 
 보통 percent나 count를 기준으로 정렬 되는데 이 경우 **sort_values('Experience')** 를 하였기때문에
 기준인 Experience를 기준으로 오름차순으로 정렬 되었다. 
@@ -253,7 +252,7 @@ text node를 축 라인과 체크라벨 위에 보여주기위해서는 x축Laye
     - 지정 해 준 colors를 사용.
 <br>
 
-![barBefore.png](../imeges/kgg/barBefore.png)
+![barBefore.png](/imeges/kgg/barBefore.png)
 
 
 
@@ -312,7 +311,7 @@ fig.update_traces(texttemplate='%{text}',
  - hovertemplate= 커서를 가까이 대면 나오는 창 x값과, y 값이 어떤 상태인지 알려 준다. 
  
 
-![Experience](../imeges/Experoemce.png)
+![Experience](/imeges/Experoemce.png)
 
 
  [hevertemplate](https://plotly.com/python/hover-text-and-formatting/)
@@ -323,7 +322,7 @@ Returns the Figure object that the method was called on  <br>
 
 [plotly.graph_objects.Figure.update_traces](https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html#plotly.graph_objects.Figure.update_traces)  <br>
 <br>
-![hovertemplate_up](../imeges/kgg/hovertemplate_up.png)
+![hovertemplate_up](/imeges/kgg/hovertemplate_up.png)
 
 <br>
 <br>
@@ -342,7 +341,7 @@ SQL의 update와 비슷한 기능인듯.
 fig.update_xaxes(showgrid=False) : x축의 grid 수정
 fig.update_yaxes(showgrid=False) : y축의 grid 수정
 
-![showgrid=False](../imeges/kgg/showgrid_False.png)
+![showgrid=False](/imeges/kgg/showgrid_False.png)
 
 <br>
 축을 보이지 않는 형태로 바꾸어 예쁘게 보이게 해줌.
@@ -373,12 +372,12 @@ fig.update_layout(showlegend=False,
 default로 되어있는 그래프의 Layout을 수정.
 
 
-![UpdateLayout](../imeges/kgg/UpdateLayout.png)
+![UpdateLayout](/imeges/kgg/UpdateLayout.png)
 
 - showlegend = False 
   - 래전드를 보여줄지 : 안보여줌 
 - plot_bgcolor='#F7F7F7' 
-    + ![plot_bgcolor](../imeges/kgg/plot_bgcolor.png)
+    + ![plot_bgcolor](/imeges/kgg/plot_bgcolor.png)
 - margin=dict(pad=20) 
   -dic에는 여러가지가 올 수 있는데 여기서는 dict(pad)를 사용
     - padding을 설정, 축과 그래프 사이의 패딩을 px 단위로 설정
@@ -386,7 +385,7 @@ default로 되어있는 그래프의 Layout을 수정.
     - [layout-margin](https://plotly.com/python/reference/layout/#layout-margin)
 - paper_bgcolor='#F7F7F7'
   - 배경색 설정
-  -  ![paper_bgcolor](../imeges/kgg/paper_bgcolor.png)
+  -  ![paper_bgcolor](/imeges/kgg/paper_bgcolor.png)
 
 - height=500
   - plot size 설정 
@@ -440,7 +439,7 @@ fig.add_annotation(dict(font=dict(size=12),
                                     yref="paper"))
 fig.show()
 ```
-
+![img_1.png](/imeges/kgg/img_1.png)
 
 
 
