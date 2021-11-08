@@ -9,7 +9,7 @@ tags:
 ---
 
 
-# kaggle dictation
+# kaggle dictation (01)
 
 <br><br>
 
@@ -100,7 +100,7 @@ recommend_leng
 
 ```
 
-![recommend_leng](../imeges/recommend_leng.png)
+![recommend_leng](/imeges/recommend_leng.png)
 
 <br>
 
@@ -172,7 +172,7 @@ fig.update_traces(hovertemplate='<b>Lenguage</b>: %{label}<br><extra></extra>'+
 
 <br>
 
-![hovertemplate](../imeges/hovertemplate.png)
+![hovertemplate](/imeges/hovertemplate.png)
 
 <br>
 
@@ -207,11 +207,13 @@ fig의 layout을 설정.
 
 <br>
 
+<br>
+
 #### fig.update_layout()을 사용하여 layout을 변경 해 보자.
 
 <br>
 
-![After_layout](../imeges/After_layout.png)
+![After_layout](/imeges/After_layout.png)
 
 <br>
 
@@ -233,8 +235,11 @@ fig.update_layout(showlegend=False,
                   title_font_size=35)
 ```
 
+
+
+
 - showlegend = False 
-  - 래전드를 보여줄지 : 안보여줌 (잘 모르겠음.)
+  - 래전드를 보여줄지 : 안보여줌 
 - treemapcolorway = colors 
   - 위에서 정의 해 준 colors가 13개였는데 여기 계층도 13개임
     + 아마도 light 부터 deep으로 색이 정해지는듯.
@@ -248,7 +253,7 @@ fig.update_layout(showlegend=False,
 
 
 
-![paper_bgcolor](../imeges/paper_bgcolor.png)
+![paper_bgcolor](/imeges/paper_bgcolor.png)
 
 - plot_bgcolor='#F7F7F7'
   - 설정 바꿔 보았으나 안보임 
@@ -267,6 +272,10 @@ fig.update_layout(showlegend=False,
   - title의 font 설정 (Default: ""Open Sans", verdana, arial, sans-serif")
   - [font 설정](https://plotly.com/python/reference/layout/#layout-font)
   - family, color, size 설정 가능, title_fond도 함께 설정 가능 해 보임.
+
+
+<br>
+<br>
 
 ### fig Information 추가
 

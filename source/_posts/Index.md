@@ -22,11 +22,16 @@ made By @YoonHwa-P</center>
  * [python, List](https://yoonhwa-p.github.io/2021/11/05/Python_List/)
  * [python, Matplotlib](https://yoonhwa-p.github.io/2021/11/03/Visualiztion__python/)
  * [python, Pandas](https://yoonhwa-p.github.io/2021/11/02/Pandas/)
+   * [pandas, series](https://yoonhwa-p.github.io/2021/11/06/series(pandas)/)
+   * [pandas, dataframe](https://yoonhwa-p.github.io/2021/11/06/dataFrame(pandas)/) <span style="font-size:150%;  color: Red;">*</span>
  * [python, Numpy](https://yoonhwa-p.github.io/2021/11/01/Numpy/)
  * [python, basic](https://yoonhwa-p.github.io/2021/11/02/ch2_python_basic/)
  * 머신러닝 (의사결정트리)
    * [의사결정트리, Classification](https://yoonhwa-p.github.io/2021/11/04/DecisionTreeClassifier/)
    * [의사결정트리, 이론](https://yoonhwa-p.github.io/2021/11/04/machineLearning_basic/)
+ * python, plotly
+   * [plotly,TreeMap](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_treemap/)
+ 
 ## DBS
  * [DBS, 이론](https://yoonhwa-p.github.io/2021/11/04/BDS/)
  * [논문리뷰, ](https://yoonhwa-p.github.io/2021/11/03/bearSoup_Review/) <span style="font-size:150%;  color: Red;">*</span>
