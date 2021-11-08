@@ -6,11 +6,11 @@ tags:
 - summary
 ---
 
-
+<br>
 
 ![kaggle_Comp](../imeges/kaggle.png)
 
-
+<br>
 
 
 
