@@ -300,7 +300,7 @@ fig.add_annotation(dict(font=dict(size=12),
 fig.show()
 ```
 
-![Q42_final](../imeges/kgg/Q42_final.png)
+![Q42_final](/imeges/kgg/Q42_final.png)
 
 <br>
 <br>

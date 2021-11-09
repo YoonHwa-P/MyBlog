@@ -20,13 +20,13 @@ tags:
 <br>
 
 1. Demographics & Geographics
-    - [(Q1)]() Age-bar
+    - (Q1) Age-bar
     - [(Q2)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_pie/) Gender-pie
-    - [(Q3)]() countries-scatter+line
+    - (Q3)countries-scatter+line
 2. Education & Occupation
-    - [(Q4)]() Age-bar_h
-    - [(Q5)]() Role-bar_h
-    - [(Q20)]() Industry-bar_h
+    - (Q4) Age-bar_h
+    - (Q5) Role-bar_h
+    - (Q20) Industry-bar_h
 3. knowledge & skills
     - [(Q6)](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_bar/) Experience : 52% 넘는 응답이 3년이상 코딩과 프로그래밍을 했다. -bar vertical (위)
     - [(Q17)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_Horizontal/) Algorithms : Linear or Logistic Regression 55% 과 Decision tree or Random Forests, respectively 66% 사용. - bar  horizon (옆)
@@ -35,9 +35,9 @@ tags:
     - [(Q9)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_HZB(2)/) F_EG /w Q7 가장 많이 쓰는 IDE : jupyter Notebook26.2%, VSCODE 13.92% - bar horizon
 4. Platforms & Media4. Platforms & Media
     - [(Q11)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_ScatterLine/) Platform: 많이 쓰는 컴퓨터 플랫폼은 랩탑이 66% -Scatter + line
-    - [(Q27_A)]()cloud_platform: 아마존 14%, 구글클라우드 12%, 마쏘 아줠 9%  - bar horizon
-    - [(Q40)]() courses: DS들이 많이 쓰는 course 플랫폼 Coursera 20, Kaggle 18%-Treemap
-    - [(Q42)]() media : DS topic report를 위해  많이 쓰는 media는 kaggle 44%, youTube 40%, blog 31%  -scatter + line
+    - (Q27_A)cloud_platform: 아마존 14%, 구글클라우드 12%, 마쏘 아줠 9%  - bar horizon
+    - (Q40) courses: DS들이 많이 쓰는 course 플랫폼 Coursera 20, Kaggle 18%-Treemap
+    - [(Q42)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_ScatterL(2)/) media : DS topic report를 위해  많이 쓰는 media는 kaggle 44%, youTube 40%, blog 31%  -scatter + line
     - Takeaways : typical Kaggle DS in 2021 :HTML picture n line n text
 
 
