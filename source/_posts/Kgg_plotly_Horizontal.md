@@ -39,7 +39,14 @@ https://www.kaggle.com/miguelfzzz/the-typical-kaggle-data-scientist-in-2021
 algorithms_cols에 data frame을 먼저 만들고 시작. 
 잘 모르겠지만 아마도 Q17이 붙은 data를 선택 하기 위한 code
 
-**있다가 물어보자 **
+algorithms_cols = [col for col in df if col.startswith(‘Q17’)]
+
+col 1부터 df 끝까지
+
+Q17로 시작하는지 확인하여 true일때만 데이터 가져오기
+
+[ref.](https://wldnjd2.github.io/2021/11/09/kaggle-3-2-%EB%A7%89%EB%8C%80%EA%B7%B8%EB%9E%98%ED%94%84-for%EB%AC%B8/)
+
 
 [How to select dataframe columns that start with *** using pandas in python ?](https://moonbooks.org/Articles/How-to-select-dataframe-columns-that-start-with--using-pandas-in-python-/)
 
