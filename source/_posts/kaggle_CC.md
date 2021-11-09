@@ -11,19 +11,20 @@ tags:
 
 <a style="font 200%;"> *Sumarry*  </a>
 
-![kaggle_Comp](../imeges/kaggle.png)
+![kaggle_Comp](/imeges/kaggle.png)
 
 
 
 <br>
+
 1. Demographics & Geographics
 2. Education & Occupation
 3. knowledge & skills
-    - [(Q6)]() Experience : 52% 넘는 응답이 3년이상 코딩과 프로그래밍을 했다. -bar vertical (위)
-    - [(Q17)]() Algorithms : Linear or Logistic Regression 55% 과 Decision tree or Random Forests, respectively 66% 사용. - bar  horizon (옆)
+    - [(Q6)](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_bar/) Experience : 52% 넘는 응답이 3년이상 코딩과 프로그래밍을 했다. -bar vertical (위)
+    - [(Q17)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_Horizontal/) Algorithms : Linear or Logistic Regression 55% 과 Decision tree or Random Forests, respectively 66% 사용. - bar  horizon (옆)
     - [(Q7)]() Languages : python 84%, SQL 41% 사용 -bar horizon
-    - [(Q8)]() Recommend_Leng: programming에 추천하는 언어는 81%가 python -Treemap
-    - [(Q9)]() F_EG /w Q7 가장 많이 쓰는 IDE : jupyter Notebook26.2%, VSCODE 13.92% - bar horizon
+    - [(Q8)](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_treemap/) Recommend_Leng: programming에 추천하는 언어는 81%가 python -Treemap
+    - [(Q9)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_HZB(2)/) F_EG /w Q7 가장 많이 쓰는 IDE : jupyter Notebook26.2%, VSCODE 13.92% - bar horizon
 4. Platforms & Media4. Platforms & Media
     - [(Q11)]() Platform: 많이 쓰는 컴퓨터 플랫폼은 랩탑이 66% -Scatter + line
     - [(Q27_A)]()cloud_platform: 아마존 14%, 구글클라우드 12%, 마쏘 아줠 9%  - bar horizon

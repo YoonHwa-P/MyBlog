@@ -1,5 +1,5 @@
 ---
-title: "kaggle :Bar Graph"
+title: "kaggle :Bar Graph (Q6)"
 date: 2021-11-08 16:50:41
 tags:
 - kaggle
