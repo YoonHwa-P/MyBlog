@@ -1,5 +1,5 @@
 ---
-title: "kaggle :HorizontalBar Graph"
+title: "kaggle :HorizontalBar (Q17)"
 date: 2021-11-09 12:00:00
 categories:
 - python
@@ -12,7 +12,6 @@ tags:
 - HorizontalBar
 ---
 
-test
 
 # kaggle dictation (03)
 
@@ -41,7 +40,7 @@ algorithms_cols에 data frame을 먼저 만들고 시작.
 
 algorithms_cols = [col for col in df if col.startswith(‘Q17’)]
 
-col 1부터 df 끝까지
+>>col 1부터 df 끝까지
 
 Q17로 시작하는지 확인하여 true일때만 데이터 가져오기
 
@@ -54,6 +53,15 @@ Q17로 시작하는지 확인하여 true일때만 데이터 가져오기
 ```python
 algorithms_cols = [col for col in df if col.startswith('Q17')]
 
+```
+
+<br><br>
+
+#### 2. data Frame 만들어 주기 
+algorithms 에 data frame을 씌워서 표를 만들고, 이름을 다음과같이 바꿔줌.
+
+```python
+
 algorithms = df[algorithms_cols]
 
 algorithms.columns = ['Linear or Logistic Regression', 'Decision Trees or Random Forests',
@@ -63,16 +71,13 @@ algorithms.columns = ['Linear or Logistic Regression', 'Decision Trees or Random
 
 ```
 
-<br><br>
-
-#### 2. data Frame 만들어 주기 
-algorithms 에 data frame을 씌워서 표를 만들고, 이름을 다음과같이 바꿔줌.
 <br>
 
 ![algorithms](/imeges/kgg/algorithms.png)
 
 <br>
 
+##### 3.표 설정. 
 
 ```python
 algorithms = (
@@ -88,8 +93,6 @@ algorithms = (
 <br>
 <br>
 
-
-##### 2.. algorithms의 표의 설정. 
  
   1. .count()  :coulumn 수 세기 
   2. .to_frame() : frame 생성
