@@ -252,7 +252,9 @@ fig.update_layout(showlegend=False,
                   title_font_size=35)
 ```
 
-![Q11_layout](../imeges/kgg/Q11_layout.png)
+
+![Q11_layout](/imeges/kgg/Q11_layout.png)
+
 
 <br>
 <br>

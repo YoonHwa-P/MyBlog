@@ -1,6 +1,8 @@
 ---
 title: "kaggle study"
 date: 2021-11-07 20:21:20
+categories:
+- index
 tags:
 - kaggle
 - summary
@@ -18,17 +20,17 @@ tags:
 <br>
 
 1. Demographics & Geographics
-    - [Q1]() Age-bar
-    - [Q2]() Gender-pie
-    - [Q3]() countries-scatter+line
+    - [(Q1)]() Age-bar
+    - [(Q2)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_pie/) Gender-pie
+    - [(Q3)]() countries-scatter+line
 2. Education & Occupation
-    - [Q4]() Age-bar_h
-    - [Q5]() Role-bar_h
-    - [Q20]() Industry-bar_h
+    - [(Q4)]() Age-bar_h
+    - [(Q5)]() Role-bar_h
+    - [(Q20)]() Industry-bar_h
 3. knowledge & skills
     - [(Q6)](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_bar/) Experience : 52% 넘는 응답이 3년이상 코딩과 프로그래밍을 했다. -bar vertical (위)
     - [(Q17)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_Horizontal/) Algorithms : Linear or Logistic Regression 55% 과 Decision tree or Random Forests, respectively 66% 사용. - bar  horizon (옆)
-    - [(Q7)]() Languages : python 84%, SQL 41% 사용 -bar horizon
+    - [(Q7)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_Bar_H(3)/) Languages : python 84%, SQL 41% 사용 -bar horizon
     - [(Q8)](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_treemap/) Recommend_Leng: programming에 추천하는 언어는 81%가 python -Treemap
     - [(Q9)](https://yoonhwa-p.github.io/2021/11/09/Kgg_plotly_HZB(2)/) F_EG /w Q7 가장 많이 쓰는 IDE : jupyter Notebook26.2%, VSCODE 13.92% - bar horizon
 4. Platforms & Media4. Platforms & Media
@@ -149,7 +151,7 @@ df에 pd.read_csv로 csv file을 읽어 옵니다.
 Ref. [loc를 이용한 행 선택](https://azanewta.tistory.com/34)
 
 <br>
-
+<hr>
 <center style="font-size:300%; font-family:Hiragino Kaku Gothic Pro, sans-serif"> 0. Introduction</center>
 <br>
 
@@ -184,3 +186,9 @@ Introduction
 
 <br>
 
+혹시,
+[css](https://developer.mozilla.org/en-US/docs/Web/CSS) 
+에 대하여 더 알아보고 싶으면, 이 문서를 참조 하자.
+
+
+<hr>

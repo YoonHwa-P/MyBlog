@@ -1,5 +1,7 @@
 ---
 title: "Index"
+categories:
+- index
 tags: 
 - DataScience
 - github

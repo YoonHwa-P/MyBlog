@@ -34,9 +34,14 @@ https://www.kaggle.com/miguelfzzz/the-typical-kaggle-data-scientist-in-2021
 ### Subject : 가장 많이쓰는 programming 언어_Horizontal bar
 
 #### 1. data 읽어오기 
+<a style="border:3px;">
+
+<br>
 
 Q7에는 sub가 많기 때문에 python 구문을 이용하여
 'Q7' 이 붙어있는 컬럼 불러오기.
+
+<br>
 
 languages_cols = [col for col in df if col.startswith(‘Q7’)]
 
@@ -44,6 +49,7 @@ languages_cols = [col for col in df if col.startswith(‘Q7’)]
 
 Q7로 시작하는지 확인하여 **true** 일 때만 데이터 가져오기
 
+</a>
 
 ```python
 languages_cols = [col for col in df if col.startswith('Q7')]
