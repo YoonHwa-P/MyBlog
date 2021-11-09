@@ -33,7 +33,7 @@ tags:
 
 
 ref. 
-- [box and scatter plot/Ko.통계]https://danbi-ncsoft.github.io/study/2018/07/23/study_eda2.html
+- [box and scatter plot/Ko.통계](https://danbi-ncsoft.github.io/study/2018/07/23/study_eda2.html)
 - [그리는 방법](https://chancoding.tistory.com/1180)
 
 #### 0. data set
