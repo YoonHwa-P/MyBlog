@@ -53,6 +53,7 @@ warnings.filterwarnings('ignore')
 
 ## data import
 
+
 [data 원문](https://www.kaggle.com/miguelfzzz/the-typical-kaggle-data-scientist-in-2021)
 <br>
 [data import 방법](https://yoonhwa-p.github.io/2021/11/07/kaggle_CC/) <br>

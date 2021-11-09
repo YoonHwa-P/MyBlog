@@ -49,11 +49,15 @@ print(ide)
 
 ![print(ide)](/imeges/kgg/print(ide).png)
 
+[list comprehension](https://doorbw.tistory.com/174)
+for문으로 돌린 data값을 전부 col로 받아와서 
+그 값을 또 ide_cols에 싣는 한줄로 이루어진 코드.
+
 
 
 #### 2. data Frame 만들어 주기 
 
-Q9로 시작하는 col 이 True이면, col을 긁어와라 df로 ?? 
+
 
 ide를 dataframe화 완료.
 

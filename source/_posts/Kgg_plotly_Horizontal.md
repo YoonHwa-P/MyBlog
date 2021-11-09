@@ -166,7 +166,7 @@ horizontal과 vertical Graph의 차이는  x, y axis를 바꾸어 주는 것과 
 orientation='h' 을 넣어 주는 것의 차이.
 
 
-<div align="center;">
+<div text-align="center;">
 
 <hr>
 
