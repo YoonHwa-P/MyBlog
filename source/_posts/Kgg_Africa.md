@@ -27,41 +27,41 @@ Historical overview 이용
 ## 1.2 **Table of Contents**
 
 1. [How does Africa compares with rest of the world?](#1)
-   1. 응답자 수(Africa/전체, 2021): bar-H 
-   2. Africa에서 kgg사용증가 : bar
+   1. (Column number) 응답자 수(Africa/전체, 2021): bar-H 
+   2. (Column number) Africa에서 kgg사용증가 : bar
 2. [Which African countries are kaggle-aware?](#2)
-   1. kgg을 사용하는 Africa나라 (2021): plotly_choroplethMap
-   2. kgg 사옹 증가 나라별 in Africa : heatmap
-   3. 조사에 참여한 나라 비율 in Africa (2021): Pie-Chart(donut)
+   1. (Q3) kgg을 사용하는 Africa나라 (2021): plotly_choroplethMap
+   2. (Q3) kgg 사옹 증가 나라별 in Africa : heatmap
+   3. (Q3) 조사에 참여한 나라 비율 in Africa (2021): Pie-Chart(donut)
 3. [Demography : Age and Gender](#3)
-   1. age / gender (Africa/전체, 2021): bar /bar-H
-   2. African 여성 비율 : bar
+   1. (Q1) age / (Q2) gender (Africa/전체, 2021): bar /bar-H
+   2. (Q2, Q2, Q2, Q1, Genderselect) African 여성 비율 : bar
 4. [Education, Jobs and Experience](#4)
-   1. 학력/ 직업/ 경력 (Africa/전체, 2021): bar-H 
+   1. (Q4)학력/ (Q5)직업/ (Q6)경력 (Africa/전체, 2021): bar-H 
 5. [Programming Languages & IDE's](#5)
-   1. 프로그래밍 언어 선호 (Africa/전체, 2021): heatmap
-   2. IDE (Africa/전체, 2021): bar-H 
-   3. 추천 프로그래밍 언어 (Africa/전체, 2021):  bar-H 
+   1. (Q7-13)프로그래밍 언어 선호 (Africa/전체, 2021): heatmap
+   2. (Q9-13)IDE (Africa/전체, 2021): bar-H 
+   3. (Q8)추천 프로그래밍 언어 (Africa/전체, 2021):  bar-H 
 6. [Machine Learning: Experience, Framework and Algorithms](#6)
-   1. Muchine Learning 경력 (Africa/전체, 2021): bar-H 
-   2. Muchine Learning 플랫폼 (Africa/전체, 2021): bar-H 
-   3. Muchine Learning 알고리즘 (Africa/전체, 2021): bar-H 
-   4. computer vision Methods (Africa/전체, 2021): Heatmap
-   5. 자연언어 처리방법 (Africa/전체, 2021): Heatmap
-   6. visualizations Library (Africa/전체, 2021): Heatmap
+   1. (Q15)Muchine Learning 경력 (Africa/전체, 2021): bar-H 
+   2. (Q16-18)Muchine Learning 플랫폼 (Africa/전체, 2021): bar-H 
+   3. (Q17-12)Muchine Learning 알고리즘 (Africa/전체, 2021): bar-H 
+   4. (Q18-7)computer vision Methods (Africa/전체, 2021): Heatmap
+   5. (Q19-6)자연언어 처리방법 (Africa/전체, 2021): Heatmap
+   6. (Q14-12)visualizations Library (Africa/전체, 2021): Heatmap
 7. [Computing Resources](#7)
-   1. hardware platform (Africa/전체, 2021): bar-H 
-   2. TPU 사용빈도 (Africa/전체, 2021): bar-H 
-   3. 특별한 하드웨어 (Africa/전체, 2021): Heatmap
-   4. 온라인 플렛폼 (Africa/전체, 2021): bar-H 
-   5. 클라우드 플렛폼 (Africa/전체, 2021): bar-H 
-   6. 클라우드 만들때 쓰는 기본 resource? (Africa/전체, 2021): bar-H
-   7. 빅데이터 만들때 (Africa/전체, 2021): bar-H
-   8. 가장많이 쓰는 big data 생성 프로그램 (Africa/전체, 2021): bar-H
+   1. (Q11)hardware platform (Africa/전체, 2021): bar-H 
+   2. (Q13)TPU 사용빈도 (Africa/전체, 2021): bar-H 
+   3. (Q12-6)특별한 하드웨어 (Africa/전체, 2021): Heatmap
+   4. (Q27_A 12)온라인 플렛폼 (Africa/전체, 2021): bar-H 
+   5. (Q28)클라우드 플렛폼 (Africa/전체, 2021): bar-H 
+   6. (29_A, 5)클라우드 만들때 쓰는 기본 resource? (Africa/전체, 2021): bar-H
+   7. (32_A, 12빅데이터 만들때 (Africa/전체, 2021): bar-H
+   8. (Q33)가장많이 쓰는 big data 생성 프로그램 (Africa/전체, 2021): bar-H
 8. [Employment and role at work](#8)
    1. (Q20) 최근 고용주 (Africa/전체, 2021): bar-H
-   2. 일할때 중요한 활동 (Africa/전체, 2021): Heatmap
-   3. 급여 피라미드  (Africa/전체, 2021): **dual bar-H**
+   2. (Q24)일할때 중요한 활동 (Africa/전체, 2021): Heatmap
+   3. (Q25) 급여 피라미드  (Africa/전체, 2021): **dual bar-H**
 9. [Learning Platform and Media](#9)
    1. (Q40) data science 배우는 플랫폼 (Africa/전체, 2021): bar-H
    2. (Q42-12) 가장 좋아하는 DS Topics 미디어 소스 (Africa/전체, 2021): Heatmap
