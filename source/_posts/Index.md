@@ -32,7 +32,8 @@ made By @YoonHwa-P</center>
    * [의사결정트리, Classification](https://yoonhwa-p.github.io/2021/11/04/DecisionTreeClassifier/)
    * [의사결정트리, 이론](https://yoonhwa-p.github.io/2021/11/04/machineLearning_basic/)
  * python, plotly
-   * [plotly,TreeMap](https://yoonhwa-p.github.io/2021/11/08/Kgg_plotly_treemap/)
+   * [Kaggle_typical](https://yoonhwa-p.github.io/2021/11/07/kaggle_CC/)
+   * [Kaggle_Africa](https://yoonhwa-p.github.io/2021/11/07/Kgg_Africa/)
  
 ## DBS
  * [DBS, 이론](https://yoonhwa-p.github.io/2021/11/04/BDS/)
@@ -49,8 +50,10 @@ made By @YoonHwa-P</center>
 <hr align="center" style="border: solid; 10px; #304A84; width: 50%;">
 
 > 올려야 하는 Posting List   <br>
->> - 의사결정트리, Regression <br>
->> - Kaggle, the-typical-kaggle-data-scientist-in-2021
+- 의사결정트리, Regression
+- seaborn 
+- matplotlib
+>
 
 수정 해야 할것도 넘넘 많다. 
 일단 이번 주 주말에는 Kaggle 먼저 **(Team project 닌까.)**
