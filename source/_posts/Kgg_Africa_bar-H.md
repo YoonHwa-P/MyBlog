@@ -1,5 +1,5 @@
 ---
-title: "kaggle in Africa_Fig"
+title: "kaggle in Africa_barH(1-1)"
 date: 2021-11-10 16:35:57
 categories:
 - python
