@@ -1,6 +1,6 @@
 ---
 title: "kaggle in Africa_Fig"
-date: 2021-11-10 15:14:27
+date: 2021-11-10 15:10:27
 categories:
 - python
     - plotly
