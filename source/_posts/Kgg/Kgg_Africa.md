@@ -27,8 +27,8 @@ Historical overview 이용
 ## 1.2 **Table of Contents**
 
 1. [How does Africa compares with rest of the world?](#1)
-   1. (Column number) 응답자 수(Africa/전체, 2021): bar-H 
-   2. (Column number) Africa에서 kgg사용증가 : bar
+   1. (Region(Q3)) 응답자 수(Africa/전체, 2021): bar-H 
+   2. (Region(Q3)) Africa에서 kgg사용증가 : bar
 2. [Which African countries are kaggle-aware?](#2)
    1. (Q3) kgg을 사용하는 Africa나라 (2021): plotly_choroplethMap
    2. (Q3) kgg 사옹 증가 나라별 in Africa : heatmap
