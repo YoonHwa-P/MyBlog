@@ -2,7 +2,8 @@
 title: "to prepare kaggle Competition"
 date: 2021-11-11 22:12:20
 categories:
-- index
+- python
+    - plotly
 tags:
 - kaggle
 - summary
