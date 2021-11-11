@@ -83,9 +83,6 @@ ide = (
     .rename(columns={'index':'IDE', 0:'Count'})
     .sort_values(by=['Count'], ascending=False)
     )
-
-
-ide['percent'] = ((ide['Count'] / len(df))*100).round(2).astype(str) + '%'
 ```
 
 
