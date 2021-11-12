@@ -75,6 +75,7 @@ def plotly_hBar(df, q, title, height=400,l=250,r=50,b=50,t=100,):
                           x=1.250, 
                           xanchor="right",)                 
                       ).update_yaxes(categoryorder='total ascending')
+    
     fig.update_traces(marker_line_color='black',
                   marker_line_width=1.5)
     fig.update_layout(yaxis_title=None,yaxis_linewidth=2.5,
@@ -96,7 +97,7 @@ def plotly_hBar(df, q, title, height=400,l=250,r=50,b=50,t=100,):
   1. def plotly_hBar(df, q, title, height=400,l=250,r=50,b=50,t=100,) 
      - 함수 plotly_hBar의 정의
      - df, q, title등의 변수를 선언하고 값을 정해줌.
-  2.  fig 정의 
+  2. fig 정의
   ```python
 fig = px.histogram(df.iloc[1:], 
                        y=q,
@@ -120,7 +121,7 @@ fig = px.histogram(df.iloc[1:],
       - orientation= 'h',
         - orientation이 h일땐, x
         - orientation이 v일땐, y
-        - 를 하라고 공식문서에 써있는데 왜 얘는 이랬는지 알 수 없음 + Histogram plot 자체가 말이 안됨.
+        - 를 하라고 공식문서에 써있는데 왜 얘는 이랬는지 알 수 없음 + Histogram plot ???.
       - height = 'height',
         - plot의 높이 지정 height=400이라고 함수 정의때 이미 지정 됨.
       - color = 'region',
@@ -138,3 +139,25 @@ fig = px.histogram(df.iloc[1:],
 
 
 [plotly.express](https://plotly.github.io/plotly.py-docs/generated/plotly.express)
+
+
+
+3. fig.update_layout()
+```python
+fig.update_layout(title=title, 
+                      font_family="San Serif",
+                      bargap=0.2,
+                      barmode='group',
+                      titlefont={'size': 28},
+                      paper_bgcolor='#F5F5F5',
+                      plot_bgcolor='#F5F5F5',                      
+                      legend=dict(
+                      orientation="v", 
+                          y=1, 
+                          yanchor="top", 
+                          x=1.250, 
+                          xanchor="right",)                 
+                      ).update_yaxes(categoryorder='total ascending')
+```
+
+fig.update_layout() : 
