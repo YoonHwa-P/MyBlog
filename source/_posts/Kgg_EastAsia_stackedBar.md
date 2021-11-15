@@ -140,3 +140,32 @@ fig.update_layout(barmode='stack', title='연도별 동아시아 Kaggle 사용�
 * dictation 할 때 까지만 해도 bar 그래프 그리는 것이 뭐그리 어렵겠나? 했다.
 * 그냥 복사 붙여넣기로 만드려고 했는데
 * 그게 참 안되네 ㅂㄷㅂㄷ 
+
+
+
+
+
+```python
+df5years_ =df5years.transpose()
+df5years_= df5years_.iloc[1:]
+
+fig2 = go.Figure(data=[
+    go.Bar(name='China', x=years, y=df5years_[0]),
+    go.Bar(name='Japan', x=years, y=df5years_[1]),
+    go.Bar(name='Taiwan', x=years, y=df5years_[2]),
+    go.Bar(name='South Korea', x=years, y=df5years_[3]),
+])
+
+
+
+
+
+fig2.show()
+```
+
+
+![Q3barAsia_stackedR](/imeges/kgg/Q3barAsia_stackedR.png)
+
++ 축 reverse로 할까말까 고민중.
++ 어떤게 더 잘 보여 줄 수 있을까 ... ㅜㅜ
+
