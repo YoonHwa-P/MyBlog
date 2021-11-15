@@ -120,8 +120,22 @@ fig.show()
 ```
 
 
-![Q3barAsia](../imeges/kgg/Q3barAsia.png)
+![Q3barAsia](/imeges/kgg/Q3barAsia.png)
 
+
+
+```python
+#Change the bar mode
+fig.update_layout(barmode='stack', title='연도별 동아시아 Kaggle 사용자수'
+                  )
+```
+
+
+![Q3barAsia_stacked](/imeges/kgg/Q3barAsia_stacked.png)
+
+
+
++ stacked bar로 할까말까 고민중.
 
 * dictation 할 때 까지만 해도 bar 그래프 그리는 것이 뭐그리 어렵겠나? 했다.
 * 그냥 복사 붙여넣기로 만드려고 했는데
