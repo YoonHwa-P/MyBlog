@@ -68,7 +68,7 @@ fig.show()
 ```
 
 
-![Q1_EastAsia](../imeges/kgg/Q1_EastAsia-1.png)
+![Q1_EastAsia](/imeges/kgg/Q1_EastAsia-1.png)
 
 
 
@@ -88,7 +88,7 @@ fig.show()
 ```
 
 
-![img_1.Q1_EastAsia](../imeges/kgg/Q1_EastAsia-2.png)
+![img_1.Q1_EastAsia](/imeges/kgg/Q1_EastAsia-2.png)
 
 
 - 못해먹겠다. 
