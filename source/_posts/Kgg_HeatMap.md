@@ -14,6 +14,9 @@ tags:
 ##HeatMap
 ###python문법의 plotly Library를 이용하여 Heatmap을 알아보자
 
++ HeatMap의 Gradation 색을 바꾸고 싶다면, [colorscales](https://plotly.com/python/builtin-colorscales/) 을 참고 해 보자. 
++ 
+
 ### HeatMap 1
 
 ```python
