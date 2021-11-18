@@ -11,8 +11,8 @@ tags:
 - kaggle_dictation
 ---
 
-##HeatMap
-###python문법의 plotly Library를 이용하여 Heatmap을 알아보자
+## HeatMap
+### python문법의 plotly Library를 이용하여 Heatmap을 알아보자
 
 ### HeatMap 1
 
