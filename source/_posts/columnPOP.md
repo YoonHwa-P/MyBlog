@@ -69,3 +69,5 @@ pd.set_option('display.max_columns', None)
 경력 : [Tenure] in df17, [Q8] in df18, [Q15] in 19, [Q6] in 20, [Q6]in 21
 연봉 : [Q9] in df18, [Q10] in df19, [Q24] in 20, [Q25]in 21
 *2017연봉의 경우 'CompensationAmount' 컬럼에 있지만, 통화가 다르므로 하지 말자. 
+
+

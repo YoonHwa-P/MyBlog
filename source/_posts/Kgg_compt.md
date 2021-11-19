@@ -1,5 +1,5 @@
 ---
-title: "Subplots in python"
+title: "kgg compete data 정리"
 date: 2021-11-19 12:10:27
 categories:
 - python
