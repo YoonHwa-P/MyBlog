@@ -53,6 +53,8 @@ df21= pd.read_csv("/kaggle/input/kaggle-survey-2021/kaggle_survey_2021_responses
 questions = df18.iloc[0, :].T
 questions
 ```
+
+
 ![Question](/imeges/kgg/Question.png)
 
 ## 질문 제거하기 

@@ -50,25 +50,6 @@ import warnings
 warnings.filterwarnings("ignore")
 ```
 
-
-<script type="text/javascript">
-window.PlotlyConfig = {MathJaxConfig: 'local'};
-if (window.MathJax) {MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
-if (typeof require !== 'undefined') {
-require.undef("plotly");
-requirejs.config({
-    paths: {
-        'plotly': ['https://cdn.plot.ly/plotly-2.4.2.min']
-    }
-});
-require(['plotly'], function(Plotly) {
-    window._Plotly = Plotly;
-});
-}
-</script>
-
-
-
     /kaggle/input/kaggle-survey-2018/SurveySchema.csv
     /kaggle/input/kaggle-survey-2018/freeFormResponses.csv
     /kaggle/input/kaggle-survey-2018/multipleChoiceResponses.csv
@@ -227,33 +208,6 @@ world_map(locations=z.index, counts=z.values, title= '<b> EastAsia Countries (20
 ```
 
 
-<div>                            <div id="a69f534a-954d-4141-815a-47392b896824" class="plotly-graph-div" style="height:475px; width:750px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("a69f534a-954d-4141-815a-47392b896824")) {                    Plotly.newPlot(                        "a69f534a-954d-4141-815a-47392b896824",                        [{"autocolorscale":false,"colorbar":{"autotick":true,"legth":3,"len":0.75,"max":1000,"min":0,"title":"respodents"},"colorscale":"Blues","locationmode":"country names","locations":["Japan","China","South Korea","Taiwan"],"marker":{"line":{"color":"#F7F7F7","width":1.5}},"reversescale":true,"type":"choropleth","z":[921,814,359,334]}],                        {"geo":{"fitbounds":"locations","showcoastlines":true,"showframe":true},"height":475,"paper_bgcolor":"#F7F7F7","title":"<b> EastAsia Countries (2021 survey) <b>","titlefont":{"family":"san serif","size":28},"width":750},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('a69f534a-954d-4141-815a-47392b896824');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
 
 ```python
 # 수치 bar g = 사용자 수 비교.
@@ -314,33 +268,6 @@ fig.add_trace(go.Bar(x=years, y=[Ea17, Ea18, Ea19, Ea20, Ea21],
 fig.update_layout(width=600, height=700)
 fig.show()
 ```
-
-
-<div>                            <div id="e350533a-af9e-4687-8b6d-4e7b30cc5fc8" class="plotly-graph-div" style="height:700px; width:600px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("e350533a-af9e-4687-8b6d-4e7b30cc5fc8")) {                    Plotly.newPlot(                        "e350533a-af9e-4687-8b6d-4e7b30cc5fc8",                        [{"base":[-16715,-23859,-19717,-20036,-25973],"hovertemplate":"<b>KaggleUser</b>: %{x}<br><b>Count</b>: %{y}","marker":{"color":"lightslategrey"},"name":"World","textposition":"outside","type":"bar","x":["2017","2018","2019","2020","2021"],"y":[16715,23859,19717,20036,25973]},{"base":0,"hovertemplate":"<b>KaggleUser</b>: %{x}<br><b>Count</b>: %{y}","marker":{"color":"pink"},"name":"East Asia","text":["7.0","10.0","9.0","8.0","9.0"],"textfont":{"size":12},"textposition":"outside","texttemplate":"%{text}  %","type":"bar","x":["2017","2018","2019","2020","2021"],"y":[1196,2500,1803,1645,2428]}],                        {"height":700,"template":{"data":{"scatter":[{"type":"scatter"}]}},"width":600},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('e350533a-af9e-4687-8b6d-4e7b30cc5fc8');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
 
 
 
@@ -423,33 +350,6 @@ fig.update_layout(
    )
 fig.show()
 ```
-
-
-<div>                            <div id="53077062-a4fd-4d0e-bd9e-b868ae7ca445" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("53077062-a4fd-4d0e-bd9e-b868ae7ca445")) {                    Plotly.newPlot(                        "53077062-a4fd-4d0e-bd9e-b868ae7ca445",                        [{"domain":{"x":[0.0,0.16799999999999998],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["EastAsia","World"],"name":"2021","scalegroup":"one","type":"pie","values":[2428,23545]},{"domain":{"x":[0.208,0.376],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["EastAsia","World"],"name":"2020","scalegroup":"one","type":"pie","values":[1645,18391]},{"domain":{"x":[0.416,0.584],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["EastAsia","World"],"name":"2019","scalegroup":"one","type":"pie","values":[1803,17914]},{"domain":{"x":[0.624,0.792],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["EastAsia","World"],"name":"2018","scalegroup":"one","type":"pie","values":[2500,21359]},{"domain":{"x":[0.832,1.0],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["EastAsia","World"],"name":"2017","scalegroup":"one","type":"pie","values":[1196,15519]}],                        {"annotations":[{"font":{"size":16},"showarrow":false,"text":"2017","x":0.08399999999999999,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"2018","x":0.292,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"2019","x":0.5,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"2020","x":0.708,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"2021","x":0.9159999999999999,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"}],"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"<b>World vs EastAsia</b>"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('53077062-a4fd-4d0e-bd9e-b868ae7ca445');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
 
 
 가설은 시간에따라서 응답자수가 증가 할 줄 알았는데 결과를 보니 오히려 감소하는 경향을 볼 수 있다. 
@@ -657,34 +557,6 @@ fig.show()
 
 ```
 
-
-<div>                            <div id="464f6d7b-6f36-45ea-ba9e-00c1272bb9c2" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("464f6d7b-6f36-45ea-ba9e-00c1272bb9c2")) {                    Plotly.newPlot(                        "464f6d7b-6f36-45ea-ba9e-00c1272bb9c2",                        [{"domain":{"x":[0.832,1.0],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["Female","Male","Others"],"name":"2021","scalegroup":"one","type":"pie","values":[4890,20598,485]},{"domain":{"x":[0.624,0.792],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["Female","Male","Others"],"name":"2020","scalegroup":"one","type":"pie","values":[3878,15789,369]},{"domain":{"x":[0.416,0.584],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["Female","Male","Others"],"name":"2019","scalegroup":"one","type":"pie","values":[3212,16138,367]},{"domain":{"x":[0.208,0.376],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["Female","Male","Others"],"name":"2018","scalegroup":"one","type":"pie","values":[4010,19430,419]},{"domain":{"x":[0.0,0.16799999999999998],"y":[0.0,1.0]},"hole":0.2,"hoverinfo":"label+percent+name","labels":["Female","Male","Others"],"name":"2017","scalegroup":"one","type":"pie","values":[2778,13610,327]}],                        {"annotations":[{"font":{"size":16},"showarrow":false,"text":"2017","x":0.08399999999999999,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"2018","x":0.292,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"2019","x":0.5,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"2020","x":0.708,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"},{"font":{"size":16},"showarrow":false,"text":"2021","x":0.9159999999999999,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"}],"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"<b>World_Gender</b>"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('464f6d7b-6f36-45ea-ba9e-00c1272bb9c2');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
 연도별, 지역별로 보았을때, 여성의 비율이 20% 미만으로 적은 것을 알 수 있다. 
 
 2019년 이전보다 2020년 이후가 증가 했다. (16%-> 19%)
@@ -871,145 +743,6 @@ fig.show()
 ```
 
 
-<div>                            <div id="da79c984-e07e-459a-aa47-b950bc5fd4d5" class="plotly-graph-div" style="height:450px; width:700px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("da79c984-e07e-459a-aa47-b950bc5fd4d5")) {                    Plotly.newPlot(                        "da79c984-e07e-459a-aa47-b950bc5fd4d5",                        [{"name":"China","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Others"],"y":[145,113,136,408,12]},{"name":"Japan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Others"],"y":[185,284,123,211,118]},{"name":"South Korea","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Others"],"y":[68,68,78,120,25]},{"name":"Taiwan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Others"],"y":[72,70,57,116,19]}],                        {"barmode":"group","height":450,"plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2021_나라별 직업 수"},"width":700},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('da79c984-e07e-459a-aa47-b950bc5fd4d5');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="6b1e4072-1057-4bf3-8d6f-aa80ce2dc4db" class="plotly-graph-div" style="height:450px; width:700px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6b1e4072-1057-4bf3-8d6f-aa80ce2dc4db")) {                    Plotly.newPlot(                        "6b1e4072-1057-4bf3-8d6f-aa80ce2dc4db",                        [{"name":"China","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Other"],"y":[73,54,60,226,61]},{"name":"Japan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Other"],"y":[107,157,111,130,133]},{"name":"South Korea","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Other"],"y":[53,37,49,84,43]},{"name":"Taiwan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Other"],"y":[43,62,36,98,28]}],                        {"barmode":"group","height":450,"plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2020_나라별 직업 수"},"width":700},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('6b1e4072-1057-4bf3-8d6f-aa80ce2dc4db');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="832d6f83-55e4-4e0a-bab6-ee2e0cca7ded" class="plotly-graph-div" style="height:450px; width:700px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("832d6f83-55e4-4e0a-bab6-ee2e0cca7ded")) {                    Plotly.newPlot(                        "832d6f83-55e4-4e0a-bab6-ee2e0cca7ded",                        [{"name":"China","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Other"],"y":[91,129,41,256,57]},{"name":"Japan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Other"],"y":[131,204,125,93,120]},{"name":"South Korea","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Other"],"y":[59,69,44,55,28]},{"name":"Taiwan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","NotEmployeed","Other"],"y":[56,90,44,86,25]}],                        {"barmode":"group","height":450,"plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2019_나라별 직업 수"},"width":700},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('832d6f83-55e4-4e0a-bab6-ee2e0cca7ded');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="2fffa68b-6c52-464b-9cfa-1e2295b606b3" class="plotly-graph-div" style="height:450px; width:700px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("2fffa68b-6c52-464b-9cfa-1e2295b606b3")) {                    Plotly.newPlot(                        "2fffa68b-6c52-464b-9cfa-1e2295b606b3",                        [{"name":"China","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","Other"],"y":[509,948,34,153]},{"name":"Japan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","Other"],"y":[265,254,9,69]},{"name":"South Korea","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","Other"],"y":[96,130,1,32]}],                        {"barmode":"group","height":450,"plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2018_나라별 직업 수"},"width":700},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('2fffa68b-6c52-464b-9cfa-1e2295b606b3');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="2b71b654-dbc1-4d99-a0a8-c87d4bba1492" class="plotly-graph-div" style="height:450px; width:700px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("2b71b654-dbc1-4d99-a0a8-c87d4bba1492")) {                    Plotly.newPlot(                        "2b71b654-dbc1-4d99-a0a8-c87d4bba1492",                        [{"name":"China","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","Other"],"y":[83,72,84,232]},{"name":"Japan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","Other"],"y":[50,85,64,78]},{"name":"South Korea","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","Other"],"y":[46,30,35,83]},{"name":"Taiwan","type":"bar","x":["Data Analyst","Data Engineer","Data Scientist","Other"],"y":[41,62,39,112]}],                        {"barmode":"group","height":450,"plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2017_나라별 직업 수"},"width":700},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('2b71b654-dbc1-4d99-a0a8-c87d4bba1492');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
 ### 0. Kaggle age & Edu (W/Ea)
 ### 0.1 data 전처리
 ### 0.2 그래프 그리기 
@@ -1109,145 +842,6 @@ fig.show()
 ```
 
 
-<div>                            <div id="ed15ab1b-e373-4c00-8486-32fef3d7535a" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("ed15ab1b-e373-4c00-8486-32fef3d7535a")) {                    Plotly.newPlot(                        "ed15ab1b-e373-4c00-8486-32fef3d7535a",                        [{"name":"China","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","70+"],"y":[206,275,159,109,39,14,8,1,2,1]},{"name":"Japan","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":[64,93,169,140,99,95,92,61,50,49,9]},{"name":"South Korea","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69"],"y":[17,46,106,53,32,26,35,30,10,4]},{"name":"Taiwan","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69"],"y":[32,69,87,38,28,23,24,20,6,7]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2021_나라별 연령"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('ed15ab1b-e373-4c00-8486-32fef3d7535a');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="4a28ccfe-fdf5-4489-864f-14e40c5e1877" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("4a28ccfe-fdf5-4489-864f-14e40c5e1877")) {                    Plotly.newPlot(                        "4a28ccfe-fdf5-4489-864f-14e40c5e1877",                        [{"name":"China","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","55-59"],"y":[113,159,116,56,14,11,2,3]},{"name":"Japan","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":[43,71,114,92,74,66,69,45,30,30,4]},{"name":"South Korea","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69"],"y":[19,35,74,41,29,27,21,10,6,4]},{"name":"Taiwan","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69"],"y":[30,59,62,28,27,24,12,15,7,3]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2020_나라별 연령"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('4a28ccfe-fdf5-4489-864f-14e40c5e1877');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="dbceff57-9ac3-43fb-98a1-764cb3fb45d0" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("dbceff57-9ac3-43fb-98a1-764cb3fb45d0")) {                    Plotly.newPlot(                        "dbceff57-9ac3-43fb-98a1-764cb3fb45d0",                        [{"name":"China","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","70+"],"y":[93,201,161,63,28,18,5,4,1]},{"name":"Japan","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":[30,82,154,125,87,66,56,35,20,17,1]},{"name":"South Korea","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69"],"y":[12,23,76,39,29,27,32,10,5,2]},{"name":"Taiwan","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":[18,55,71,38,40,30,21,16,7,4,1]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2019_나라별 연령"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('dbceff57-9ac3-43fb-98a1-764cb3fb45d0');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="3ff8513a-6fc7-49f5-b0c2-d2445d793b29" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("3ff8513a-6fc7-49f5-b0c2-d2445d793b29")) {                    Plotly.newPlot(                        "3ff8513a-6fc7-49f5-b0c2-d2445d793b29",                        [{"name":"China","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70-79","80+"],"y":[246,611,525,147,58,32,13,3,3,1,1,4]},{"name":"Japan","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70-79"],"y":[39,87,143,99,82,65,38,17,9,12,6]},{"name":"South Korea","type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69"],"y":[9,36,90,44,24,20,25,3,3,5]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2018_나라별 연령"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('3ff8513a-6fc7-49f5-b0c2-d2445d793b29');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="eb4b6a56-fe64-48c7-96e7-c730ea4f66a5" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("eb4b6a56-fe64-48c7-96e7-c730ea4f66a5")) {                    Plotly.newPlot(                        "eb4b6a56-fe64-48c7-96e7-c730ea4f66a5",                        [{"name":"China","type":"bar","x":[16.0,18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,47.0,50.0,54.0,100.0,"etc"],"y":[1,3,3,14,34,40,44,55,45,32,31,25,21,32,8,8,7,10,12,2,8,3,4,3,4,2,2,1,3,2,2,1,1,8]},{"name":"Japan","type":"bar","x":[19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,50.0,51.0,52.0,53.0,54.0,55.0,57.0,58.0,59.0,62.0,64.0,65.0,67.0,68.0,70.0,"etc"],"y":[1,4,3,7,11,6,13,9,20,18,13,13,7,10,10,13,12,3,13,5,5,8,8,4,7,6,4,4,1,6,5,4,2,3,1,2,2,1,1,1,1,1,1,2,1,1,4]},{"name":"South Korea","type":"bar","x":[17.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,49.0,53.0,56.0,57.0,59.0,62.0,65.0,"etc"],"y":[1,2,1,3,3,7,9,19,20,15,6,11,9,7,7,2,5,6,4,1,9,3,5,4,4,4,3,4,5,1,3,2,1,1,1,1,1,1,3]},{"name":"Taiwan","type":"bar","x":[18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0,27.0,28.0,29.0,30.0,31.0,32.0,33.0,34.0,35.0,36.0,37.0,38.0,39.0,40.0,41.0,42.0,43.0,44.0,45.0,46.0,47.0,48.0,50.0,51.0,52.0,53.0,54.0,56.0,60.0],"y":[1,2,14,16,14,20,22,15,15,7,10,8,5,4,5,7,13,12,2,4,10,2,10,2,3,1,2,9,3,2,4,2,2,1,2,1,1,1]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2017_나라별 연령"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('eb4b6a56-fe64-48c7-96e7-c730ea4f66a5');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
 ### 0.2 Kaggle age (Ea)
 ### 0.1.1 data 전처리
 ### 0.2.1 그래프 그리기 
@@ -1288,62 +882,6 @@ fig.update_layout(barmode="stack",
                  title='2021_ 나라별 연령 비율 in East Asia')
 fig.show()
 ```
-
-
-<div>                            <div id="78c8214c-2956-44e2-a035-7e2c1d299547" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("78c8214c-2956-44e2-a035-7e2c1d299547")) {                    Plotly.newPlot(                        "78c8214c-2956-44e2-a035-7e2c1d299547",                        [{"name":"China","text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%"],"type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","70+"],"y":[8.48,11.33,6.55,4.49,1.61,0.58,0.33,0.04,0.08,0.04]},{"name":"Japan","text":["2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%"],"type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":[2.64,3.83,6.96,5.77,4.08,3.91,3.79,2.51,2.06,2.02,0.37]},{"name":"South Korea","text":["0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%"],"type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69"],"y":[0.7,1.89,4.37,2.18,1.32,1.07,1.44,1.24,0.41,0.16]},{"name":"Taiwan","text":["1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69"],"y":[1.32,2.84,3.58,1.57,1.15,0.95,0.99,0.82,0.25,0.29]}],                        {"barmode":"stack","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2021_ 연령별 나라 비율 in East Asia"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('78c8214c-2956-44e2-a035-7e2c1d299547');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="e6b02bd9-8ef3-48d5-9751-958989ed3b27" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("e6b02bd9-8ef3-48d5-9751-958989ed3b27")) {                    Plotly.newPlot(                        "e6b02bd9-8ef3-48d5-9751-958989ed3b27",                        [{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[8.48,2.64,0.7,1.32]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[11.33,3.83,1.89,2.84]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[6.55,6.96,4.37,3.58]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[4.49,5.77,2.18,1.57]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[1.61,4.08,1.32,1.15]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[0.58,3.91,1.07,0.95]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[0.33,3.79,1.44,0.99]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[0.04,2.51,1.24,0.82]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan","South Korea","Taiwan"],"y":[0.08,2.06,0.41,0.25]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["Japan","South Korea","Taiwan"],"y":[2.02,0.16,0.29]},{"text":["8.48%","11.33%","6.55%","4.49%","1.61%","0.58%","0.33%","0.04%","0.08%","0.04%","2.64%","3.83%","6.96%","5.77%","4.08%","3.91%","3.79%","2.51%","2.06%","2.02%","0.37%","0.7%","1.89%","4.37%","2.18%","1.32%","1.07%","1.44%","1.24%","0.41%","0.16%","1.32%","2.84%","3.58%","1.57%","1.15%","0.95%","0.99%","0.82%","0.25%","0.29%"],"type":"bar","x":["China","Japan"],"y":[0.04,0.37]}],                        {"barmode":"stack","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2021_ 나라별 연령 비율 in East Asia"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('e6b02bd9-8ef3-48d5-9751-958989ed3b27');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
 
 ### 연도별 연령
 
@@ -1399,117 +937,6 @@ fig18.show()
 ```
 
 
-<div>                            <div id="c0f0e5e2-f134-43f6-a5aa-a23571c2160a" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("c0f0e5e2-f134-43f6-a5aa-a23571c2160a")) {                    Plotly.newPlot(                        "c0f0e5e2-f134-43f6-a5aa-a23571c2160a",                        [{"colorscale":[[0.0,"rgb(243, 231, 155)"],[0.16666666666666666,"rgb(250, 196, 132)"],[0.3333333333333333,"rgb(248, 160, 126)"],[0.5,"rgb(235, 127, 134)"],[0.6666666666666666,"rgb(206, 102, 147)"],[0.8333333333333334,"rgb(160, 89, 160)"],[1.0,"rgb(92, 83, 165)"]],"reversescale":false,"showscale":false,"type":"heatmap","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":["China","Japan","South Korea","Taiwan"],"z":[[0.25,0.34,0.2,0.13,0.05,0.02,0.01,0.0,0.0,0.0,0.0],[0.07,0.1,0.18,0.15,0.11,0.1,0.1,0.07,0.05,0.05,0.01],[0.05,0.13,0.3,0.15,0.09,0.07,0.1,0.08,0.03,0.01,0.0],[0.1,0.21,0.26,0.11,0.08,0.07,0.07,0.06,0.02,0.02,0.0]]}],                        {"annotations":[{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.25","x":"18-21","xref":"x","y":"China","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.34","x":"22-24","xref":"x","y":"China","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.2","x":"25-29","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.13","x":"30-34","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"35-39","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"40-44","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"45-49","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"50-54","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"55-59","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"60-69","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"18-21","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"22-24","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.18","x":"25-29","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"30-34","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"35-39","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"40-44","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"45-49","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"50-54","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"55-59","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"60-69","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"70+","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"18-21","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.13","x":"22-24","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.3","x":"25-29","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"30-34","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"35-39","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"40-44","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"45-49","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"50-54","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"55-59","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"60-69","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"18-21","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.21","x":"22-24","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.26","x":"25-29","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"30-34","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"35-39","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"40-44","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"45-49","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"50-54","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"55-59","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"60-69","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"Taiwan","yref":"y"}],"template":{"data":{"scatter":[{"type":"scatter"}]}},"xaxis":{"dtick":1,"gridcolor":"rgb(0, 0, 0)","side":"top","ticks":""},"yaxis":{"dtick":1,"ticks":"","ticksuffix":"  "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('c0f0e5e2-f134-43f6-a5aa-a23571c2160a');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="2e2c52e8-5176-4b82-a5b8-e7a9a443f5f9" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("2e2c52e8-5176-4b82-a5b8-e7a9a443f5f9")) {                    Plotly.newPlot(                        "2e2c52e8-5176-4b82-a5b8-e7a9a443f5f9",                        [{"colorscale":[[0.0,"rgb(243, 231, 155)"],[0.16666666666666666,"rgb(250, 196, 132)"],[0.3333333333333333,"rgb(248, 160, 126)"],[0.5,"rgb(235, 127, 134)"],[0.6666666666666666,"rgb(206, 102, 147)"],[0.8333333333333334,"rgb(160, 89, 160)"],[1.0,"rgb(92, 83, 165)"]],"reversescale":false,"showscale":false,"type":"heatmap","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":["China","Japan","South Korea","Taiwan"],"z":[[0.24,0.34,0.24,0.12,0.03,0.02,0.0,0.0,0.01,0.0,0.0],[0.07,0.11,0.18,0.14,0.12,0.1,0.11,0.07,0.05,0.05,0.01],[0.07,0.13,0.28,0.15,0.11,0.1,0.08,0.04,0.02,0.02,0.0],[0.11,0.22,0.23,0.1,0.1,0.09,0.04,0.06,0.03,0.01,0.0]]}],                        {"annotations":[{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.24","x":"18-21","xref":"x","y":"China","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.34","x":"22-24","xref":"x","y":"China","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.24","x":"25-29","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.12","x":"30-34","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"35-39","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"40-44","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"45-49","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"50-54","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"55-59","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"60-69","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"18-21","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"22-24","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.18","x":"25-29","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.14","x":"30-34","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.12","x":"35-39","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"40-44","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"45-49","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"50-54","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"55-59","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"60-69","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"70+","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"18-21","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.13","x":"22-24","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.28","x":"25-29","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"30-34","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"35-39","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"40-44","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"45-49","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"50-54","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"55-59","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"60-69","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"18-21","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.22","x":"22-24","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.23","x":"25-29","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"30-34","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"35-39","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"40-44","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"45-49","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"50-54","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"55-59","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"60-69","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"Taiwan","yref":"y"}],"template":{"data":{"scatter":[{"type":"scatter"}]}},"xaxis":{"dtick":1,"gridcolor":"rgb(0, 0, 0)","side":"top","ticks":""},"yaxis":{"dtick":1,"ticks":"","ticksuffix":"  "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('2e2c52e8-5176-4b82-a5b8-e7a9a443f5f9');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="371893a2-4aab-4b40-b7d7-9e1485ca08c7" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("371893a2-4aab-4b40-b7d7-9e1485ca08c7")) {                    Plotly.newPlot(                        "371893a2-4aab-4b40-b7d7-9e1485ca08c7",                        [{"colorscale":[[0.0,"rgb(243, 231, 155)"],[0.16666666666666666,"rgb(250, 196, 132)"],[0.3333333333333333,"rgb(248, 160, 126)"],[0.5,"rgb(235, 127, 134)"],[0.6666666666666666,"rgb(206, 102, 147)"],[0.8333333333333334,"rgb(160, 89, 160)"],[1.0,"rgb(92, 83, 165)"]],"reversescale":false,"showscale":false,"type":"heatmap","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":["China","Japan","South Korea","Taiwan"],"z":[[0.16,0.35,0.28,0.11,0.05,0.03,0.01,0.01,0.0,0.0,0.0],[0.04,0.12,0.23,0.19,0.13,0.1,0.08,0.05,0.03,0.03,0.0],[0.05,0.09,0.3,0.15,0.11,0.11,0.13,0.04,0.02,0.01,0.0],[0.06,0.18,0.24,0.13,0.13,0.1,0.07,0.05,0.02,0.01,0.0]]}],                        {"annotations":[{"font":{"color":"#000000"},"showarrow":false,"text":"0.16","x":"18-21","xref":"x","y":"China","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.35","x":"22-24","xref":"x","y":"China","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.28","x":"25-29","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"30-34","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"35-39","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"40-44","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"45-49","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"50-54","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"55-59","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"60-69","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"18-21","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.12","x":"22-24","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.23","x":"25-29","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.19","x":"30-34","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.13","x":"35-39","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"40-44","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"45-49","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"50-54","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"55-59","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"60-69","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"18-21","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"22-24","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.3","x":"25-29","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"30-34","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"35-39","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"40-44","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.13","x":"45-49","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"50-54","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"55-59","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"60-69","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"18-21","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.18","x":"22-24","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.24","x":"25-29","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.13","x":"30-34","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.13","x":"35-39","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"40-44","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"45-49","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"50-54","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"55-59","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"60-69","xref":"x","y":"Taiwan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"Taiwan","yref":"y"}],"template":{"data":{"scatter":[{"type":"scatter"}]}},"xaxis":{"dtick":1,"gridcolor":"rgb(0, 0, 0)","side":"top","ticks":""},"yaxis":{"dtick":1,"ticks":"","ticksuffix":"  "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('371893a2-4aab-4b40-b7d7-9e1485ca08c7');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="84a63d82-0628-44aa-8037-f5411e50e701" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("84a63d82-0628-44aa-8037-f5411e50e701")) {                    Plotly.newPlot(                        "84a63d82-0628-44aa-8037-f5411e50e701",                        [{"colorscale":[[0.0,"rgb(243, 231, 155)"],[0.16666666666666666,"rgb(250, 196, 132)"],[0.3333333333333333,"rgb(248, 160, 126)"],[0.5,"rgb(235, 127, 134)"],[0.6666666666666666,"rgb(206, 102, 147)"],[0.8333333333333334,"rgb(160, 89, 160)"],[1.0,"rgb(92, 83, 165)"]],"reversescale":false,"showscale":false,"type":"heatmap","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70-79","80+"],"y":["China","Japan","South Korea"],"z":[[0.15,0.37,0.32,0.09,0.04,0.02,0.01,0.0,0.0,0.0,0.0,0.0],[0.07,0.15,0.24,0.17,0.14,0.11,0.06,0.03,0.02,0.02,0.01,0.0],[0.03,0.14,0.35,0.17,0.09,0.08,0.1,0.01,0.01,0.02,0.0,0.0]]}],                        {"annotations":[{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"18-21","xref":"x","y":"China","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.37","x":"22-24","xref":"x","y":"China","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.32","x":"25-29","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"30-34","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"35-39","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"40-44","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"45-49","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"50-54","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"55-59","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"60-69","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70-79","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"80+","xref":"x","y":"China","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"18-21","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"22-24","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.24","x":"25-29","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.17","x":"30-34","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.14","x":"35-39","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"40-44","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"45-49","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"50-54","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"55-59","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"60-69","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"70-79","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"80+","xref":"x","y":"Japan","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"18-21","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.14","x":"22-24","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.35","x":"25-29","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.17","x":"30-34","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"35-39","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"40-44","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.1","x":"45-49","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"50-54","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"55-59","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"60-69","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70-79","xref":"x","y":"South Korea","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"80+","xref":"x","y":"South Korea","yref":"y"}],"template":{"data":{"scatter":[{"type":"scatter"}]}},"xaxis":{"dtick":1,"gridcolor":"rgb(0, 0, 0)","side":"top","ticks":""},"yaxis":{"dtick":1,"ticks":"","ticksuffix":"  "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('84a63d82-0628-44aa-8037-f5411e50e701');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
 ### 연령별 지역 
 
 
@@ -1557,33 +984,6 @@ fig = go.Figure(data=go.Heatmap(
 fig.show()
 
 ```
-
-
-<div>                            <div id="46c6ee8d-49fa-4a3d-865c-353c3f2c6e30" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("46c6ee8d-49fa-4a3d-865c-353c3f2c6e30")) {                    Plotly.newPlot(                        "46c6ee8d-49fa-4a3d-865c-353c3f2c6e30",                        [{"colorscale":[[0.0,"rgb(255,247,236)"],[0.125,"rgb(254,232,200)"],[0.25,"rgb(253,212,158)"],[0.375,"rgb(253,187,132)"],[0.5,"rgb(252,141,89)"],[0.625,"rgb(239,101,72)"],[0.75,"rgb(215,48,31)"],[0.875,"rgb(179,0,0)"],[1.0,"rgb(127,0,0)"]],"hoverongaps":false,"opacity":1.0,"type":"heatmap","x":["South Korea","Taiwan","China","Japan"],"xgap":2.5,"y":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"ygap":2.5,"z":[[4.74,9.58,25.31,6.95],[12.81,20.66,33.78,10.1],[29.53,26.05,19.53,18.35],[14.76,11.38,13.39,15.2],[8.91,8.38,4.79,10.75],[7.24,6.89,1.72,10.31],[9.75,7.19,0.98,9.99],[8.36,5.99,0.12,6.62],[2.79,1.8,0.25,5.43],[1.11,2.1,0.0,5.32],[0.0,0.0,0.12,0.98]]}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('46c6ee8d-49fa-4a3d-865c-353c3f2c6e30');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
 
 
 ### 0.2 Kaggle Edu (Ea)
@@ -1710,146 +1110,6 @@ fig.show()
 ```
 
 
-<div>                            <div id="606e8a00-f0e9-4a4a-8b32-205f790116b4" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("606e8a00-f0e9-4a4a-8b32-205f790116b4")) {                    Plotly.newPlot(                        "606e8a00-f0e9-4a4a-8b32-205f790116b4",                        [{"name":"China","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree","etc"],"y":[8.94,2.88,16.31,0.37,0.37,3.75,0.91]},{"name":"Japan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree","etc"],"y":[9.93,4.24,15.82,1.94,0.49,3.58,1.94]},{"name":"South Korea","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree","etc"],"y":[5.23,2.27,3.79,0.62,0.25,2.14,0.49]},{"name":"Taiwan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree","etc"],"y":[2.72,1.65,7.58,0.21,0.25,0.99,0.37]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2021_나라별 학력"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('606e8a00-f0e9-4a4a-8b32-205f790116b4');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="336395a3-791a-4ae5-81df-56d9a89b18d2" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("336395a3-791a-4ae5-81df-56d9a89b18d2")) {                    Plotly.newPlot(                        "336395a3-791a-4ae5-81df-56d9a89b18d2",                        [{"name":"China","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[7.23,2.49,13.37,0.06,0.36,2.49,2.8]},{"name":"Japan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[9.24,4.07,16.29,1.03,0.43,3.65,4.07]},{"name":"South Korea","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[4.13,2.43,4.98,0.49,0.61,2.07,1.46]},{"name":"Taiwan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[2.61,1.7,9.3,0.3,0.24,0.91,1.16]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2020_나라별 학력"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('336395a3-791a-4ae5-81df-56d9a89b18d2');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="c93605ee-c898-4dda-b890-493654aefd36" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("c93605ee-c898-4dda-b890-493654aefd36")) {                    Plotly.newPlot(                        "c93605ee-c898-4dda-b890-493654aefd36",                        [{"name":"China","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[7.99,3.55,15.7,0.11,0.5,1.66,2.33]},{"name":"Japan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[8.43,4.44,16.75,1.05,0.33,3.0,3.33]},{"name":"South Korea","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[3.88,2.33,4.38,0.28,0.55,1.44,1.28]},{"name":"Taiwan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[2.5,2.38,9.6,0.17,0.44,0.72,0.89]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2019_나라별 학력"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('c93605ee-c898-4dda-b890-493654aefd36');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="6b61c5e7-9b62-4e80-be93-b0bbb770b656" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6b61c5e7-9b62-4e80-be93-b0bbb770b656")) {                    Plotly.newPlot(                        "6b61c5e7-9b62-4e80-be93-b0bbb770b656",                        [{"name":"China","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[14.32,7.0,34.04,0.68,0.92,3.8,5.0]},{"name":"Japan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[5.76,2.88,10.92,0.92,0.28,1.76,1.36]},{"name":"South Korea","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[3.44,1.32,3.68,0.12,0.36,0.6,0.84]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2018_나라별 학력"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('6b61c5e7-9b62-4e80-be93-b0bbb770b656');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="12f3b019-a42d-48b2-b3eb-9c1d8b82e34b" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("12f3b019-a42d-48b2-b3eb-9c1d8b82e34b")) {                    Plotly.newPlot(                        "12f3b019-a42d-48b2-b3eb-9c1d8b82e34b",                        [{"name":"China","type":"bar","x":["Bachelor's degree","Doctoral degree","I did not complete any formal education past high school","Master's degree","Professional degree","Some college/university study without earning a bachelor's degree","etc"],"y":[13.88,3.93,0.75,14.21,0.33,1.59,4.68]},{"name":"Japan","type":"bar","x":["Bachelor's degree","Doctoral degree","I did not complete any formal education past high school","Master's degree","Professional degree","Some college/university study without earning a bachelor's degree","etc"],"y":[6.02,3.85,0.84,8.61,0.42,1.34,2.09]},{"name":"South Korea","type":"bar","x":["Bachelor's degree","Doctoral degree","I did not complete any formal education past high school","Master's degree","Professional degree","Some college/university study without earning a bachelor's degree","etc"],"y":[5.02,2.51,0.5,4.77,0.25,0.92,2.26]},{"name":"Taiwan","type":"bar","x":["Bachelor's degree","Doctoral degree","I did not complete any formal education past high school","Master's degree","Professional degree","Some college/university study without earning a bachelor's degree","etc"],"y":[5.43,2.51,0.17,9.03,0.25,1.17,2.68]}],                        {"barmode":"group","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2017_나라별 학력"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('12f3b019-a42d-48b2-b3eb-9c1d8b82e34b');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
 ```python
 
 #21년도 Bar graph 그리기
@@ -1921,146 +1181,6 @@ fig.show()
 ```
 
 
-<div>                            <div id="c4ac4e5e-09be-4e8f-9775-aaaa2efa2f37" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("c4ac4e5e-09be-4e8f-9775-aaaa2efa2f37")) {                    Plotly.newPlot(                        "c4ac4e5e-09be-4e8f-9775-aaaa2efa2f37",                        [{"name":"China","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree","etc"],"y":[217,70,396,9,9,91,22]},{"name":"Japan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree","etc"],"y":[241,103,384,47,12,87,47]},{"name":"South Korea","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree","etc"],"y":[127,55,92,15,6,52,12]},{"name":"Taiwan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree","etc"],"y":[66,40,184,5,6,24,9]}],                        {"barmode":"stack","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2021_나라별 학력 비율 "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('c4ac4e5e-09be-4e8f-9775-aaaa2efa2f37');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="5ed0509a-5b0e-4fd2-b2b0-29f73002262a" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("5ed0509a-5b0e-4fd2-b2b0-29f73002262a")) {                    Plotly.newPlot(                        "5ed0509a-5b0e-4fd2-b2b0-29f73002262a",                        [{"name":"China","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[119,41,220,1,6,41,46]},{"name":"Japan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[152,67,268,17,7,60,67]},{"name":"South Korea","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[68,40,82,8,10,34,24]},{"name":"Taiwan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[43,28,153,5,4,15,19]}],                        {"barmode":"stack","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2020_나라별 학력 비율 "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('5ed0509a-5b0e-4fd2-b2b0-29f73002262a');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="60631bb4-7380-4ff5-a04b-ba39675b9a37" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("60631bb4-7380-4ff5-a04b-ba39675b9a37")) {                    Plotly.newPlot(                        "60631bb4-7380-4ff5-a04b-ba39675b9a37",                        [{"name":"China","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[144,64,283,2,9,30,42]},{"name":"Japan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[152,80,302,19,6,54,60]},{"name":"South Korea","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[70,42,79,5,10,26,23]},{"name":"Taiwan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[45,43,173,3,8,13,16]}],                        {"barmode":"stack","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2019_나라별 학력 비율 "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('60631bb4-7380-4ff5-a04b-ba39675b9a37');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="4c8a390a-e60e-4efe-bd75-b3a5e769c0d4" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("4c8a390a-e60e-4efe-bd75-b3a5e769c0d4")) {                    Plotly.newPlot(                        "4c8a390a-e60e-4efe-bd75-b3a5e769c0d4",                        [{"name":"China","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[358,175,851,17,23,95,125]},{"name":"Japan","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[144,72,273,23,7,44,34]},{"name":"South Korea","type":"bar","x":["Bachelor’s degree","Doctoral degree","Master’s degree","No formal education past high school","Professional degree","Some college/university study without earning a bachelor’s degree","etc"],"y":[86,33,92,3,9,15,21]}],                        {"barmode":"stack","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2018_나라별 학력 비율  "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('4c8a390a-e60e-4efe-bd75-b3a5e769c0d4');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-<div>                            <div id="a736f17b-42b5-439e-bfcc-fdcc467646fd" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("a736f17b-42b5-439e-bfcc-fdcc467646fd")) {                    Plotly.newPlot(                        "a736f17b-42b5-439e-bfcc-fdcc467646fd",                        [{"name":"China","type":"bar","x":["Bachelor's degree","Doctoral degree","I did not complete any formal education past high school","Master's degree","Professional degree","Some college/university study without earning a bachelor's degree","etc"],"y":[166,47,9,170,4,19,56]},{"name":"Japan","type":"bar","x":["Bachelor's degree","Doctoral degree","I did not complete any formal education past high school","Master's degree","Professional degree","Some college/university study without earning a bachelor's degree","etc"],"y":[72,46,10,103,5,16,25]},{"name":"South Korea","type":"bar","x":["Bachelor's degree","Doctoral degree","I did not complete any formal education past high school","Master's degree","Professional degree","Some college/university study without earning a bachelor's degree","etc"],"y":[60,30,6,57,3,11,27]},{"name":"Taiwan","type":"bar","x":["Bachelor's degree","Doctoral degree","I did not complete any formal education past high school","Master's degree","Professional degree","Some college/university study without earning a bachelor's degree","etc"],"y":[65,30,2,108,3,14,32]}],                        {"barmode":"stack","plot_bgcolor":"white","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"2017_나라별 학력 비율 "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('a736f17b-42b5-439e-bfcc-fdcc467646fd');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
 ```python
 
 z = df21_Ea.groupby(['Q4', 'Q1']).size().unstack().fillna(0).astype('int64')
@@ -2071,33 +1191,6 @@ y = z.index.tolist()
 fig = ff.create_annotated_heatmap(z_data, x = x, y = y, colorscale = "sunset")
 fig.show()
 ```
-
-
-<div>                            <div id="f304db3b-8835-4153-8f92-eb2f3852f1dd" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("f304db3b-8835-4153-8f92-eb2f3852f1dd")) {                    Plotly.newPlot(                        "f304db3b-8835-4153-8f92-eb2f3852f1dd",                        [{"colorscale":[[0.0,"rgb(243, 231, 155)"],[0.16666666666666666,"rgb(250, 196, 132)"],[0.3333333333333333,"rgb(248, 160, 126)"],[0.5,"rgb(235, 127, 134)"],[0.6666666666666666,"rgb(206, 102, 147)"],[0.8333333333333334,"rgb(160, 89, 160)"],[1.0,"rgb(92, 83, 165)"]],"reversescale":false,"showscale":false,"type":"heatmap","x":["18-21","22-24","25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-69","70+"],"y":["Bachelor’s degree","Doctoral degree","I prefer not to answer","Master’s degree","No formal education past high school","Professional doctorate","Some college/university study without earning a bachelor’s degree"],"z":[[0.21,0.19,0.19,0.12,0.08,0.06,0.06,0.04,0.03,0.03,0.0],[0.01,0.05,0.18,0.22,0.11,0.08,0.11,0.08,0.06,0.08,0.01],[0.09,0.09,0.22,0.12,0.07,0.17,0.09,0.06,0.06,0.04,0.0],[0.05,0.27,0.27,0.15,0.08,0.06,0.06,0.03,0.02,0.01,0.0],[0.2,0.09,0.14,0.17,0.05,0.11,0.07,0.11,0.04,0.0,0.03],[0.03,0.03,0.12,0.09,0.12,0.15,0.09,0.15,0.06,0.09,0.06],[0.42,0.18,0.12,0.05,0.06,0.05,0.05,0.04,0.02,0.02,0.0]]}],                        {"annotations":[{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.21","x":"18-21","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.19","x":"22-24","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.19","x":"25-29","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.12","x":"30-34","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"35-39","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"40-44","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"45-49","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"50-54","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"55-59","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"60-69","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"Bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"18-21","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"22-24","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.18","x":"25-29","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.22","x":"30-34","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"35-39","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"40-44","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"45-49","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"50-54","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"55-59","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"60-69","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"70+","xref":"x","y":"Doctoral degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"18-21","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"22-24","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.22","x":"25-29","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.12","x":"30-34","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"35-39","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.17","x":"40-44","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"45-49","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"50-54","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"55-59","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"60-69","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"I prefer not to answer","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"18-21","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.27","x":"22-24","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.27","x":"25-29","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"30-34","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.08","x":"35-39","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"40-44","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"45-49","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"50-54","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"55-59","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.01","x":"60-69","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"Master’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.2","x":"18-21","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"22-24","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.14","x":"25-29","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.17","x":"30-34","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"35-39","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"40-44","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.07","x":"45-49","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.11","x":"50-54","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"55-59","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"60-69","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"70+","xref":"x","y":"No formal education past high school","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"18-21","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.03","x":"22-24","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.12","x":"25-29","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"30-34","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.12","x":"35-39","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"40-44","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"45-49","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.15","x":"50-54","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"55-59","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.09","x":"60-69","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"70+","xref":"x","y":"Professional doctorate","yref":"y"},{"font":{"color":"#FFFFFF"},"showarrow":false,"text":"0.42","x":"18-21","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.18","x":"22-24","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.12","x":"25-29","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"30-34","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.06","x":"35-39","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"40-44","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.05","x":"45-49","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.04","x":"50-54","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"55-59","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.02","x":"60-69","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"},{"font":{"color":"#000000"},"showarrow":false,"text":"0.0","x":"70+","xref":"x","y":"Some college/university study without earning a bachelor’s degree","yref":"y"}],"template":{"data":{"scatter":[{"type":"scatter"}]}},"xaxis":{"dtick":1,"gridcolor":"rgb(0, 0, 0)","side":"top","ticks":""},"yaxis":{"dtick":1,"ticks":"","ticksuffix":"  "}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('f304db3b-8835-4153-8f92-eb2f3852f1dd');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
 
 
 ## 경력
@@ -2129,34 +1222,6 @@ fig.update_layout(title_text="<b>21년 World kaggler들의 경력</b>",title_fon
 
 fig.show()
 ```
-
-
-<div>                            <div id="343ea7ed-f974-4065-8a78-78bfe20cb3fe" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("343ea7ed-f974-4065-8a78-78bfe20cb3fe")) {                    Plotly.newPlot(                        "343ea7ed-f974-4065-8a78-78bfe20cb3fe",                        [{"name":"21년 World kaggler들의 경력","orientation":"v","type":"bar","x":["_3year","_5year","_10year"],"y":[14787,3099,4026]}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"font":{"size":35},"text":"<b>21년 World kaggler들의 경력</b>"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('343ea7ed-f974-4065-8a78-78bfe20cb3fe');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
 
 
 ```python
@@ -2193,33 +1258,6 @@ fig.show()
 ```
 
 
-<div>                            <div id="e2aecdc1-cdab-40dc-8a1f-adf3c8dc3ee1" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("e2aecdc1-cdab-40dc-8a1f-adf3c8dc3ee1")) {                    Plotly.newPlot(                        "e2aecdc1-cdab-40dc-8a1f-adf3c8dc3ee1",                        [{"name":"China","type":"bar","x":["_3year","_5year","_10year"],"y":[542,65,52]},{"name":"Japan","type":"bar","x":["_3year","_5year","_10year"],"y":[445,108,228]},{"name":"South Korea","type":"bar","x":["_3year","_5year","_10year"],"y":[206,45,54]},{"name":"Taiwan","type":"bar","x":["_3year","_5year","_10year"],"y":[185,47,46]}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"font":{"size":35},"text":"<b>21년 EastAisa kaggler들의 경력</b>"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('e2aecdc1-cdab-40dc-8a1f-adf3c8dc3ee1');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
 ### 연봉
 
 
@@ -2240,32 +1278,6 @@ fig.update_layout(title_text="<b>21년 World kaggler들의 연봉</b>",title_fon
 fig.show()
 ```
 
-
-<div>                            <div id="de5a4fd6-45d2-4001-8de4-a357e70389c8" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("de5a4fd6-45d2-4001-8de4-a357e70389c8")) {                    Plotly.newPlot(                        "de5a4fd6-45d2-4001-8de4-a357e70389c8",                        [{"name":"21년 World kaggler들의 연봉","orientation":"v","type":"bar","x":["$0-999","1,000-1,999","10,000-14,999","30,000-39,999","100,000-124,999","5,000-7,499","50,000-59,999","40,000-49,999","20,000-24,999","2,000-2,999","15,000-19,999","7,500-9,999","60,000-69,999","25,000-29,999","70,000-79,999","4,000-4,999","150,000-199,999","80,000-89,999","3,000-3,999","125,000-149,999","90,000-99,999","200,000-249,999","300,000-499,999","250,000-299,999",">$1,000,000","$500,000-999,999"],"y":[3369,969,950,741,725,699,697,688,587,575,573,552,551,470,464,456,392,391,380,379,350,177,91,75,58,32]}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"font":{"size":35},"text":"<b>21년 World kaggler들의 연봉</b>"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('de5a4fd6-45d2-4001-8de4-a357e70389c8');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
 
 
 
@@ -2290,43 +1302,12 @@ fig.update_layout(title_text="<b>21년 EastAisa kaggler들의 연봉</b>",title_
 fig.show()
 ```
 
-
-<div>                            <div id="94a83dbe-42e5-40aa-95e0-898c459b78d7" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("94a83dbe-42e5-40aa-95e0-898c459b78d7")) {                    Plotly.newPlot(                        "94a83dbe-42e5-40aa-95e0-898c459b78d7",                        [{"name":"China","type":"bar","x":["$0-999","1,000-1,999","10,000-14,999","30,000-39,999","100,000-124,999","5,000-7,499","50,000-59,999","40,000-49,999","20,000-24,999","2,000-2,999","15,000-19,999","7,500-9,999","60,000-69,999","25,000-29,999","70,000-79,999","4,000-4,999","150,000-199,999","80,000-89,999","3,000-3,999","125,000-149,999","90,000-99,999","200,000-249,999","300,000-499,999","250,000-299,999",">$1,000,000","$500,000-999,999"],"y":[79,74,60,53,46,44,43,36,31,28,27,27,20,18,15,10,9,8,8,6,5,2,1,1,1]},{"name":"Japan","type":"bar","x":["$0-999","1,000-1,999","10,000-14,999","30,000-39,999","100,000-124,999","5,000-7,499","50,000-59,999","40,000-49,999","20,000-24,999","2,000-2,999","15,000-19,999","7,500-9,999","60,000-69,999","25,000-29,999","70,000-79,999","4,000-4,999","150,000-199,999","80,000-89,999","3,000-3,999","125,000-149,999","90,000-99,999","200,000-249,999","300,000-499,999","250,000-299,999",">$1,000,000","$500,000-999,999"],"y":[28,23,19,14,13,12,10,10,10,10,7,6,6,5,3,3,2,2,2,1,1,1]},{"name":"South Korea","type":"bar","x":["$0-999","1,000-1,999","10,000-14,999","30,000-39,999","100,000-124,999","5,000-7,499","50,000-59,999","40,000-49,999","20,000-24,999","2,000-2,999","15,000-19,999","7,500-9,999","60,000-69,999","25,000-29,999","70,000-79,999","4,000-4,999","150,000-199,999","80,000-89,999","3,000-3,999","125,000-149,999","90,000-99,999","200,000-249,999","300,000-499,999","250,000-299,999",">$1,000,000","$500,000-999,999"],"y":[33,21,18,17,15,12,12,11,11,11,9,8,7,6,6,6,5,5,4,4,2,2]},{"name":"Taiwan","type":"bar","x":["$0-999","1,000-1,999","10,000-14,999","30,000-39,999","100,000-124,999","5,000-7,499","50,000-59,999","40,000-49,999","20,000-24,999","2,000-2,999","15,000-19,999","7,500-9,999","60,000-69,999","25,000-29,999","70,000-79,999","4,000-4,999","150,000-199,999","80,000-89,999","3,000-3,999","125,000-149,999","90,000-99,999","200,000-249,999","300,000-499,999","250,000-299,999",">$1,000,000","$500,000-999,999"],"y":[106,28,21,21,20,19,18,18,15,12,12,12,9,7,7,7,7,6,6,5,5,4,2]}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"font":{"size":35},"text":"<b>21년 EastAisa kaggler들의 연봉</b>"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('94a83dbe-42e5-40aa-95e0-898c459b78d7');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
 ### 언어
 
 
 ```python
 df21['Q7_Part_1'].value_counts()
 ```
-
-
-
 
     Python    21860
     Name: Q7_Part_1, dtype: int64
@@ -2374,32 +1355,6 @@ fig.update_layout(title_text="<b>21년 World kaggler들이 사용하는 언어</
 fig.show()
 ```
 
-
-<div>                            <div id="6a39f4dd-965c-4020-a6f2-683e7c1ecc36" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("6a39f4dd-965c-4020-a6f2-683e7c1ecc36")) {                    Plotly.newPlot(                        "6a39f4dd-965c-4020-a6f2-683e7c1ecc36",                        [{"name":"21년 World kaggler들이 사용하는 언어","orientation":"v","type":"bar","x":["Python","R","SQL","C","C++","Java","Javascript","Julia","Swift","Bash","MATLAB","None"],"y":[21860,5334,10756,4709,5535,4769,4332,305,242,2216,2935,319]}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"font":{"size":35},"text":"<b>21년 World kaggler들이 사용하는 언어</b>"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('6a39f4dd-965c-4020-a6f2-683e7c1ecc36');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
 
 
 
@@ -2486,131 +1441,6 @@ fig.update_layout(title_text="<b>21년 EastAisa kaggler들이 사용하는 언�
 fig.show()
 ```
 
-
-<div>                            <div id="89ffc1e9-fdab-4bd9-a8e2-44ff4437bee5" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("89ffc1e9-fdab-4bd9-a8e2-44ff4437bee5")) {                    Plotly.newPlot(                        "89ffc1e9-fdab-4bd9-a8e2-44ff4437bee5",                        [{"name":"China","type":"bar","x":["Python","R","SQL","C","C++","Java","Javascript","Julia","Swift","Bash","MATLAB","None"],"y":[738,85,215,226,268,212,86,4,5,31,169]},{"name":"Japan","type":"bar","x":["Python","R","SQL","C","C++","Java","Javascript","Julia","Swift","Bash","MATLAB","None"],"y":[787,122,233,164,164,138,148,8,20,81,53,6]},{"name":"South Korea","type":"bar","x":["Python","R","SQL","C","C++","Java","Javascript","Julia","Swift","Bash","MATLAB","None"],"y":[303,89,89,81,68,57,42,2,6,14,38,3]},{"name":"Taiwan","type":"bar","x":["Python","R","SQL","C","C++","Java","Javascript","Julia","Swift","Bash","MATLAB","None"],"y":[292,71,100,93,96,46,50,3,10,21,55,5]}],                        {"template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"font":{"size":35},"text":"<b>21년 EastAisa kaggler들이 사용하는 언어</b>"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('89ffc1e9-fdab-4bd9-a8e2-44ff4437bee5');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
-
-```python
-
-```
-
-
-```python
-#Stacked Area Cart
-
-# q3_q5_q19_2019 = df_2019.loc[:, ['Q3', 'Q5', 'Q19']]
-
-# final_df = pd.concat([q3_q5_q19_2019, q3_q5_q8_2020, q3_q5_q8_2021])
-
-# year_val = final_df['year'].unique().tolist()
-
-# # final_df.groupby(["Q8", "Q5"]).size().unstack().fillna(0).astype("int16")
-# year_q5 = final_df.groupby(['year', 'Q5']).size().reset_index().rename(columns = {0:"Count"})
-# # print(year_q5.head())
-
-# year_q5 = year_q5[year_q5['Q5'].isin(['Student', 'Data Scientist', 'Data Analyst', 'Data Engineer', 'Software Engineer'])]
-
-# # 2019
-# q5_2019 = year_q5[year_q5['year'] == "2019"].reset_index(drop = True)
-# q5_2019['percentage'] = q5_2019["Count"] / q5_2019["Count"].sum()
-# q5_2019['%'] = np.round(q5_2019['percentage'] * 100, 1)
-
-# # 2020
-# q5_2020 = year_q5[year_q5['year'] == "2020"].reset_index(drop = True)
-# q5_2020['percentage'] = q5_2020["Count"] / q5_2020["Count"].sum()
-# q5_2020['%'] = np.round(q5_2020['percentage'] * 100, 1)
-
-# # 2021
-# q5_2021 = year_q5[year_q5['year'] == "2021"].reset_index(drop = True)
-# q5_2021['percentage'] = q5_2021["Count"] / q5_2021["Count"].sum()
-# q5_2021['%'] = np.round(q5_2021['percentage'] * 100, 1)
-
-
-
-# year_q5_df = pd.concat([q5_2019, q5_2020, q5_2021], ignore_index = True)
-# year_q5_final = pd.pivot(year_q5_df, index = "year", columns = "Q5", values = "%").reset_index()
-# year_q5_final
-```
-
-
-```python
-# year_val = year_q5_final['year'].unique().tolist()
-
-# fig = go.Figure()
-
-# fig.add_trace(go.Scatter(
-#     x = year_val, 
-#     y = year_q5_final["Data Analyst"].tolist(), 
-#     mode = "lines", 
-#     name = "Data Analyst",
-#     line = dict(width = 0.5),
-#     stackgroup = "one"
-# ))
-
-# fig.add_trace(go.Scatter(
-#     x = year_val, 
-#     y = year_q5_final["Data Engineer"].tolist(), 
-#     mode = "lines", 
-#     name = "Data Engineer",
-#     line = dict(width = 0.5),
-#     stackgroup = "one"
-# ))
-
-# fig.add_trace(go.Scatter(
-#     x = year_val, 
-#     y = year_q5_final["Data Scientist"].tolist(), 
-#     name = "Data Scientist",
-#     mode = "lines", 
-#     line = dict(width = 0.5),
-#     stackgroup = "one"
-# ))
-
-# fig.add_trace(go.Scatter(
-#     x = year_val, 
-#     y = year_q5_final["Software Engineer"].tolist(), 
-#     name = "Software Engineer",
-#     mode = "lines", 
-#     line = dict(width = 0.5),
-#     stackgroup = "one"
-# ))
-
-# fig.add_trace(go.Scatter(
-#     x = year_val, 
-#     y = year_q5_final["Student"].tolist(), 
-#     name = "Student",
-#     mode = "lines", 
-#     line = dict(width = 0.5),
-#     stackgroup = "one"
-# ))
-
-# fig.update_layout(yaxis_range = (0, 100))
-
-# fig.show()
-```
-
 ### Thank you for reading!
+
+
