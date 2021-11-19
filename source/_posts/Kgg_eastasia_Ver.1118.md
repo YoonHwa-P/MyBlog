@@ -427,34 +427,6 @@ fig.show()
 
 ```
 
-
-<div>                            <div id="5f1fa333-b3c1-45f7-affc-367ba7e0ec7e" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("5f1fa333-b3c1-45f7-affc-367ba7e0ec7e")) {                    Plotly.newPlot(                        "5f1fa333-b3c1-45f7-affc-367ba7e0ec7e",                        [{"name":"2017","type":"bar","x":["China","Japan","Taiwan","South Korea"],"y":[471,277,254,194]},{"name":"2018","type":"bar","x":["China","Japan","Taiwan","South Korea"],"y":[1644.0,597.0,null,259.0]},{"name":"2019","type":"bar","x":["China","Japan","Taiwan","South Korea"],"y":[574,673,301,255]},{"name":"2020","type":"bar","x":["China","Japan","Taiwan","South Korea"],"y":[474,638,267,266]},{"name":"2021","type":"bar","x":["China","Japan","Taiwan","South Korea"],"y":[814,921,334,359]}],                        {"barmode":"stack","template":{"data":{"scatter":[{"type":"scatter"}]}},"title":{"text":"연도별 동아시아 Kaggle 사용자수"}},                        {"responsive": true}                    ).then(function(){
-
-var gd = document.getElementById('5f1fa333-b3c1-45f7-affc-367ba7e0ec7e');
-var x = new MutationObserver(function (mutations, observer) {{
-        var display = window.getComputedStyle(gd).display;
-        if (!display || display === 'none') {{
-            console.log([gd, 'removed!']);
-            Plotly.purge(gd);
-            observer.disconnect();
-        }}
-}});
-
-// Listen for the removal of the full notebook cells
-var notebookContainer = gd.closest('#notebook-container');
-if (notebookContainer) {{
-    x.observe(notebookContainer, {childList: true});
-}}
-
-// Listen for the clearing of the current output cell
-var outputEl = gd.closest('.output');
-if (outputEl) {{
-    x.observe(outputEl, {childList: true});
-}}
-
-                        })                };                });            </script>        </div>
-
-
 5년간 china의 Kaggle 응답자 수가 가장 많았다. taiwan이 가장 적지만, 2018년도에 어떤이유인지 모르겠지만, china로 결과 값이 흡수 된 것 같다. 
 
 
