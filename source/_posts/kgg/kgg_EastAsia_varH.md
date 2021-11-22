@@ -1,6 +1,6 @@
 ---
 title: "kaggle HeatMap"
-date: 2021-11-18 18:10:27
+date: 2021-11-22 12:10:27
 categories:
 - python
     - plotly
