@@ -46,7 +46,7 @@ fig.update_layout(yaxis  = dict(title = "KaggleUser in World", showgrid = False,
 fig.show()
 ```
 
-![vbar_scatters](../../iimeges/kgg/vbar_scatters.png)
+![vbar_scatters](../../imeges/kgg/vbar_scatters.png)
 
 
 ## age data , 연도별로
