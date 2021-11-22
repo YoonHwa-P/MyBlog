@@ -46,7 +46,7 @@ fig.update_layout(yaxis  = dict(title = "KaggleUser in World", showgrid = False,
 fig.show()
 ```
 
-![vbar_scatters](../imeges/kgg/vbar_scatters.png)
+![vbar_scatters](/imeges/kgg/vbar_scatters.png)
 
 
 ## age data , 연도별로
@@ -218,7 +218,7 @@ fig.show()
 ```
 
 
-![AgePerYears_Inwo](../imeges/kgg/AgePerYears_Inwo.png)
+![AgePerYears_Inwo](/imeges/kgg/AgePerYears_Inwo.png)
 
 
 
@@ -292,4 +292,60 @@ fig.show()
 ```
 
 
-![AgePerYears_InEa](/../imeges/kgg/AgePerYears_InEa.png)
+![AgePerYears_InEa](/imeges/kgg/AgePerYears_InEa.png)
+
+
+
+```python
+# 연도별 나이 
+df21Age_Ea = df21_Ea.loc[:,['Q3','Q1']].reset_index().rename(columns={'Q3':'East_Asia', 'Q1':'2021'}).fillna('etc')
+
+# 연령-지역 %
+dfKo_Age21= df21Age_Ea[df21Age_Ea['East_Asia']=='South Korea']
+dfKo_Age21_per=dfKo_Age21['2021'].value_counts().to_frame().reset_index()
+dfKo_Age21_per['South Korea']=((dfKo_Age21_per['2021'] / len(dfKo_Age21))*100).round(2)
+
+dfTw_Age21= df21Age_Ea[df21Age_Ea['East_Asia']=='Taiwan']
+dfTw_Age21_per=dfTw_Age21['2021'].value_counts().to_frame().reset_index()
+dfTw_Age21_per['Taiwan']=((dfTw_Age21_per['2021'] / len(dfTw_Age21))*100).round(2)
+dfTw_Age21_per
+
+dfCh_Age21= df21Age_Ea[df21Age_Ea['East_Asia']=='China']
+dfCh_Age21_per=dfCh_Age21['2021'].value_counts().to_frame().reset_index()
+dfCh_Age21_per['China']=((dfCh_Age21_per['2021'] / len(dfCh_Age21))*100).round(2)
+dfCh_Age21_per
+
+df21Age_Ea.head()
+dfJp_Age21= df21Age_Ea[df21Age_Ea['East_Asia']=='Japan']
+dfJp_Age21_per=dfJp_Age21['2021'].value_counts().to_frame().reset_index()
+dfJp_Age21_per['Japan']=((dfJp_Age21_per['2021'] / len(dfJp_Age21))*100).round(2)
+dfJp_Age21_per
+
+
+
+#g 그리기(heatMap)
+merge1= pd.merge(dfKo_Age21_per,dfTw_Age21_per, on='index', how='outer')
+merge2= pd.merge(dfCh_Age21_per,dfJp_Age21_per, on='index', how='outer')
+merge= pd.merge(merge1,merge2, on='index', how='outer').fillna(0).sort_values(by=['index'],ascending=True)
+
+merge.iloc[:,[2,4,6,8]]
+merge.iloc[:,[2,4,6,8]].to_numpy()
+
+
+
+fig = go.Figure(data=go.Heatmap(
+                   z=merge.iloc[:,[2,4,6,8]].to_numpy(),
+                   x=['South Korea','Taiwan','China','Japan'],
+                   y=merge.sort_values(by=['index'],ascending=True)['index'].tolist(),
+                   hoverongaps = False,
+                   opacity=1.0, xgap=2.5, ygap=2.5, colorscale='orrd'),
+                   )
+
+fig.update_layout( height=500, width=600,
+                 title_text="<b>East Asia 나이 2021</b>",
+                 title_x=0.5)
+fig.show()
+```
+
+
+![HeatMap_Eastandage](../../imeges/kgg/HeatMap_Eastandage.png)
