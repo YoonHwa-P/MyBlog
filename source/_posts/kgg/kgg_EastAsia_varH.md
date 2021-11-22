@@ -46,7 +46,7 @@ fig.update_layout(yaxis  = dict(title = "KaggleUser in World", showgrid = False,
 fig.show()
 ```
 
-![vbar_scatters](/imeges/kgg/vbar_scatters.png)
+![vbar_scatters](../../iimeges/kgg/vbar_scatters.png)
 
 
 ## age data , 연도별로
@@ -218,7 +218,7 @@ fig.show()
 ```
 
 
-![AgePerYears_Inwo](/imeges/kgg/AgePerYears_Inwo.png)
+![AgePerYears_Inwo](../../imeges/kgg/AgePerYears_Inwo.png)
 
 
 
@@ -292,7 +292,7 @@ fig.show()
 ```
 
 
-![AgePerYears_InEa](/imeges/kgg/AgePerYears_InEa.png)
+![AgePerYears_InEa](../../imeges/kgg/AgePerYears_InEa.png)
 
 
 
@@ -349,3 +349,47 @@ fig.show()
 
 
 ![HeatMap_Eastandage](../../imeges/kgg/HeatMap_Eastandage.png)
+
+
+
+```python
+#데이터 전처리
+df21_Ea_degree=(df21_Ea['Q4'].replace(['No formal education past high school',
+                       'Some college/university study without earning a bachelor’s degree'],'~college')
+             .replace(['Doctoral degree',
+                       'Professional doctorate'],'Doctoral degree~').value_counts().to_frame().rename(columns={'Q4':'2021'}))
+df20_Ea_degree=(df20_Ea['Q4'].replace(['No formal education past high school',
+                       'Some college/university study without earning a bachelor’s degree'],'~college')
+             .replace(['Doctoral degree',
+                       'Professional doctorate'],'Doctoral degree~').value_counts().to_frame().rename(columns={'Q4':'2020'}))
+df19_Ea_degree=(df19_Ea['Q4'].replace(['No formal education past high school',
+                       'Some college/university study without earning a bachelor’s degree'],'~college')
+             .replace(['Doctoral degree',
+                       'Professional doctorate'],'Doctoral degree~').value_counts().to_frame().rename(columns={'Q4':'2019'}))
+df18_Ea_degree=(df18_Ea['Q4'].replace(['No formal education past high school',
+                       'Some college/university study without earning a bachelor’s degree'],'~college')
+             .replace(['Doctoral degree',
+                       'Professional doctorate'],'Doctoral degree~').value_counts().to_frame().rename(columns={'Q4':'2018'}))
+df17_Ea_degree=(df17_Ea['FormalEducation'].replace(['No formal education past high school',
+                       'Some college/university study without earning a bachelor’s degree'],'~college')
+             .replace(['Doctoral degree',
+                       'Professional doctorate'],'Doctoral degree~')
+                .value_counts().to_frame()
+                .rename(columns={'FormalEducation':'2017'})
+                .rename(index = {'I did not complete any formal education past high school':'No formal education past high school'}))
+
+concat1 = pd.concat([df21_Ea_degree,df20_Ea_degree],axis=1, join='outer')  
+concat2 = pd.concat([df19_Ea_degree,df18_Ea_degree],axis=1, join='outer')  
+concat3 = pd.concat([concat1,concat2],axis=1, join='outer') 
+
+df21_Ea_degree_yearly_=concat3.join(df17_Ea_degree).fillna(0).transpose() #.transpose() 행 열 바꾸기
+df21_Ea_degree_yearly=df21_Ea_degree_yearly_.stack().to_frame().reset_index().rename(columns={'level_0':'year','level_1':'degree',0:'value'})
+df21_Ea_degree_yearly
+
+#그래프 그리기
+fig = px.sunburst(df21_Ea_degree_yearly, path=['year','degree'], values=df21_Ea_degree_yearly['value'].tolist())
+fig.show()
+```
+
+
+![piepie_G](../../imeges/kgg/piepie_G.png)

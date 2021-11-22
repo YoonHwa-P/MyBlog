@@ -16,7 +16,7 @@ google colab에서 version 오류로 실행 되지 않는 것들이 있다고 �
 따라서 이때 Kaggle data를 이용 할 예정이면 Kaggle Note를 사용해 보는 것은 어떨까?
 
 
-![kaggle_addNote](../imeges/kaggle_addNote.png)
+![kaggle_addNote](../../imeges/kaggle_addNote.png)
 
  '+ Create' 표시를 누른다. 
 
