@@ -151,7 +151,7 @@ fig.show()
 ```
 
 
-![2021_DS_Salary](img/2021_DS_Salary.png)
+![2021_DS_Salary](/2021_DS_Salary.png)
 
 
 + [25,000-59,999] 이 구간이 East asia의 data scientist 들의 빈도가 가장 높은 연봉 구간이다. 
