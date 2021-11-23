@@ -18,12 +18,12 @@ tags:
 
 
 
-##Data scientist로써 East Asia 에서 살아 남아보자 !
+## Data scientist로써 East Asia 에서 살아 남아보자 !
 
 
 ### Data Import
 
-####East asia data에서 DS(Data scientist)뽑아내기 
+#### East asia data에서 DS(Data scientist)뽑아내기 
 
 ```python
 # 21년 EastAsia 의 Data Scientist
