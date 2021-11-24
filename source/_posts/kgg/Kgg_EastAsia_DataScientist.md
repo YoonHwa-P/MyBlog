@@ -347,3 +347,41 @@ fig.show()
 내 경력에는 큰 의미가 없을지언정 ㅎㅎ
 
 <br><br><hr>
+
+
+
+```python
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pylab as plt
+
+import plotly.io as pio
+import plotly.express as px
+import plotly.graph_objects as go
+import plotly.figure_factory as ff
+from plotly.subplots import make_subplots
+from plotly.offline import init_notebook_mode, iplot
+init_notebook_mode(connected=True)
+pio.templates.default = "none"
+# import plotly.offline as py
+# py.offline.init_notebook_mode()
+
+import os
+for dirname, _, filenames in os.walk('/kaggle/input'):
+    for filename in filenames:
+        print(os.path.join(dirname, filename))
+
+import warnings
+warnings.filterwarnings("ignore")
+
+#joypy를 쓰고 싶다면, sns에 싣어야 하는데 고민.
+#pip install joypy
+# import joypy
+
+# fig,axes =  joypy.joyplot(df_duration, by='year',color=palette18, alpha=0.8)
+# plt.title('Time taken to complete the survey (in seconds)', size=14, fontweight='bold')
+# plt.show()
+
+# https://ichi.pro/ko/joypyleul-sayonghayeo-joy-plot-mandeulgi-113466494282576
+```
