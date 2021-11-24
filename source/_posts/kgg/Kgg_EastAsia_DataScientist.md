@@ -385,3 +385,16 @@ warnings.filterwarnings("ignore")
 
 # https://ichi.pro/ko/joypyleul-sayonghayeo-joy-plot-mandeulgi-113466494282576
 ```
+
+
+```python
+ds_pc=df21_Ea_DS.loc[:, ['Q5','Q25','Q6','Q4','Q8']]
+
+fig = px.parallel_categories(ds_pc, labels={'Q5':'Job', 'Q25':'Salary', 'Q6':'Experience', 'Q4':'Degree', 'Q8':'Language'})
+
+fig.update_layout(hovermode = 'x')
+fig.update_layout(title='<b>        Data Scientist</b>',title_font_size=20,
+                  margin = dict(t=120, l=100, r=10, b=150),
+                  height=600, width=700)
+fig.show()
+```
