@@ -10,7 +10,14 @@ tags:
 - plot
 ---
 
+
+
+
 ## Newbie as a data scientist in East Asia!
+
+[notebook](https://www.kaggle.com/yoonhwayam/newbies-as-a-data-scientist-in-east-asia/notebook)
+
+---
 
 Hello, Kaggers! Nice to meet you! 
 
@@ -144,9 +151,9 @@ We used all the data for five years. (2017~2021)
         - [<999, 1,000-20,000, 20,000-59,999, 60,000-99,999, 100,000-199,999, 200,000~]
     
 
-![image.png](attachment:85ab1662-6b79-4573-9fc6-fd4a06dac5d4.png)
+![All](img/All.png)
 
-![image.png](attachment:a3267e76-64a2-45fa-9c8f-8136fc761106.png)
+![East_Asia_Data_Scientist](img/East_Asia_Data_Scientist.png)
 
 
 
