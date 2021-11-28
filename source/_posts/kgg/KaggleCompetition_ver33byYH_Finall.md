@@ -14,7 +14,7 @@ tags:
 
 
 ## Newbie as a data scientist in East Asia!
-
+![inotebookIMG](/../imeges/img/inotebookIMG.png)
 [notebook](https://www.kaggle.com/yoonhwayam/newbies-as-a-data-scientist-in-east-asia/notebook)
 
 ---
