@@ -1,3 +1,15 @@
+---
+title: "Newbie as a data scientist in East Asia! (kaggle Competition)"
+date: 2021-11-28 13:18:29
+categories:
+- python
+    - plotly
+tags:
+- kaggle
+- Plotly
+- plot
+---
+
 ## Newbie as a data scientist in East Asia!
 
 Hello, Kaggers! Nice to meet you! 
