@@ -180,3 +180,4 @@ for i in range(1,len(df21['Q3'])):
 
 D-17 (대회 종료까지)
 
+[대회 종료 final version](https://yoonhwa-p.github.io/2021/11/28/kgg/KaggleCompetition_ver33byYH_Finall/)

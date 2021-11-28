@@ -151,7 +151,7 @@ fig.show()
 ```
 
 
-![2021_DS_Salary](/img/2021_DS_Salary.png)
+![2021_DS_Salary](/../imeges/img/2021_DS_Salary.png)
 
 
 + [25,000-59,999] 이 구간이 East asia의 data scientist 들의 빈도가 가장 높은 연봉 구간이다. 
@@ -187,7 +187,7 @@ fig.show()
 ```
 
 
-![2021_DS_SalExp](/img/2021_DS_SalExp.png)
+![2021_DS_SalExp](/../imeges/img/2021_DS_SalExp.png)
 
 <br>
 
@@ -223,7 +223,7 @@ fig.show()
 ```
 
 
-![2021_DS_Edu](/img/2021_DS_Edu.png)
+![2021_DS_Edu](/../imeges/img/2021_DS_Edu.png)
 
 
 
@@ -257,7 +257,7 @@ fig.update_layout( title_text="<b>Data Scientist의 경력과 연봉 </b>",
 fig.show()
 ```
 
-![2021_DS_Exp_sal](/img/2021_DS_Exp_sal.png)
+![2021_DS_Exp_sal](/../imeges/img/2021_DS_Exp_sal.png)
 
 - East Asia의 ds들의 연봉은 거의 [25000-60000] 구간에 들어잇는 것 같다. 
 - 학위랑은 많이 상관 없어 보이며
@@ -327,7 +327,7 @@ fig.show()
 ```
 
 
-![2021_DS_Langu](/img/2021_DS_Langu.png)
+![2021_DS_Langu](/../imeges/img/2021_DS_Langu.png)
 
 
 이 plot은 강사쌤의 도움을 많이 받았다. 

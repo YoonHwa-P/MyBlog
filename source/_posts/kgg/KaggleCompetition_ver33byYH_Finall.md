@@ -14,6 +14,7 @@ tags:
 
 
 ## Newbie as a data scientist in East Asia!
+
 ![inotebookIMG](/../imeges/img/inotebookIMG.png)
 [notebook](https://www.kaggle.com/yoonhwayam/newbies-as-a-data-scientist-in-east-asia/notebook)
 
@@ -27,7 +28,7 @@ As newbies, we want to know what and/or how Kaggler is!
 
 so, let's have a time to learn about Kaggle as a senior with us from now.
 
-If you want to support us*(or feel qute)*, I ask for a comment! (PLZ) ^0^
+If you want to support us *(or feel qute)* , I ask for a comment! (PLZ) ^0^
 
 And !! Since we are **not native English speakers**, please ask questions if there is a context that you don't understand because it's not smooth.
 
@@ -151,9 +152,9 @@ We used all the data for five years. (2017~2021)
         - [<999, 1,000-20,000, 20,000-59,999, 60,000-99,999, 100,000-199,999, 200,000~]
     
 
-![All](/kgg/imeges/img/img/All.png)
+![All](/../imeges/img/img/All.png)
 
-![East_Asia_Data_Scientist](/kgg/imeges/img/East_Asia_Data_Scientist.png)
+![East_Asia_Data_Scientist](/../imeges/img/East_Asia_Data_Scientist.png)
 
 
 
