@@ -151,9 +151,9 @@ We used all the data for five years. (2017~2021)
         - [<999, 1,000-20,000, 20,000-59,999, 60,000-99,999, 100,000-199,999, 200,000~]
     
 
-![All](/img/All.png)
+![All](/kgg/imeges/img/img/All.png)
 
-![East_Asia_Data_Scientist](/img/East_Asia_Data_Scientist.png)
+![East_Asia_Data_Scientist](/kgg/imeges/img/East_Asia_Data_Scientist.png)
 
 
 
