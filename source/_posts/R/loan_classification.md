@@ -1,6 +1,6 @@
 ---
 title: "loan_classification"
-date: 2021-08-08T21:00:00+09:00
+date: 2021-11-29 15:21:20
 output: 
   html_document: 
     keep_md: true
