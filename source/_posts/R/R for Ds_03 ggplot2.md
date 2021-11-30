@@ -60,7 +60,7 @@ install.packages(c("nycflights13", "gapminder", "Lahman"))
 mpg
 ```
 
-![mpg](/../mpg.png)
+![mpg](/../imeges/images/mpg.png)
 
 - displ  = car’s engine size, in litres
 - hwy = fuel efficiency in miles per gallon (mpg)
