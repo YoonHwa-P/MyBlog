@@ -60,7 +60,7 @@ install.packages(c("nycflights13", "gapminder", "Lahman"))
 mpg
 ```
 
-![mpg](/images/mpg.png)
+![mpg](/../mpg.png)
 
 - displ  = car’s engine size, in litres
 - hwy = fuel efficiency in miles per gallon (mpg)
@@ -76,7 +76,7 @@ ggplot(data = mpg) +
 - geom_point() : Layers 추가
 - scatterplot
 
-![scatterplot_mpg](/images/scatterplot_mpg.png)
+![scatterplot_mpg](/../scatterplot_mpg.png)
 
 - mapping = aes(x= displ, y = hwy) : x와 y를 mapping 해 준다. 
 
@@ -99,7 +99,7 @@ ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, color = class))
 ```
 
-![mpg_color](/images/mpg_color.png)
+![mpg_color](/../mpg_color.png)
 
 
 
@@ -108,7 +108,7 @@ ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, size = class))
 ```
 
-![mpg_Size](images/mpg_Size.png)
+![mpg_Size](/../mpg_Size.png)
 
 
  colour , color : 모두 써도 됨.
