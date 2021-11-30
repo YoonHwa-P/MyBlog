@@ -24,6 +24,8 @@ tags:
 
 ## Introduction 
 
+---
+
 - how to visualise your data using ggplot2. R 
 - ggplot2는 그래프를 그려주는 프로그램 
 [ggplot2 이론배경](https://byrneslab.net/classes/biol607/readings/wickham_layered-grammar.pdf)
@@ -31,6 +33,8 @@ tags:
 
 
 ### 3.1.1 Prerequisites
+
+---
 
 
 ```r
@@ -51,6 +55,9 @@ install.packages(c("nycflights13", "gapminder", "Lahman"))
 
 
 ### 3.2 First steps
+
+---
+
 #### 3.2.1 The mpg data frame
 
 - US Environmental Protection Agency on 38 models of car
@@ -90,9 +97,14 @@ ggplot(data = mpg) +
 
 ### 3.3 Aesthetic mappings
 
+---
+
 aesthetic : 래전드 모양, 색 크기
 - value :  data
 - level : aesthetic properties
+- size : 크기
+- color = colour, aesthetic의 색
+- alpha = shape , aesthetic의 모양 
 
 ```r
 ggplot(data = mpg) +
@@ -113,6 +125,46 @@ ggplot(data = mpg) +
 
  colour , color : 모두 써도 됨.
 
+
+```r
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y= hwy, alpha = class))
+```
+
+
+![mpg_alpha](/../../imeges/R_images/mpg_alpha.png)
+
+
+
+
+```r
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, shape = class))
+```
+![mpg_shape](/../../imeges/R_images/mpg_shape.png)
+
+
+---
+
+(수동으로 색 설정)
+
+래전드를 생성 하지 않으면서 color만 바꿀 수 있다. 
+
+
+```r
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy), color = "blue")
+```
+
+
+![mpg3.1_Bulet25](/../../imeges/R_images/Bulet25_.png)
+
+
+<br>
+<br>
+
+---
+
 [아직 덜 했다 !](https://r4ds.had.co.nz/data-visualisation.html#a-graphing-template)
 
-
+[rmarkdown_Book](https://bookdown.org/yihui/rmarkdown/)
