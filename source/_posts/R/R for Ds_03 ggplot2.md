@@ -163,6 +163,18 @@ ggplot(data = mpg) +
 <br>
 <br>
 
+
+```r
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
+```
+
+mpg 내의 data가 color이라는 column이 있다. 
+
+그 data가 "blue"인 data들의 displ과 hwy의 Graph
+
+![mpg_Color_Blue](/../../imeges/R_images/mpg_Color_Blue.png)
+
 ---
 
 [아직 덜 했다 !](https://r4ds.had.co.nz/data-visualisation.html#a-graphing-template)
