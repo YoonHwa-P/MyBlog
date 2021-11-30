@@ -175,8 +175,17 @@ mpg 내의 data가 color이라는 column이 있다.
 
 ![mpg_Color_Blue](/../../imeges/R_images/mpg_Color_Blue.png)
 
+
+
 ---
 
 [아직 덜 했다 !](https://r4ds.had.co.nz/data-visualisation.html#a-graphing-template)
 
 [rmarkdown_Book](https://bookdown.org/yihui/rmarkdown/)
+
+
+
+
+### R publishing
+[Rggplot](https://rpubs.com/YoonHwa-P/Rggplot)
+![RPubs](../../imeges/R_images/R_PUBS.png)
