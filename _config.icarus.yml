@@ -91,7 +91,7 @@ head:
         # Page publisher logo (optional)
         # You should leave this blank for most of the time
         publisher_logo: 
-        # Page images (optional)
+        # Page R_images (optional)
         # You should leave this blank for most of the time
         image: 
     # Additional HTML meta tags in an array
