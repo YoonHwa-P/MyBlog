@@ -13,7 +13,7 @@ tags:
 ## Welcome
 <hr>
 
-![R_Welcome](/images/R_Welcome.png)
+![R_Welcome](/../../imeges/R_images/R_Welcome.png)
 
 - 저작권 : "R for DataScience by Hadley Wickham and Garrett Grolemund(O'Reilly). Copyright 2017 Garrett Grolemund, Hadley Wickham, 978-1-491-91039-9
 
@@ -37,7 +37,7 @@ R을 이용한 data science를 해 봅시다.
 ### 1.1 What you will learn
 <hr>
 
-![R4ds_Learn](/images/R4ds_Learn.png)
+![R4ds_Learn](/../../imeges/R_images/R4ds_Learn.png)
 
 
 ### 1.2 How this book is organised

@@ -99,7 +99,7 @@ ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, color = class))
 ```
 
-![mpg_color](../../imeges/R_images/mpg_color.png)
+![mpg_color](/../../imeges/R_images/mpg_color.png)
 
 
 
