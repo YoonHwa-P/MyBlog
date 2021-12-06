@@ -4,6 +4,8 @@ date: 2021-11-02 14:21:20
 tags: 
 - python_basic
 - github
+- multiplace
+- 깃허브
 ---
 
 

@@ -10,15 +10,9 @@ tags:
 - Classifier
 ---
 
+## DecisionTreeClassifier
 
-
-
-# DecisionTreeClassifier
-
-
-##Classifier function 
-
-
+### Classifier function 
 
 Decision Tree **Classifier**는 데이터 집합에서 다중 클래스 분류를 수행할 수 있는 클래스이다. 
 
@@ -41,9 +35,6 @@ clf.predict([[2., 2.]])
 clf.predict_proba([[2., 2.]])
 ```
 
-
-
-
     array([[0., 1.]])
 
 
@@ -65,7 +56,6 @@ tree.plot_tree(clf)
 
 
 
-
     [Text(167.4, 199.32, 'X[2] <= 2.45\ngini = 0.667\nsamples = 150\nvalue = [50, 50, 50]'),
      Text(141.64615384615385, 163.07999999999998, 'gini = 0.0\nsamples = 50\nvalue = [50, 0, 0]'),
      Text(193.15384615384616, 163.07999999999998, 'X[3] <= 1.75\ngini = 0.5\nsamples = 100\nvalue = [0, 50, 50]'),
@@ -83,8 +73,6 @@ tree.plot_tree(clf)
      Text(231.7846153846154, 54.359999999999985, 'gini = 0.0\nsamples = 2\nvalue = [0, 0, 2]'),
      Text(283.2923076923077, 54.359999999999985, 'gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]'),
      Text(309.04615384615386, 90.6, 'gini = 0.0\nsamples = 43\nvalue = [0, 0, 43]')]
-
-
 
 
     
@@ -111,8 +99,6 @@ decision tree는 약 20여종의 parameter가 있다.
 * min_impurity_split : 나무 성장을 멈추기 위한 임계치
 * class_weight : 클래스 가중치
 * presort : 데이터 정렬 필요 여부
-
-
 
 
 

@@ -51,7 +51,7 @@ tags:
 
 <br>
 
-![BDS_componets.png](../../imeges/BDS_componets.png)
+![BDS_componets.png](/../../imeges/BDS_componets.png)
 
 <br>
 
@@ -110,7 +110,7 @@ BDS가 궁극적으로 연구의 과학이라는 이런 점에서, 전형적인 
 
 <br>
 
-![BDS_Investigation.png](../../imeges/BDS_Investigation.png)
+![BDS_Investigation.png](/../../imeges/BDS_Investigation.png)
 
 <br>
 
@@ -128,7 +128,7 @@ BDS 데이터는 매우 많은 수의 관측에서 보존된 패턴을 식별하
 
 
     
-![BDS_omics.png](../../imeges/BDS_omics.png)
+![BDS_omics.png](/../../imeges/BDS_omics.png)
 
 <br>
 

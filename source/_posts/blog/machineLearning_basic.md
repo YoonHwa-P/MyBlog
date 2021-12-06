@@ -9,8 +9,8 @@ tags:
 - predictionModel
 ---
 
-# machine learning 
-## Decision tree learing
+## machine learning 
+### Decision tree learing
 
 <br>
 <hr>
@@ -24,7 +24,7 @@ tags:
 데이터 기능에서 유추된 결정규칙을 학습하여 대상 변수값을 예측 하는 모델을 만들기 위해 사용
 
 
-####종류
+#### 종류
  - 분류 트리 
    - 변수가 유한한 수의 값을 가지는 것, **클래스 출력**
    - Leaf node는 클래스 라벨을 나타내고 가지는 클래스 라벨과 관련있는 특징들의 논리 곱을 나타낸다. 
@@ -72,6 +72,8 @@ tags:
 3. 의사 결정 트리의 예측은 근사치이기 때문에 좋은 추정은 아닐 수 있다.
 4. 의사결정 트리의 최적화의 문제는 NP-complete로 잘 알려진 문제이다.
    잘 모르겠다.
+
+
 - [NP-complete](https://ko.wikipedia.org/wiki/NP-%EC%99%84%EC%A0%84)
  
 5. XOR, parity or multiplexer problems와 같이 배우기 쉽지 않은 컨셉들 때문에 표현하기 쉽지않다. 

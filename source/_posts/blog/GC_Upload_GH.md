@@ -12,7 +12,8 @@ tags: google, colaboratory, github, upload
 <br>
 <hr>
 <br>
-###google Colaboratory란?  
+
+### google Colaboratory란?  
 
 
 <br>
