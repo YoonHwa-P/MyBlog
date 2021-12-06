@@ -84,6 +84,12 @@ See the user guide <basics.dtypes> for more usages. <br><br>
 >> Copy input data.  <br>
 
 
+<h4>type</h4>
+
+- list []
+- tuple ()
+- set {}
+- dict {Key:value}
 
 
 
