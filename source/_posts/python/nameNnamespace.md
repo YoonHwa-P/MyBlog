@@ -11,7 +11,7 @@ tags:
 ---
 
 
-##Name
+## Name
 
 - name : identifier, variable, reference
 - object의 구분을 위해 사용
