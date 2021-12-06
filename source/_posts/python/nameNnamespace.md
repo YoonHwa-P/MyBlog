@@ -73,6 +73,8 @@ object(10, int, ref_cnt=1)0x100
 
 python에서 제공하는 함수, class, instance 등이 들어있는 곳.
 
+[Built-in Functions](https://docs.python.org/3/library/functions.html)
+
 ### global name space
 
 내가 만든 함수, 인수, class들이 들어 있는 곳
@@ -144,7 +146,7 @@ pp.pprint(keyword.kwlist)
 >> ['False',
  'None',
  'True',
- '__peg_parser__',
+ '\__peg_parser\__',
  'and',
  'as',
  'assert',
@@ -191,6 +193,64 @@ pp.pprint(keyword.kwlist)
 |:-----------:|:-------------:|:-------------:|:------:|
 | assignment | =  | a = 10 | 10에 a 를 바인딩 |
 | assignmented assignment |  **=, +=, -=, *=, //=, %=. <<=, >>=, &=, &#124;=, ^=, @=  | a+= 10  |a에 10을 더한 결과 객체에 a를 바인딩 |
+
+#### 덧셈의 ref_cnt
+
+```python
+print("**********")
+i = 10
+print(id(i))
+i += 1
+print(id(i))
+print("**********")
+```
+
+i가 10이때, i += 1 을 하면 11이라는 것이 만들어 진다. 
+
+이 11은 새로운 객체이다. 
+
+
+![assignment_i](/../../imeges/python/assignment_i.png)
+
+
+새로운 객체가 생성 되기 때문에 id가 달라진다. (memory의 adress)
+
+
+### pack & unPack
+
+- pack : (,) 콤마를 이용하여 Tuple 객체 하나 생성
+- unpack : 1개의 묶음에 있는 여러개의 객체 아이템이 분리되어 각각의 이름에 바인딩 됨.
+
+이와 같은 pack과 unpack을 이용 하면, 여러 이름에 여러 값을 부여하기 쉽다.
+
+> in
+```python
+data_int = 1
+data_Tuple = 1,
+
+data = 10, 20, 30
+first, second, third = data
+print(first, second, third)
+
+def function():
+    a = 10
+    b = 20
+    print(locals())
+    del b
+    print(locals())
+
+function()
+```
+>Out
+>>10 20 30 <br><br>
+{'a': 10, 'b': 20} <br>
+{'a': 10} <br>
+
++ del (변수) : python에 있는 좋은 기능
++ 변수를 삭제 할 수 있다. 
++ locals() : local안에 있는 변수를 확인 할 수 있다. 
++ type() : 변수의 data type을 확인 할 수 있다. 
+
 
 
 Ref. [youtube, 1hr](https://www.youtube.com/watch?v=_WgARuzoPeU)
