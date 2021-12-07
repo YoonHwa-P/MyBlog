@@ -9,7 +9,7 @@ tags:
 - pythonFuction
 ---
 
-## day 1 Lecture
+## day 1 Lecture (01)
 
 <br><br><hr>
 
@@ -110,3 +110,42 @@ Game 개발을 위한 가상 환경 조성 (다른 버전을 사용 할 수 있�
 PKG 설정: 
 
 https://pypi.org 에 들어가서 PKG 버전을보고 설치 하면 된다. 
+
+
+
+### 4. venu : 가상 환경 설정
+
+![venv_En](/../../imeges/python/venv_En.png)
+
+
+```python
+
+#terminal
+
+$ source ./venv/Scripts/activate
+(venv)
+
+#terminal
+$ which python
+/c/Users/brill/Desktop/PyThon_Function/venv/Scripts/python
+(venv)
+
+```
+
+가상환경 설정 
+
+- **$ which python**
+    /c/ProgramData/Anaconda3/python
+
+- **$ source ./venv/Scripts/activate**
+<p style="color:#FF0000";>(venv)</p>
+
+- $ which python
+
+> /c/Users/brill/Desktop/PyThon_Function/venv/Scripts/python
+> <p style="color:#FF0000";>(venv)</p>
+
+<p style="color:#FF0000";>(venv)</p> 가 있어야 가상환경 설정이 된것이다. 
+
+
+![raise_ValueError](/../../imeges/python/raise_ValueError.png)
