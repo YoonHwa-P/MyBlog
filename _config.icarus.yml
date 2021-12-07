@@ -404,7 +404,8 @@ providers:
     cdn: https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css
     # jsdelivr
     # Name or URL template of the webfont CDN provider
-    fontcdn: google
+    fontcdn: https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css
+    # google
     # Name or URL of the fontawesome icon font CDN provider
     iconcdn: fontawesome
 
