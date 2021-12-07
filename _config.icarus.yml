@@ -403,10 +403,8 @@ providers:
     # Name or URL template of the JavaScript and/or stylesheet CDN provider
     cdn: jsdelivr
     # Name or URL template of the webfont CDN provider
-    fontcdn: google
+    fontcdn: https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css
+    # google
     # Name or URL of the fontawesome icon font CDN provider
     iconcdn: fontawesome
     #https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css
-
-@import
-url(https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css);
