@@ -248,7 +248,7 @@ widgets:
                 icon: fab fa-twitter
                 url: 'https://twitter.com'
             Instagram:
-                icon: /../img/instaGram.jpg
+                icon: fab fa-instagram
                 url: 'https://www.instagram.com/1_haza'
             RSS:
                 icon: fas fa-rss
