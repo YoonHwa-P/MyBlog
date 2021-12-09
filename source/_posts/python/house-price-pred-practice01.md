@@ -12,6 +12,12 @@ tags:
 
 ## Kaggle 주택가격 예측
 
+[Kaggle house oruces advabced regression](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/)
+
+
+<br><br>
+
+---
 
 ```python
 # This Python 3 environment comes with many helpful analytics libraries installed
@@ -372,6 +378,10 @@ plt.show()
 ```
 
 
+![Kgg_House_years](/../../imeges/python/Kgg_House_years.png)
+
+<br><br>
+
 ```python
 all_df = all_df.drop(['YearBuilt', 'GarageYrBlt'], axis=1)
 print(all_df.shape)
@@ -387,6 +397,9 @@ ax.scatter(YearsSinceRemodel, y, alpha=0.3)
 fig.show()
 ```
 
+![Kgg_House_YearsSinceRemodel](/../../imeges/python/Kgg_House_YearsSinceRemodel.png)
+
+<br><br>
 
 ```python
 all_df['YearsSinceRemodel'] = all_df['YrSold'].astype(int) - all_df['YearRemodAdd'].astype(int)
@@ -401,7 +414,11 @@ print(all_df.shape)
 -  명목형      : 남학생, 여학생...  
 -  서열형(순서) : 1등급, 2등급, 3등급 (가중치, 등급숫자 등으로 바꿀 수 있다. )
 
-![image.png](attachment:b795960f-cac3-4486-9bcf-502ce4e4bb84.png)
+![Kgg_House_StringF](/../../imeges/python/Kgg_House_StringF.png)
+
+<br><br>
+
+
 
 
 - 세부적으로 customize 하는 것이 낫다. 
@@ -444,7 +461,11 @@ all_df['Fireplaces'] = all_df['Fireplaces'].apply(count_dummy)
 all_df['Fireplaces'].value_counts()
 ```
 
+<br><br>
+
 ### Label Encoding, Ordinal Encoding, One-Hot Encoding
+
+---
 
 - Label Encoding : 종속변수에만 
 - Ordinal Encoding : 독립변수에만
@@ -516,6 +537,7 @@ all_df.shape
 
 #### 데이터셋 분리 및 교차 검증
 
+---
 
 ```python
 X = all_df.iloc[:len(y), :]
@@ -530,9 +552,12 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, rand
 X_train.shape, X_test.shape, y_train.shape, y_test.shape
 ```
 
+<br><br>
+
 ### 평가지표
 #### MAE
 
+---
 
 ```python
 import numpy as np
@@ -561,8 +586,11 @@ def mean_squared_error(y_true, y_pred):
   return mse
 ```
 
+<br><br>
+
 #### RMSE
 
+---
 
 ```python
 import numpy as np
@@ -602,8 +630,11 @@ print("MSE:", mean_squared_error(y_true, y_pred))
 print("RMSE:", root_rmse_squared_error(y_true, y_pred))
 ```
 
+<br><br>
+
 #### RMSE with Sklean
 
+---
 
 ```python
 from sklearn.metrics import mean_squared_error
@@ -612,8 +643,11 @@ def rmsle(y_true, y_pred):
     return np.sqrt(mean_squared_error(y_true, y_pred))
 ```
 
+<br><br>
+
 ### 모형 정의 및 검증 평가
 
+---
 
 ```python
 from sklearn.metrics import mean_squared_error
