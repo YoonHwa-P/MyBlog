@@ -17,6 +17,7 @@ tags:
 
 <br><br>
 
+
 ---
 
 ```python
@@ -378,7 +379,7 @@ plt.show()
 ```
 
 
-![Kgg_House_years](/../../imeges/python/Kgg_House_years.png)
+![Kgg_House_years](../../imeges/python/Kgg_House_years.png)
 
 <br><br>
 
@@ -397,7 +398,7 @@ ax.scatter(YearsSinceRemodel, y, alpha=0.3)
 fig.show()
 ```
 
-![Kgg_House_YearsSinceRemodel](/../../imeges/python/Kgg_House_YearsSinceRemodel.png)
+![Kgg_House_YearsSinceRemodel](../../imeges/python/Kgg_House_YearsSinceRemodel.png)
 
 <br><br>
 
@@ -414,7 +415,7 @@ print(all_df.shape)
 -  명목형      : 남학생, 여학생...  
 -  서열형(순서) : 1등급, 2등급, 3등급 (가중치, 등급숫자 등으로 바꿀 수 있다. )
 
-![Kgg_House_StringF](/../../imeges/python/Kgg_House_StringF.png)
+![Kgg_House_StringF](../../imeges/python/Kgg_House_StringF.png)
 
 <br><br>
 
