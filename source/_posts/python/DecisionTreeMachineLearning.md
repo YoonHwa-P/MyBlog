@@ -1,6 +1,6 @@
 ---
 title: "DecisionTreeMachineLearning(03)"
-date: 2021-12-10 17:50:48
+date: 2021-12-10 17:30:48
 categories:
 - python
 - machineLeaning
@@ -221,7 +221,8 @@ tree_gini.fit(X_train, y_train)
 
 >DecisionTreeClassifier(max_depth=3)
 > 
-
+- depth를 3으로 해 주었기 때문에 과적합 X
+- 
 
 ```python
 X_combined = np.vstack((X_train, X_test))
@@ -235,27 +236,54 @@ plt.tight_layout()
 plt.show()
 ```
 
-![tree_gini_layout](../../imeges/python/tree_gini_layout.png)
+![tree_gini_layout](/../../imeges/python/tree_gini_layout.png)
 
 
+```python
+from pydotplus import graph_from_dot_data
+from sklearn.tree import export_graphviz
+
+dot_data = export_graphviz(tree_gini,
+                           filled=True, 
+                           rounded=True,
+                           class_names=['Setosa', 
+                                        'Versicolor',
+                                        'Virginica'],
+                           feature_names=['petal length', 
+                                          'petal width'],
+                           out_file=None) 
+graph = graph_from_dot_data(dot_data) 
+graph.write_png('gini_tree.png') 
+```
+
+>True
+
+![gini_tree](/../../imeges/python/gini_tree_.png)
+
+<br><br>
+
+---
 
 - gini 로 1개 Entripy 로 1개 짜서 해야함 
 + `gini`: default 
 + `Entropy` : 도 해보고 비교
 
 ```python
-tree_Entropy.fit(x_train, y_train)
+tree_entropy = DecisionTreeClassifier(criterion="entropy", max_depth=3)
+tree_entropy.fit(X_train, y_train)
 
-x_combined = np.vstack((x_train, x_test))
-y_combined = np.hstack((y_trin, y_test))
+X_combined = np.vstack((X_train, X_test))
+y_combined = np.hstack((y_train, y_test))
 
-plot_decision_regions(x_combined, y_combined, 
-                      classifier= tree_Entropy, test_idx = range(105, 150) )
-
-plt.legend(loc= "upper left")
+plot_decision_regions(X_combined, y_combined, classifier=tree_entropy, test_idx = range(105, 150))
+plt.xlabel("petal length")
+plt.ylabel("petal width")
+plt.legend(loc = "upper left")
 plt.tight_layout()
-plt.show
+plt.show()
 ```
+
+![tree_Entropy_layout](../../imeges/python/tree_Entropy_layout.png)
 
 - 모형을 도식화로 
 
@@ -273,10 +301,12 @@ dot_data = export_graphviz(tree_entropy,
                                           'petal width'],
                            out_file=None) 
 graph = graph_from_dot_data(dot_data) 
-graph.write_png('gini_tree.png') 
+graph.write_png('Entropy_tree.png') 
 ```
 
-![Entropy_zero](/../../imeges/python/Entropy_zero.png)
+
+![Entropy_tree](/../../imeges/python/Entropy_tree.png)
+
 
 entropy가 0이 되면 더이상 나눌 필요가 없다. 
 
