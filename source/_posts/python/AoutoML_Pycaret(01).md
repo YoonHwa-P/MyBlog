@@ -343,4 +343,297 @@ version을 정해서 설치 할 수도 있다.
 
 ---
 
-### pycaret install 
+google colab에 설치 한 경우 
+
+<p style="color:#E84D4D;font-size:110%;"> 
+Install 후 <strong>런타임>런타임다시시작(CTRL+M)</strong> 을 
+꼭 한번 해 준 후
+</p>
+
+아래 설명에 따라 가는 것이 좋음.
+
+
+ ** 만약 오류가 난다면, 런타임 초기화 후 import, 런타임다시시작 후 진행 하는 것을 추천 
+
+- 왜 그런지 모름 ~_~ 그냥 이렇게 하면 된다는 것만 알려주겠음
+
+<br><br>
+
+---
+
+
+### Data Load
+
+```python
+from pycaret.datasets import get_data
+data = get_data("diamond")
+```
+
+![pycaret_diamond_data](/../../imeges/python/pycaret_diamond_data.png)
+
+<br><br>
+
+---
+
+### pycaret.regression
+
+```python
+from pycaret.regression import *
+reg_set = setup(data, target = 'Price', transform_target = True, 
+                log_experiment = True, experiment_name = 'diamond')
+```
+
+- pycaret.regression : 종류
+
+|  \\ |               Description              |      Value     |
+|:--:|:--------------------------------------:|:--------------:|
+|  0 |               session_id               |      2882      |
+|  1 |                 Target                 |      Price     |
+|  2 |              Original Data             |    (6000, 8)   |
+|  3 |             Missing Values             |      False     |
+|  4 |            Numeric Features            |        1       |
+|  5 |          Categorical Features          |        6       |
+|  6 |            Ordinal Features            |      False     |
+|  7 |        High Cardinality Features       |      False     |
+|  8 |         High Cardinality Method        |      None      |
+|  9 |          Transformed Train Set         |   (4199, 28)   |
+| 10 |          Transformed Test Set          |   (1801, 28)   |
+| 11 |           Shuffle Train-Test           |      True      |
+| 12 |           Stratify Train-Test          |      False     |
+| 13 |             Fold Generator             |      KFold     |
+| 14 |               Fold Number              |       10       |
+| 15 |                CPU Jobs                |       -1       |
+| 16 |                 Use GPU                |      False     |
+| 17 |             Log Experiment             |      True      |
+| 18 |             Experiment Name            |     diamond    |
+| 19 |                   USI                  |      116c      |
+| 20 |             Imputation Type            |     simple     |
+| 21 |     Iterative Imputation Iteration     |      None      |
+| 22 |             Numeric Imputer            |      mean      |
+| 23 |   Iterative Imputation Numeric Model   |      None      |
+| 24 |           Categorical Imputer          |    constant    |
+| 25 | Iterative Imputation Categorical Model |      None      |
+| 26 |      Unknown Categoricals Handling     | least_frequent |
+| 27 |                Normalize               |      False     |
+| 28 |            Normalize Method            |      None      |
+| 29 |             Transformation             |      False     |
+| 30 |          Transformation Method         |      None      |
+| 31 |                   PCA                  |      False     |
+| 32 |               PCA Method               |      None      |
+| 33 |             PCA Components             |      None      |
+| 34 |           Ignore Low Variance          |      False     |
+| 35 |           Combine Rare Levels          |      False     |
+| 36 |          Rare Level Threshold          |      None      |
+| 37 |             Numeric Binning            |      False     |
+| 38 |             Remove Outliers            |      False     |
+| 39 |           Outliers Threshold           |      None      |
+| 40 |        Remove Multicollinearity        |      False     |
+| 41 |       Multicollinearity Threshold      |      None      |
+| 42 |       Remove Perfect Collinearity      |      True      |
+| 43 |               Clustering               |      False     |
+| 44 |          Clustering Iteration          |      None      |
+| 45 |           Polynomial Features          |      False     |
+| 46 |            Polynomial Degree           |      None      |
+| 47 |          Trignometry Features          |      False     |
+| 48 |          Polynomial Threshold          |      None      |
+| 49 |             Group Features             |      False     |
+| 50 |            Feature Selection           |      False     |
+| 51 |        Feature Selection Method        |     classic    |
+| 52 |      Features Selection Threshold      |      None      |
+| 53 |           Feature Interaction          |      False     |
+| 54 |              Feature Ratio             |      False     |
+| 55 |          Interaction Threshold         |      None      |
+| 56 |            Transform Target            |      True      |
+| 57 |         Transform Target Method        |     box-cox    |
+
+
+<div style="border: 1px solid gold">
+
+- 더 많이 알고 싶으면 저거 다 공부 해 ^0^
+
+</div>
+
+<br><br>
+
+---
+
+### 모델 만들기 
+
+- 최적의 모델을 만들기 위해 한줄의 코드면 된다 ㅠㅠ 
+
+
+```python
+best  = compare_models()
+```
+
+|          |              Model              |    MAE    |      MSE     |    RMSE    |     R2    |  RMSLE |  MAPE  | TT (Sec) |
+|:--------:|:-------------------------------:|:---------:|:------------:|:----------:|:---------:|:------:|:------:|:--------:|
+| lightgbm | Light Gradient Boosting Machine |  637.8811 | 1.928277e+06 |  1367.4159 |   0.9813  | 0.0677 | 0.0491 |   0.120  |
+|    et    |      Extra Trees Regressor      |  748.9529 | 2.253684e+06 |  1478.3926 |   0.9782  | 0.0802 | 0.0594 |   1.199  |
+|    rf    |     Random Forest Regressor     |  742.9041 | 2.417200e+06 |  1528.6437 |   0.9765  | 0.0785 | 0.0579 |   1.090  |
+|    gbr   |   Gradient Boosting Regressor   |  764.6458 | 2.449865e+06 |  1544.3382 |   0.9762  | 0.0783 | 0.0583 |   0.288  |
+|    dt    |     Decision Tree Regressor     |  946.3401 | 3.350058e+06 |  1811.0705 |   0.9672  | 0.1034 | 0.0756 |   0.040  |
+|    ada   |        AdaBoost Regressor       | 1997.1826 | 1.710448e+07 |  4091.7565 |   0.8350  | 0.1895 | 0.1511 |   0.251  |
+|    knn   |      K Neighbors Regressor      | 3072.0318 | 3.642699e+07 |  6017.2046 |   0.6421  | 0.3636 | 0.2323 |   0.086  |
+|    omp   |   Orthogonal Matching Pursuit   | 3317.3424 | 8.643676e+07 |  9045.7885 |   0.1344  | 0.2823 | 0.2209 |   0.026  |
+|   llar   |   Lasso Least Angle Regression  | 6540.9142 | 1.144871e+08 | 10682.7674 |  -0.1241  | 0.7130 | 0.5636 |   0.281  |
+|   lasso  |         Lasso Regression        | 6540.9147 | 1.144871e+08 | 10682.7665 |  -0.1241  | 0.7130 | 0.5636 |   0.025  |
+|    en    |           Elastic Net           | 6540.9147 | 1.144871e+08 | 10682.7665 |  -0.1241  | 0.7130 | 0.5636 |   0.025  |
+|   dummy  |         Dummy Regressor         | 6540.9142 | 1.144871e+08 | 10682.7674 |  -0.1241  | 0.7130 | 0.5636 |   0.021  |
+|   ridge  |         Ridge Regression        | 3376.7759 | 4.409370e+08 | 17429.1601 |  -3.0382  | 0.2235 | 0.1734 |   0.026  |
+|    br    |          Bayesian Ridge         | 3464.5342 | 6.180348e+08 | 19047.2745 |  -4.5803  | 0.2244 | 0.1745 |   0.028  |
+|   huber  |         Huber Regressor         | 3490.0167 | 7.900161e+08 | 19860.5244 |  -6.0721  | 0.2254 | 0.1729 |   0.118  |
+|    lr    |        Linear Regression        | 3566.8112 | 8.908481e+08 | 21034.8582 |  -6.9766  | 0.2253 | 0.1755 |   0.309  |
+|    par   |   Passive Aggressive Regressor  | 8585.4060 | 5.154119e+10 | 94736.3961 | -439.8984 | 0.2947 | 0.2745 |   0.031  |
+
+
+<br><br>
+
+---
+
+### 모형 평가 
+
+- 최적의 모델 확인 후 평가 역시 코드 한줄 ㅠㅠ 감동
+
+
+```python
+plot_model(best)
+```
+
+![plot_model](/../../imeges/python/plot_model.png)
+
+
+<br><br>
+
+
+```python
+plot_model(best, plot = "feature")
+```
+
+![pycarat_plot_model_feature](/../../imeges/python/pycarat_plot_model_feature.png)
+
+<br><br>
+
+---
+
+### 모형 저장, 모형 배포
+  - MLOps 개념, RestAPI, Flask
+  
+```python
+finalize_best = finalize_model(best)
+
+#save model
+save_model(finalize_best, "diamond_pipeline")
+```
+
+
+>Transformation Pipeline and Model Successfully Saved
+(Pipeline(memory=None,
+          steps=[('dtypes',
+                  DataTypes_Auto_infer(categorical_features=[],
+                                       display_types=True, features_todrop=[],
+                                       id_columns=[], ml_usecase='regression',
+                                       numerical_features=[], target='Price',
+                                       time_features=[])),
+                 ('imputer',
+                  Simple_Imputer(categorical_strategy='not_available',
+                                 fill_value_categorical=None,
+                                 fill_value_numerical=None,
+                                 numeric_strategy='...
+                                                                          learning_rate=0.1,
+                                                                          max_depth=-1,
+                                                                          min_child_samples=20,
+                                                                          min_child_weight=0.001,
+                                                                          min_split_gain=0.0,
+                                                                          n_estimators=100,
+                                                                          n_jobs=-1,
+                                                                          num_leaves=31,
+                                                                          objective=None,
+                                                                          random_state=2882,
+                                                                          reg_alpha=0.0,
+                                                                          reg_lambda=0.0,
+                                                                          silent='warn',
+                                                                          subsample=1.0,
+                                                                          subsample_for_bin=200000,
+                                                                          subsample_freq=0),
+                                                  silent='warn', subsample=1.0,
+                                                  subsample_for_bin=200000,
+                                                  subsample_freq=0)]],
+          verbose=False), 'diamond_pipeline.pkl')
+
+<br><br>
+
+---
+
+### MLOps
+  + devOPs (개발과 운영 팀이 별도로 있었음.)
+  +자동화 되면서 같이 됨.
+  MLOps dash board
+
+<br>
+
+```python
+!pip install mlflow --quiet
+!pip install pyngrok --quiet
+
+import mlflow
+
+with mlflow.start_run(run_name="MLflow on Colab"):
+  mlflow.log_metric("m1", 2.0)
+  mlflow.log_param("p1", "mlflow-colab")
+
+# run tracking UI in the background
+get_ipython().system_raw("mlflow ui --port 5000 &") # run tracking UI in the background
+
+
+# create remote tunnel using ngrok.com to allow local port access
+# borrowed from https://colab.research.google.com/github/alfozan/MLflow-GBRT-demo/blob/master/MLflow-GBRT-demo.ipynb#scrollTo=4h3bKHMYUIG6
+
+from pyngrok import ngrok
+
+# Terminate open tunnels if exist
+ngrok.kill()
+
+# Setting the authtoken (optional)
+# Get your authtoken from https://dashboard.ngrok.com/auth
+NGROK_AUTH_TOKEN = ""
+ngrok.set_auth_token(NGROK_AUTH_TOKEN)
+
+# Open an HTTPs tunnel on port 5000 for http://localhost:5000
+ngrok_tunnel = ngrok.connect(addr="5000", proto="http", bind_tls=True)
+print("MLflow Tracking UI:", ngrok_tunnel.public_url)
+```
+<div style="border: 1px solid gold;background-color: lightyellow; margin: 1.5px">  
+  |████████████████████████████████| 745 kB 5.4 MB/s    <br>
+  Building wheel for pyngrok (setup.py) ... done   <br>
+---------------------------------------  <br>
+Exception                                 Traceback (most recent call last)  <br>
+<ipython-input-8-054256cc92ef> in <module>()  <br>
+      4 import mlflow  <br>
+      5   <br>
+----> 6 with mlflow.start_run(run_name="MLflow on Colab"):  <br>
+      7   mlflow.log_metric("m1", 2.0)   <br>
+      8   mlflow.log_param("p1", "mlflow-colab")  <br> 
+
+<br>
+
+/usr/local/lib/python3.7/dist-packages/mlflow/tracking/fluent.py in start_run(run_id, experiment_id, run_name, nested, tags)
+<br>    229                 + "current run with mlflow.end_run(). To start a nested "
+<br>    230                 + "run, call start_run with nested=True"
+<br> --> 231             ).format(_active_run_stack[0].info.run_id)
+<br>    232         )
+<br>    233     client = MlflowClient()
+<br>
+<br> Exception: Run with UUID 3cbca838cdd44eac8620700ac1929a64 is already active. <br>
+To start a new run, first end the current run with mlflow.end_run(). <br>
+To start a nested run, call start_run with nested=True <br>
+
+<br></div>
+
+<p style="color:#E84D4D;font-size:110%;"> 
+배포 하는 것이 마지막 단계인데,  
+구글 코랩에서 안먹는 다는 것이 함정이라고 한다.   
+ 
+</p>
+
+언젠간 내가 스스로 할 수 있는 날이 오지 않을까 한다.  
