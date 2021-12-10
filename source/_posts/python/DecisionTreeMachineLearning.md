@@ -74,20 +74,174 @@ Decision Tree MachineLearning
 
 - 정보이득을 최대로 하는 옵션을 찾는다. 
 
+<br><br><br>
+
+
+---
+
+### 실습 
+
+
 ```python
-from sklearn.tree import DscisionTreeClassifier
+from sklearn import datasets 
+import numpy as np 
 
-tree_Entropy = DecisionTreeClassifier(
-   criterion = "entropy",
-   max_depth = 3)
+iris = datasets.load_iris()
+X = iris.data[:, [2, 3]]
+y = iris.target 
 
-tree_Entropy
+print("클래스 레이블:", np.unique(y))
 ```
+
+>클래스 레이블: [0 1 2]
+
+
+```python
+from sklearn.model_selection import train_test_split
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size = 0.3, random_state = 1
+)
+
+print("y 레이블 갯수:", np.bincount(y))
+```
+
+>y 레이블 갯수: [50 50 50]
+
+<br><br>
+
+
+
+#### 시각화
+
+```python
+from matplotlib.colors import ListedColormap
+import matplotlib.pyplot as plt
+
+def plot_decision_regions(X, y, classifier, test_idx=None, resolution=0.02):
+
+    # 마커와 컬러맵을 설정합니다.
+    markers = ('s', 'x', 'o', '^', 'v')
+    colors = ('red', 'blue', 'lightgreen', 'gray', 'cyan')
+    cmap = ListedColormap(colors[:len(np.unique(y))])
+
+    # 결정 경계를 그립니다.
+    x1_min, x1_max = X[:, 0].min() - 1, X[:, 0].max() + 1
+    x2_min, x2_max = X[:, 1].min() - 1, X[:, 1].max() + 1
+    xx1, xx2 = np.meshgrid(np.arange(x1_min, x1_max, resolution),
+                           np.arange(x2_min, x2_max, resolution))
+    Z = classifier.predict(np.array([xx1.ravel(), xx2.ravel()]).T)
+    Z = Z.reshape(xx1.shape)
+    plt.contourf(xx1, xx2, Z, alpha=0.3, cmap=cmap)
+    plt.xlim(xx1.min(), xx1.max())
+    plt.ylim(xx2.min(), xx2.max())
+
+    for idx, cl in enumerate(np.unique(y)):
+        plt.scatter(x=X[y == cl, 0], 
+                    y=X[y == cl, 1],
+                    alpha=0.8, 
+                    c=colors[idx],
+                    marker=markers[idx], 
+                    label=cl, 
+                    edgecolor='black')
+
+    # 테스트 샘플을 부각하여 그립니다.
+    if test_idx:
+        X_test, y_test = X[test_idx, :], y[test_idx]
+
+        plt.scatter(X_test[:, 0],
+                    X_test[:, 1],
+                    c='',
+                    edgecolor='black',
+                    alpha=1.0,
+                    linewidth=1,
+                    marker='o',
+                    s=100, 
+                    label='test set')
+```
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 지니 불순도 함수
+def gini(p):
+    return p * (1 - p) + (1 - p) * (1 - (1 - p))
+
+
+# 엔트로피 함수 
+def entropy(p):
+    return - p * np.log2(p) - (1 - p) * np.log2((1 - p))
+
+# 분류 오차
+def error(p):
+    return 1 - np.max([p, 1 - p])
+
+x = np.arange(0.0, 1.0, 0.01)
+
+ent = [entropy(p) if p != 0 else None for p in x]
+sc_ent = [e * 0.5 if e else None for e in ent]
+err = [error(i) for i in x]
+
+fig = plt.figure()
+ax = plt.subplot(111)
+for i, lab, ls, c, in zip([ent, sc_ent, gini(x), err], 
+                          ['Entropy', 'Entropy (scaled)', 
+                           'Gini Impurity', 'Misclassification Error'],
+                          ['-', '-', '--', '-.'],
+                          ['black', 'lightgray', 'red', 'green', 'cyan']):
+    line = ax.plot(x, i, label=lab, linestyle=ls, lw=2, color=c)
+
+ax.legend(loc='upper center', bbox_to_anchor=(0.5, 1.15),
+          ncol=5, fancybox=True, shadow=False)
+
+ax.axhline(y=0.5, linewidth=1, color='k', linestyle='--')
+ax.axhline(y=1.0, linewidth=1, color='k', linestyle='--')
+plt.ylim([0, 1.1])
+plt.xlabel('p(i=1)')
+plt.ylabel('Impurity Index')
+plt.show()
+```
+
+![Impurity_Index](/../../imeges/python/Impurity_Index.png)
+
+
+
+
+---
+
+- 정보 이득을 최대로 하는 옵션을 찾아서 
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+
+tree_gini = DecisionTreeClassifier(criterion="gini", max_depth=3)
+tree_gini.fit(X_train, y_train)
+```
+
+>DecisionTreeClassifier(max_depth=3)
+> 
+
+
+```python
+X_combined = np.vstack((X_train, X_test))
+y_combined = np.hstack((y_train, y_test))
+
+plot_decision_regions(X_combined, y_combined, classifier=tree_gini, test_idx = range(105, 150))
+plt.xlabel("petal length")
+plt.ylabel("petal width")
+plt.legend(loc = "upper left")
+plt.tight_layout()
+plt.show()
+```
+
+![tree_gini_layout](../../imeges/python/tree_gini_layout.png)
+
+
 
 - gini 로 1개 Entripy 로 1개 짜서 해야함 
 + `gini`: default 
-+ 
-
++ `Entropy` : 도 해보고 비교
 
 ```python
 tree_Entropy.fit(x_train, y_train)
@@ -108,18 +262,18 @@ plt.show
 ```python
 from pydotplus import graph_from_dot_data
 from sklearn.tree import export_graphviz
- 
-dot_data = export_graphviz(tree,
-                            filled=True, 
-                            rounded=True,
-                            class_names=['Setosa', 
-                                         'Versicolor',
-                                         'Virginica'],
-                            feature_names=['petal length', 
-                                           'petal width'],
-                            out_file=None) 
+
+dot_data = export_graphviz(tree_entropy,
+                           filled=True, 
+                           rounded=True,
+                           class_names=['Setosa', 
+                                        'Versicolor',
+                                        'Virginica'],
+                           feature_names=['petal length', 
+                                          'petal width'],
+                           out_file=None) 
 graph = graph_from_dot_data(dot_data) 
-graph.write_png('tree.png') 
+graph.write_png('gini_tree.png') 
 ```
 
 ![Entropy_zero](/../../imeges/python/Entropy_zero.png)
@@ -137,3 +291,8 @@ entropy가 0이 되면 더이상 나눌 필요가 없다.
 
 
 [머신러닝 배우기](https://asummerz.tistory.com/16)
+
+
+<아직 안배운 부분>
++ 스태킹 알고리즘 (앙상블)
++ 
