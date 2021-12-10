@@ -11,7 +11,7 @@ tags:
 - Rss
 ---
 
-##Chepter 5 _파이썬 머신러닝 완벽 가이드 
+## Chepter 5 _파이썬 머신러닝 완벽 가이드 
    ref. & copyright(c) [Book](https://kr.mathworks.com/content/dam/mathworks/ebook/gated/kr-machine-learning-ebook-all-chapters.pdf)
 
 <br>
