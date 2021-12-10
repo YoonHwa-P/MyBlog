@@ -70,5 +70,70 @@ Decision Tree MachineLearning
 
 ![PythonMacnineLeanting_E03](/../../imeges/python/PythonMacnineLeanting_E03.png)
 
+---
+
+- 정보이득을 최대로 하는 옵션을 찾는다. 
+
+```python
+from sklearn.tree import DscisionTreeClassifier
+
+tree_Entropy = DecisionTreeClassifier(
+   criterion = "entropy",
+   max_depth = 3)
+
+tree_Entropy
+```
+
+- gini 로 1개 Entripy 로 1개 짜서 해야함 
++ `gini`: default 
++ 
 
 
+```python
+tree_Entropy.fit(x_train, y_train)
+
+x_combined = np.vstack((x_train, x_test))
+y_combined = np.hstack((y_trin, y_test))
+
+plot_decision_regions(x_combined, y_combined, 
+                      classifier= tree_Entropy, test_idx = range(105, 150) )
+
+plt.legend(loc= "upper left")
+plt.tight_layout()
+plt.show
+```
+
+- 모형을 도식화로 
+
+```python
+from pydotplus import graph_from_dot_data
+from sklearn.tree import export_graphviz
+ 
+dot_data = export_graphviz(tree,
+                            filled=True, 
+                            rounded=True,
+                            class_names=['Setosa', 
+                                         'Versicolor',
+                                         'Virginica'],
+                            feature_names=['petal length', 
+                                           'petal width'],
+                            out_file=None) 
+graph = graph_from_dot_data(dot_data) 
+graph.write_png('tree.png') 
+```
+
+![Entropy_zero](/../../imeges/python/Entropy_zero.png)
+
+entropy가 0이 되면 더이상 나눌 필요가 없다. 
+
++ sklearn에서는 분류오차는 없다. 
+
+
+
+- 지니 와 엔트로피 두개를 보고 더 나은 것을 선택 
+
+![Entropy_gini](/../../imeges/python/Entropy_gini.png)
+
+
+
+[머신러닝 배우기](https://asummerz.tistory.com/16)
