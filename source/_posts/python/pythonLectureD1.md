@@ -149,3 +149,57 @@ $ which python
 
 
 ![raise_ValueError](/../../imeges/python/raise_ValueError.png)
+
+
+### terminal에서 pandas import 하는 방법 
+
+```gitbash
+brill@DESKTOP-1IO6A45 MINGW64 ~/Desktop/PyThon_Function (master)
+$ pip install pandas
+```
+
+> Requirement already satisfied: pandas in c:\users\brill\desktop\python_function\venv\lib\site-packages (1
+.3.4)
+Requirement already satisfied: pytz>=2017.3 in c:\users\brill\desktop\python_function\venv\lib\site-packa
+ges (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in c:\users\brill\desktop\python_function\venv\lib\site-pack
+ages (from pandas) (1.21.4)
+Requirement already satisfied: python-dateutil>=2.7.3 in c:\users\brill\desktop\python_function\venv\lib\
+site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in c:\users\brill\desktop\python_function\venv\lib\site-packages
+(from python-dateutil>=2.7.3->pandas) (1.16.0)
+WARNING: You are using pip version 21.1.2; however, version 21.3.1 is available.
+You should consider upgrading via the 'C:\Users\brill\Desktop\PyThon_Function\venv\Scripts\python.exe -m pip install --upgrade pip' c
+ommand.
+(venv)
+
+
+
+pandas  등을 하나씩 install 하는 방법도 있지만, file(requirements)
+를 만들어 install 하는 방법도 있다. 
+
+```python
+# /c/Users/brill/Desktop/PyThon_Function/venv/Scripts/python
+# -*- coding : utf-8 -*-
+
+"""
+모방 : 부모 클래스를 모방 후 자식이 창조
+"""
+
+import pandas as pd
+
+class newDataFrame(pd.dataFrame):
+    pass
+
+temp_dic = {"A": [1, 2, 3],
+            "B":[4, 5, 6]}
+
+if __name__ == "__main__":
+    temp = pd.DataFrame(temp_dic, columns=["A","B"])
+    print(temp)
+    print("-----------------")
+    temp2 = newDataFrame(temp_dic, columns=["B", "A"])
+    print(temp2)
+```
+
+
