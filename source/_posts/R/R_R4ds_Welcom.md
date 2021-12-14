@@ -47,6 +47,13 @@ R을 이용한 data science를 해 봅시다.
 - https://cloud.r-project.org,
 #### 1.4.2 RStudio
 - http://www.rstudio.com/download.
+- https://cran.r-project.org/bin/windows/Rtools/rtools40.html
+- 위에 Rtools(64 bit) 실행
+
+
+- 설치 해야 할 programs : 확인
+![Rprograms_install](/../../imeges/R_images/Rprograms_install.png)
+
 #### 1.4.3 The tidyverse
 
 ```r

@@ -161,3 +161,6 @@ if __name__ == "__main__":
     except tipExcept:
         print("Error Tip")
 ```
+
+여전히  Error가 나는 코드 
+나는 Exception 안됨
