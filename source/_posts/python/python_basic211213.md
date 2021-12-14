@@ -90,5 +90,114 @@ False
   - < : __lt__()
 
 
+### __eq()__ 함수 사용하기
+
+```python
+# /c/Users/brill/Desktop/PyThon_Function/venv/Scripts/python
+# -*- coding : UTF-8
+
+class Bank:
+
+    #instance attribute
+    def __init__(self, cust_id, balance=0):
+        self.balance, self.cust_id = balance, cust_id
+
+
+    #instance methode
+    def withdraw(self, amount):
+        self.balance -= amount
+
+    def __eq__(self, other):
+        print("__eq()__ is called")
+        return (self.cust_id == other.cust_id) and (type(self) == type(other))
+
+class Phone:
+
+    def __init__(self, cust_id):
+        self.cust_id = cust_id
+
+    def __eq__(self, other):
+        return self.cust_id == other.cust_id
+
+
+if __name__ == "__main__":
+    account01 = Bank(1234)
+    phone01 = Phone(1234)
+
+    print(account01 == phone01)
+
+```
+> __eq()__ is called
+False
+> 
+
+eq를 불러와서 같은지 확인 할 수 있다. 
+
+
+### 접근기록, log 기록 확인하기
+
+
+```python
+# /c/Users/brill/Desktop/PyThon_Function/venv/Scripts/python
+# -*- coding : UTF-8
+
+
+class Bank:
+    def __init__(self, cust_id, name, balance = 0):
+        self.cust_id, self.name, self.balance = cust_id, name, balance
+
+    def __str__(self):
+        cust_str = """
+        customer:
+            cust_id : {cust_id}
+            name : {name}
+            balance : {balance}
+        """.format(cust_id = self.cust_id, name = self.name, balance= self.balance)
+
+        return cust_str
+
+if __name__ == "__main__":
+    bank_cust = Bank(123, "YH")
+    print(bank_cust)
+
+```
+
+- DB에 저장 되지 않지만, 로그 기록을 확인 할 수 있다. 
+
+
+
+### str() and repr() 비교
+
+
+```python
+# /c/Users/brill/Desktop/PyThon_Function/venv/Scripts/python
+# -*- coding : UTF-8
+
+
+class Bank:
+    def __init__(self, cust_id, name, balance = 0):
+        self.cust_id, self.name, self.balance = cust_id, name, balance
+
+    def __str__(self):
+        cust_str = """
+        customer:
+            cust_id : {cust_id}
+            name : {name}
+            balance : {balance}
+        """.format(cust_id = self.cust_id, name = self.name, balance= self.balance)
+
+        return cust_str
+
+    def __repr__(self):
+        cust_str = "Bank({cust_id}, '{name}', {balance})".format(cust_id = self.cust_id, name = self.name, balance= self.balance)
+        return cust_str
+
+if __name__ == "__main__":
+    bank_cust = Bank(123, "YH")
+    print(str(bank_cust))
+    print(repr(bank_cust))
+```
+
+[difference of str() and repr()](https://www.codingem.com/str-vs-repr-in-python/)
 
 
