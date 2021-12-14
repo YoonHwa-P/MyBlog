@@ -24,6 +24,8 @@ tags:
 
 ---
 
+## 앞서서 설치한 files 바탕으로 TextMining을 해 보자. 
+
 ### data 수집
 
 
@@ -34,7 +36,7 @@ tags:
 ### data  전처리 
 
 
-![정규표현식](../../imeges/R_images/Regular_Expressions_R.png)
+![정규표현식](/../../imeges/R_images/Regular_Expressions_R.png)
 
 [cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
 

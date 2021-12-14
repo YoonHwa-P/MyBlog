@@ -163,4 +163,17 @@ pos(sentence = text2)
 > [1] "안녕/NNG"   "하/XSV"     "세요/EP+EF" "?/SF"       "!/SF"    <br>
 
 
+[강사님 도움 받기](https://dschloe.github.io/r/newpkgs/rcppmecab_install/)
+[강사님 강의 듣기 ](https://www.udemy.com/course/beginner_with_r/?ranMID=39197&ranEAID=je6NUbpObpQ&ranSiteID=je6NUbpObpQ-KP3qadbY6_OuEVyg83bGDg&LSNPUBID=je6NUbpObpQ&utm_source=aff-campaign&utm_medium=udemyads)
 
+
+<p style="color:#F9C5C5;font-size:40%;">
+<br> 페이가 안맞아서 그런가 우리 수업에서는 이렇게 안해준다.
+<br> 못가르치는 것이 아니라 안가르치는 것이어서 화가 나지만, 각자의 사정이 있는것이겠지.
+<br> 나도 국비 과정 들으면서 너무 많은 것을 바란건 아닌지 생각 해 본다. 
+<br>
+</p>
+
+<p style="color:#E84D4D;font-size:150%;">
+설치/  확인 끝 
+</p>
