@@ -13,30 +13,43 @@ tags:
 
 앞선 내용 :
 <br>[Text Mining in R (01)](https://yoonhwa-p.github.io/2021/12/14/R/textmining(01)/)
+: library(KoNLP), useNIADic() 사용/설치 확인
 <br>[Text Mining in R (02)](https://yoonhwa-p.github.io/2021/12/14/R/textmining(02)/)
+: Rcppmecab 설치, 확인
+<br>
 <br>다음 내용 :
-<br>[Text Mining in R (04)]()
+<br>[Lecture](https://github.com/YoonHwa-P/R/blob/main/7_day_textmining/ch01_morphological_analysis.r)
 
-### MeCab 설치
+<br><br>
 
-Mecab-ko 형태소 분석기 사용 위해서는 Rcppmecab 패키지를 설치해야 함.
+---
 
-RcppMeCab 패키지 설치 앞서서 설치할 파일이 있음.
+### data 수집
 
-[URL:](https://github.com/junhewk/RcppMeCab/blob/master/README_kr.md)
 
-해당 깃허브에서 설치해야 할 파일을 다운로드 받은 후, 
+<br><br>
 
-“C:\mecab” 경로에 설치한다.
+---
 
-- 이 과정에서 
-![Rcppmecab](/../../imeges/R_images/Rcppmecab.png)
+### data  전처리 
 
-- 위의 file내의 폴더 형태와, file 명, 경로 가 같지 않으면 에러가 난다. 
 
+![정규표현식](../../imeges/R_images/Regular_Expressions_R.png)
+
+[cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
 
 
 ---
+
+
+### Tokenize
+
+[tidytextmining](https://www.tidytextmining.com/)
+
+```R
+install.packages("tidytext")
+```
+
 
 
 

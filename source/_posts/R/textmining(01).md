@@ -608,7 +608,7 @@ The downloaded binary packages are in
 ---
 
 
-### 형태소 분리기 설치 후 확인 
+### 명사 분리기 설치 후 확인 
 
 [New](https://news.v.daum.net/v/20211214145504242)
 
