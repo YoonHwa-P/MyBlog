@@ -27,4 +27,13 @@
 
 ![programLanguage](source/imeges/MyBlogIMG/img_2.png)
 
+- [Kaggle competition](https://www.kaggle.com/yoonhwayam/newbies-as-a-data-scientist-in-east-asia/notebook)
+
 <br><br>
+
+![certificate_OA](source/imeges/MyBlogIMG/certificate_OA.png)
+<br>
+![Education_training](source/imeges/MyBlogIMG/Education_training.png)
+<br>
+![career_history](source/imeges/MyBlogIMG/career_history.png)
+<br>
