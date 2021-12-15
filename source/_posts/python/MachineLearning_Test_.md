@@ -397,7 +397,7 @@ plt.show()
 
 
     
-![train_data](../../imeges/python/output_22_0.png)
+![train_data](/../../imeges/python/output_22_0.png)
     
 
 
@@ -559,7 +559,7 @@ plt.show()
 
 
     
-![Review_Histogram](../../imeges/python/output_43_1.png)
+![Review_Histogram](/../../imeges/python/output_43_1.png)
     
 
 
@@ -679,7 +679,7 @@ plt.show()
     리뷰의 평균 길이 : 15.307521459871541
 
     
-![LengthOfReview](../../imeges/python/output_58_1.png)
+![LengthOfReview](/../../imeges/python/output_58_1.png)
 
 
 리뷰의 최대 길이는 85, 평균 길이는 약 15입니다.
