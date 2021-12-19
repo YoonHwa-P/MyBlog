@@ -18,6 +18,7 @@ tags:
 
 ```R
 # ---- 데이터 불러오기 ----
+
 library(ggplot2) # 시각화 코드
 # install.packages("dplyr")
 # install.packages("tidyr")
@@ -215,4 +216,7 @@ plot.roc(roc_glm, print.auc=TRUE)
     6. ML 모형 진행 (다른 모형을 진행 해도 된다. )
 
 
+---
 
+하지만, 혹시 지금까지 배운 내용이 너무 어렵다면 python으로만 하는 것도 
+나쁘지 않다. 
