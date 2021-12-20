@@ -42,7 +42,6 @@ tags:
 ```python
 !pip install pycaret
 
-
 # !pip install pycaret==2.0
 ```
 
