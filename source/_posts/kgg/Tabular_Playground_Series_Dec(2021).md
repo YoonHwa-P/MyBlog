@@ -68,9 +68,9 @@ Slope - 경사 기울기 <br>
 Horizontal_Distance_To_Hydrology - 해수면까지의 수평거리
 <br> Vertical_Distance_To_Hydrology - 해수면까지의 수직거리
 <br> Horizontal_Distance_To_Roadways - 도로와의 수평 거리 
-<br> Hillshade_9am (0 to 255 index) - 여름, 오전 9시 언덕 모양 지수
-<br> Hillshade_Noon (0 to 255 index) - 여름, 정오 언덕 모양 지수 
-<br> Hillshade_3pm (0 to 255 index) - 여름, 오후 3시 언덕 모양 지수
+<br> Hillshade_9am (0 to 255 index) - 여름, 오전 9시 Hillshade 
+<br> Hillshade_Noon (0 to 255 index) - 여름, 정오 Hillshade  
+<br> Hillshade_3pm (0 to 255 index) - 여름, 오후 3시 Hillshade
 <br> Horizontal_Distance_To_Fire_Points - 산불 발화점까지 수평거리
 <br><br>
 
@@ -113,7 +113,7 @@ The wilderness areas are:
 <br> 4 Ratake family - Rock outcrop complex, rubbly.
 <br> 5 Vanet family - Rock outcrop complex complex, rubbly.
 <br> 6 Vanet - Wetmore families - Rock outcrop complex, stony.
-<br> 7 Gothic family.
+<br> 7 Gothic family. **Na**
 <br> 8 Supervisor - Limber families complex.
 <br> 9 Troutville family, very stony.
 <br> 10 Bullwark - Catamount families - Rock outcrop complex, rubbly.
@@ -121,7 +121,7 @@ The wilderness areas are:
 <br> 12 Legault family - Rock land complex, stony.
 <br> 13 Catamount family - Rock land - Bullwark family complex, rubbly.
 <br> 14 Pachic Argiborolis - Aquolis complex.
-<br> 15 unspecified in the USFS Soil and ELU Survey.
+<br> 15 unspecified in the USFS Soil and ELU Survey. **(Na)**
 <br> 16 Cryaquolis - Cryoborolis complex.
 <br> 17 Gateview family - Cryaquolis complex.
 <br> 18 Rogert family, very stony.
@@ -151,10 +151,14 @@ The wilderness areas are:
 
 </div>
 
-- stony : 돌처럼 딱딱한
-- rubbly: 쓰레기 같은 
-- outcrop : 노출
+- 경사(Slope) : 어떤 지점의 지반이 수평을 기준으로 몇도 기울어져 있는가 
+  - θ(theta) 로 표현
+  - 각이 클 수록 지반의 경사가 급하고 각이 0이면 평편한 지반 
+- 향(Aspect):  지반의 경사면이 어디를 향하는가
+  - 북: 0도, 동: 90도, 남: 180도, 서: 270도.
+  - 완전히 평편할 경우 GIS 시스템마다 다른 값, Null 가능,  (-1과 같은 값이 적당)
 
+[Ref.](http://www.gisdeveloper.co.kr/?p=894)
 
 ---
 
@@ -163,4 +167,6 @@ The wilderness areas are:
 ![TPS12_Evaluation](/../../imeges/kgg/TPS12_Evaluation.png)
 
 각각의 ID 를 cover type 과 Matching하여 file format 형태를 만들어 제출 하면 됩니다. 
+
+
 
