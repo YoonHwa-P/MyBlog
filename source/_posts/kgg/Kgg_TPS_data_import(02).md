@@ -6,7 +6,7 @@ categories:
     - plotly
 tags:
 - kaggle
-- summary
+- soil
 - kaggle_dictation
 ---
 
@@ -16,6 +16,13 @@ tags:
 [origin of dictation](https://www.kaggle.com/andrej0marinchenko/tps12-21-data-visualization)
 
 ---
-[Kgg_TPS 01]()
+이전 포스팅 : 
+
+[Kgg_TPS 01](https://yoonhwa-p.github.io/2021/12/20/kgg/Tabular_Playground_Series_Dec(2021)/)
 
 ## Description of competition 
+
+
+- 유투브, 인프런 강의  : self branding
+- data analysis : 
+- 자격증 : ADsP 데이터 분석 준 전문가 

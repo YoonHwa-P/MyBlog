@@ -15,7 +15,8 @@ tags:
 <br><br>
 [origin of dictation](https://www.kaggle.com/andrej0marinchenko/tps12-21-data-visualization)
 ---
-[Kgg_TPS 02]()
+이어지는 포스팅 :  
+[Kgg_TPS 02](https://yoonhwa-p.github.io/2021/12/20/kgg/Kgg_TPS_data_import(02)/)
 
 
 
@@ -71,20 +72,25 @@ Horizontal_Distance_To_Hydrology - 해수면까지의 수평거리
 <br> Hillshade_Noon (0 to 255 index) - 여름, 정오 언덕 모양 지수 
 <br> Hillshade_3pm (0 to 255 index) - 여름, 오후 3시 언덕 모양 지수
 <br> Horizontal_Distance_To_Fire_Points - 산불 발화점까지 수평거리
-<br>
+<br><br>
+
 <p style="color:#4E3BC6;font-size:130%;"> Wilderness_Area </p> : 야생지역 <br>
 - 4 개의 columns (토양 유형 지정) <br>
 + 0 = 없음 <br>
-+ 1 = 있음 <br>
++ 1 = 있음 <br><br>
+
 <p style="color:#3BC669;font-size:130%;"> Soil_Type </p> : 토양 유형 지정
 <br>  - 40 개의  columns 
 <br>    + 0 = 없음 
-<br>    + 1 = 있음
+<br>    + 1 = 있음 <br>
+
 <br> <p style="color:#C6563B;font-size:130%;"> Cover_Type </p> FCT 지정
 br>  - 7 개  columns 
 <br>    + 0 = 없음 
 <br>    + 1 = 있음
-<br><br><br>
+
+<br><br>
+
 <p style="color:#4E3BC6;font-size:130%;">
 The wilderness areas are:
 </p>
