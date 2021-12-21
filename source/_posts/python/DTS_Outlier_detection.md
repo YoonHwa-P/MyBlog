@@ -7,10 +7,14 @@ categories:
 tags:
 - python
 - machineLeaning
-- EMD
+- EDA
 ---
 
-§ [변수 1개를 이용하여 이상값 찾기 ]()
+§ [결측치 찾기 이론](https://yoonhwa-p.github.io/2021/12/21/python/DTS_MissingValue)
+
+§ [결측치 찾기 실습](https://yoonhwa-p.github.io/2021/12/21/python/DTS_MissingValue2)
+
+§ [변수 1개를 이용하여 이상값 찾기 ](https://yoonhwa-p.github.io/2021/12/21/python/DTS_Outlier_detection)
 
 § [변수 2개를 이용하여 이상값 찾기 ]()
 
