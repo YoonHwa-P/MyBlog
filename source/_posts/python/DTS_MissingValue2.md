@@ -36,7 +36,7 @@ covidtotals = pd.read_csv("../input/covid-data/covidtotals.csv")
 covidtotals.head()
 ```
 
-![MissingValue_covidtotals](../../imeges/python/MissingValue_covidtotals.png)
+![MissingValue_covidtotals](/../../imeges/python/MissingValue_covidtotals.png)
 
 ### data info
 
@@ -44,7 +44,7 @@ covidtotals.head()
 covidtotals.info()
 ```
 
-![MissingValue_covid_info](../../imeges/python/MissingValue_covid_info.png)
+![MissingValue_covid_info](/../../imeges/python/MissingValue_covid_info.png)
 
 ### data division
 
@@ -62,7 +62,7 @@ demo_vars = ["population", "pop_density", "median_age", "gdp_per_capita", "hosp_
 covidtotals[demo_vars].isnull().sum(axis = 0) # column별로 결측치를 측정
 ```
 
-![MissingValue_covid_isnullsum](../../imeges/python/MissingValue_covid_isnullsum.png)
+![MissingValue_covid_isnullsum](/../../imeges/python/MissingValue_covid_isnullsum.png)
 
 
 ### case_vars column별로 결측치를 측정
@@ -71,7 +71,7 @@ covidtotals[demo_vars].isnull().sum(axis = 0) # column별로 결측치를 측정
 covidtotals[case_vars].isnull().sum(axis = 0) # column별로 결측치를 측정
 ```
 
-![MissingValue_covid_nullSum](../../imeges/python/MissingValue_covid_nullSum.png)
+![MissingValue_covid_nullSum](/../../imeges/python/MissingValue_covid_nullSum.png)
 
 
 - case_vars 에는 결측치가 없지만, demo_vars에는 결측치가 있는 것을 확인 할 수 있다. 
@@ -112,7 +112,7 @@ dtype: int64
 covidtotals.loc[demovars_misscnt >= 3, ["location"] + demo_vars].T
 
 ```
-![MissingValue_covid_Location](../../imeges/python/MissingValue_covid_Location.png)
+![MissingValue_covid_Location](/../../imeges/python/MissingValue_covid_Location.png)
 
 
 
@@ -139,7 +139,7 @@ temp[case_vars].isnull().sum(axis = 0)
 
 ```
 
-![MissingValue_covid_Del](../../imeges/python/MissingValue_covid_Del.png)
+![MissingValue_covid_Del](/../../imeges/python/MissingValue_covid_Del.png)
 
 ---
 
