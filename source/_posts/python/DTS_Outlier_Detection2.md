@@ -1,6 +1,6 @@
 ---
 title: "DTS: Outlier detection02"
-date: 2021-12-21 15:54:49
+date: 2021-12-22 10:54:49
 categories:
 - python
 - machineLeaning
@@ -18,6 +18,7 @@ tags:
 
 § [변수 2개를 이용하여 이상값 찾기 ]()
 
+§ [data 출처](https://ourworldindata.org/coronavirus-source-data)
 ---
 
 ## 이상값 찾기 
@@ -29,4 +30,29 @@ tags:
 # 상관관계 확인
 covidtotals.corr(method = "pearson")
 ```
+- corr <|0.2| : 약한 상관관계
+- corr < |0.3~0.6| : 중간정도의 상관관계
+- 상관관계를 확인 할 수 있다. 
+
+
+### crosstab
+- 총 사망자 분위수별 총 확진자 분위수의 크로스 탭 표시 
+    - case: 확진자수
+    - deaths: 사망자 수 
+
+```python
+pd.crosstab(covidtotalsonly["total_cases_q"], 
+            covidtotalsonly["total_deaths_q"])
+```
+
+
+![Outlier_crosstab](/../../imeges/python/Outlier_crosstab.png)
+
+- 매우 낮은 수로 사망 했지만, 확진이 중간 = 이상치
 - 
+
+```python
+covidtotals.loc[(covidtotalsonly["total_cases_q"]== "very high")
+                & (covidtotalsonly["total_deaths_q"]== "medium")].T
+```
+
