@@ -1,5 +1,5 @@
 ---
-title: "DTS: Outlier detection"
+title: "DTS: Outlier detection01"
 date: 2021-12-21 15:54:49
 categories:
 - python
