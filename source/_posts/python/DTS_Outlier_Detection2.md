@@ -56,3 +56,18 @@ covidtotals.loc[(covidtotalsonly["total_cases_q"]== "very high")
                 & (covidtotalsonly["total_deaths_q"]== "medium")].T
 ```
 
+
+
+```python
+
+fig, ax = plt.subplots()
+sns.regplot(x = "total_cases_pm", y = "total_deaths_pm", data = covidtotals, ax = ax)
+ax.set(xlabel = "Cases Per Million", ylabel = "Deaths Per Million", title = "Total Covid Cases and Deaths per Million by Country")
+ax.ticklabel_format(axis = "x", useOffset=False, style = "plain")
+plt.xticks(rotation=90)
+plt.show()
+```
+
+![Outlier_regplot](/../../imeges/python/Outlier_regplot.png)
+
+
