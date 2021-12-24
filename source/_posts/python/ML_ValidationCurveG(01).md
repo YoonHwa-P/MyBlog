@@ -9,7 +9,12 @@ tags:
 - machineLeaning
 - DTS
 ---
- 
+ § 이전 posting
+
+☞ [PipeLine](https://yoonhwa-p.github.io/2021/12/22/python/DTS_PipeLine/)
+
+☞ [Learning curve](https://yoonhwa-p.github.io/2021/12/24/python/ML_LearningCurveG(01)/)
+
 
 ---
 

@@ -10,6 +10,14 @@ tags:
 - sklearn
 ---
 
+§ 다음 posting
+
+☞ [PipeLine](https://yoonhwa-p.github.io/2021/12/24/python/ML_ValidationCurveG(01)/)
+
+☞ [Learning curve](https://yoonhwa-p.github.io/2021/12/24/python/ML_LearningCurveG(01)/)
+
+---
+
 ## sklearn.pipeline.Pipeline
 
 - class sklearn.pipeline.Pipeline(steps, *, memory=None, verbose=False)

@@ -16,7 +16,7 @@ tags:
 
 § 다음 posting
 
-☞ [PipeLine](https://yoonhwa-p.github.io/2021/12/22/python/DTS_ValidationCurbeG(01)/)
+☞ [PipeLine](https://yoonhwa-p.github.io/2021/12/24/python/ML_ValidationCurveG(01)/)
 
 ---
 
