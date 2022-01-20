@@ -251,14 +251,16 @@ widgets:
             Instagram:
                 icon: fab fa-instagram
                 url: 'https://www.instagram.com/1_haza'
-         # Google AdSense unit configurations
-        - # Where should the widget be placed, left sidebar or right sidebar
-            position: right
-            type: adsense
-            # AdSense client ID
-            client_id: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450'
-            # AdSense AD unit ID
-            slot_id: 'anonymous'
+
+    # Google AdSense unit configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: right
+        type: adsense
+        # AdSense client ID
+        client_id: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450'
+        # AdSense AD unit ID
+        slot_id: 'anonymous'
 
     # Table of contents widget configurations
     -
