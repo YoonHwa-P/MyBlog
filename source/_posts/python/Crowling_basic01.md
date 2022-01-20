@@ -13,6 +13,9 @@ tags:
 
 즐거운 마음으로 크롤링 해 봅시다 !
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450"
+     crossorigin="anonymous"></script>
+
 ---
 
 ### 01. file  준비
