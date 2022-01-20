@@ -22,7 +22,7 @@ head:
         theme_color: 'salmon'
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
-        background_color :
+        background_color : 'black'
         # The preferred display mode for the website
         display: standalone
         # Image files that can serve as application icons for different contexts
@@ -73,7 +73,7 @@ head:
     # Structured data of the page
     # https://developers.google.com/search/docs/guides/intro-structured-data
     structured_data:
-        # Page title (optional)
+        Page title (optional)
         # You should leave this blank for most of the time
         title: 
         # Page description (optional)
@@ -121,7 +121,7 @@ footer:
 
     links:
         Creative Commons:
-            icon: fab fa-creative-commons
+            icon: fab fa-google
             url: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450'
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
@@ -135,6 +135,11 @@ article:
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+        .hljs {
+        background: #1d1f21;
+        color: #c5c8c6;
+            }
+
         theme: atom-one-light
         # Show copy code button
         clipboard: true
