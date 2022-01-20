@@ -44,7 +44,7 @@ from bs4 import BeautifulSoup
 print("library imported")
 ```
 terminal에 library imported가 print 된다. 
-
+ 
 ---
 
 ### 03. 크롤링 : code
