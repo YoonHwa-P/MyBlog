@@ -73,9 +73,8 @@ head:
     # Structured data of the page
     # https://developers.google.com/search/docs/guides/intro-structured-data
     structured_data:
-        'Page title (optional)'
         # You should leave this blank for most of the time
-        title: 
+        title:
         # Page description (optional)
         # You should leave this blank for most of the time
         description: 
