@@ -139,7 +139,7 @@ article:
         # Show copy code button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
-        fold: unfolded
+        fold: folded
     # Whether to show estimated article reading time
     readtime: true
     # Article licensing block
@@ -245,15 +245,21 @@ widgets:
             Facebook:
                 icon: fab fa-facebook
                 url: 'https://facebook.com'
-            Twitter:
-                icon: fab fa-twitter
-                url: 'https://twitter.com'
+            Naver:
+                icon: fab fa-NAVER
+                url: 'https://blog.naver.com/abcdpuh'
             Instagram:
                 icon: fab fa-instagram
                 url: 'https://www.instagram.com/1_haza'
-            RSS:
-                icon: fas fa-rss
-                url: /
+         # Google AdSense unit configurations
+        - # Where should the widget be placed, left sidebar or right sidebar
+            position: right
+            type: adsense
+            # AdSense client ID
+            client_id: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450'
+            # AdSense AD unit ID
+            slot_id: 'anonymous'
+
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -264,7 +270,7 @@ widgets:
         # Whether to collapse sub-headings when they are out-of-view
         collapsed: true
         # Maximum level of headings to show (1-6)
-        depth: 3
+        depth: 2
     # Recommendation links widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -303,15 +309,7 @@ widgets:
         description: 
         # Feedburner ID
         feedburner_id: ''
-    # Google AdSense unit configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: adsense
-        # AdSense client ID
-        client_id: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450'
-        # AdSense AD unit ID
-        slot_id: 'anonymous'
+
 
     # Follow.it email subscription widget configurations
     -
