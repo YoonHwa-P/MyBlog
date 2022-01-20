@@ -118,6 +118,9 @@ navbar:
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450"
+    crossorigin="anonymous">
+    </script>
     links:
         Creative Commons:
             icon: fab fa-creative-commons
@@ -308,9 +311,10 @@ widgets:
         position: right
         type: adsense
         # AdSense client ID
-        client_id: ''
+        client_id: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450'
         # AdSense AD unit ID
-        slot_id: ''
+        slot_id: 'anonymous'
+
     # Follow.it email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
