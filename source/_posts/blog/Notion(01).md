@@ -19,8 +19,7 @@ tags:
 진짜 넘 힘들었는데 이제는 자신있다 !
 
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450"
-     crossorigin="anonymous"></script>
+
 
 <br><br>
 <hr>
@@ -84,6 +83,11 @@ directory를 source안에 많이 만드는 것이 훨씬 쉽게 작성 하는 �
 
 내가 정리 한 글이 마음에 들지 않는다면, [노션 가이드북](https://www.notion.so/haebom/Notion-1ad7ccbc41a44298814a4820d4acb14e)
 을 참고 하는 방법도 있다. 
+
+```html
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450"
+     crossorigin="anonymous"></script>
+```
 
 
 
