@@ -246,7 +246,7 @@ widgets:
                 icon: fab fa-facebook
                 url: 'https://facebook.com'
             Naver:
-                icon: fab fa-NAVER
+                icon: fab fa-naver
                 url: 'https://blog.naver.com/abcdpuh'
             Instagram:
                 icon: fab fa-instagram
