@@ -118,13 +118,11 @@ navbar:
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450"
-    crossorigin="anonymous">
-    </script>
+
     links:
         Creative Commons:
             icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
+            url: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9661048314566450'
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by/4.0/'
