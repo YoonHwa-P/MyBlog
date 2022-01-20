@@ -41,24 +41,40 @@ tags:
 
 2. 시작 하기에 대부분의 내용이 나와 있기 때문에 이 부분을 보면 된다. 
     
-![img.png](/../../imeges/BlogImg/Notion01.png)
+![Notion01](/../../imeges/BlogImg/Notion01.png)
     <br><br>
 
 3. 페이지 추가하기를 누르면 페이지가 추가 되고, 페이지의 하위페이지도 추가 할 수 있다.
 
 <br><br>
 
-    4. 커버 사진도 손쉽게 변경 할 수 있고, 명령어 사용을 위해 ` / `을 입력하면 원하는 명령어가 리스트로 나온다. 
-![img_1.png](/../../imeges/BlogImg/Notion02.png)
-    <br><br>
+4. 커버 사진도 손쉽게 변경 할 수 있고, 명령어 사용을 위해 ` / `을 입력하면 원하는 명령어가 리스트로 나온다. 
 
-5. 사진의 경우 네이버 처럼 `Ctrl + C`, `Ctrl + V`, 즉 복붙을 통해 편리하게 넣을 수 있다. 
+5. ![Notion02](/../../imeges/BlogImg/Notion02.png)
+   
+<br><br>
+
+7. 사진의 경우 네이버 처럼 `Ctrl + C`, `Ctrl + V`, 즉 복붙을 통해 편리하게 넣을 수 있다. 
 
  - 나의 경우 Image를 `Ctrl + C`, `Ctrl + V`,를 통해 가져와서 pycham 에서 directory를 image file 로 옮기면서 이름을 변경하는 형식으로 진행했다. 
 
+ <br><br>
+
 6. 사실 포스팅 하나마다 포스팅 directory를 이용하면, pycham으로 작성하는 것이 더 쉬울 수도 ...
 
+ <br><br>
 
+7. `Mark Down` 문서를 작성하기 가장 쉬운 곳은 [visual studio code](https://code.visualstudio.com/) 라고 한다. 
+
+<br><br>
+
+
+## Notion! 결론은 ?
+
+
+directory를 source안에 많이 만드는 것이 훨씬 쉽게 작성 하는 방법 인것 같다.
+
+예쁘게 만들고 싶다면 처음부터 Notion을 사용 하는 것이 좋을 듯 !
 
 
 <br><br>
