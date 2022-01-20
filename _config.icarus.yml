@@ -134,10 +134,9 @@ article:
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        .hljs {
+
         background: #1d1f21;
         color: #c5c8c6;
-            }
 
         theme: atom-one-light
         # Show copy code button
