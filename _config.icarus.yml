@@ -142,7 +142,7 @@ article:
         # Show copy code button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
-        fold: folded
+        fold:
     # Whether to show estimated article reading time
     readtime: true
     # Article licensing block
@@ -249,7 +249,7 @@ widgets:
                 icon: fab fa-facebook
                 url: 'https://facebook.com'
             Naver:
-                icon: fab fa-naver
+                icon: /../imeges/naverBlog.png
                 url: 'https://blog.naver.com/abcdpuh'
             Instagram:
                 icon: fab fa-instagram
